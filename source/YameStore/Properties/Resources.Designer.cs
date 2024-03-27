@@ -63,6 +63,26 @@ namespace YameStore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap clothes {
+            get {
+                object obj = ResourceManager.GetObject("clothes", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap curve {
+            get {
+                object obj = ResourceManager.GetObject("curve", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap eyes {
             get {
                 object obj = ResourceManager.GetObject("eyes", resourceCulture);
@@ -114,6 +134,16 @@ namespace YameStore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap locked_icon {
+            get {
+                object obj = ResourceManager.GetObject("locked-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap noneyes {
             get {
                 object obj = ResourceManager.GetObject("noneyes", resourceCulture);
@@ -157,6 +187,16 @@ namespace YameStore.Properties {
         internal static System.Drawing.Bitmap yame {
             get {
                 object obj = ResourceManager.GetObject("yame", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap yamelogo {
+            get {
+                object obj = ResourceManager.GetObject("yamelogo", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
