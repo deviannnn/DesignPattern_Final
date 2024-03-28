@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SideNav));
             this.toolStrip1 = new System.Windows.Forms.ToolStrip();
-            this.toolStripButton1 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton2 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton3 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton4 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton5 = new System.Windows.Forms.ToolStripButton();
-            this.toolStripButton6 = new System.Windows.Forms.ToolStripButton();
+            this.dashboardBtn = new System.Windows.Forms.ToolStripButton();
+            this.posBtn = new System.Windows.Forms.ToolStripButton();
+            this.profileBtn = new System.Windows.Forms.ToolStripButton();
+            this.lookupsBtn = new System.Windows.Forms.ToolStripButton();
+            this.returnsBtn = new System.Windows.Forms.ToolStripButton();
+            this.membersBtn = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -46,12 +46,12 @@
             this.toolStrip1.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.toolStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.toolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripButton1,
-            this.toolStripButton2,
-            this.toolStripButton3,
-            this.toolStripButton4,
-            this.toolStripButton5,
-            this.toolStripButton6});
+            this.dashboardBtn,
+            this.posBtn,
+            this.profileBtn,
+            this.lookupsBtn,
+            this.returnsBtn,
+            this.membersBtn});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
             this.toolStrip1.Padding = new System.Windows.Forms.Padding(8);
@@ -59,96 +59,96 @@
             this.toolStrip1.TabIndex = 0;
             this.toolStrip1.Text = "toolStrip1";
             // 
-            // toolStripButton1
+            // dashboardBtn
             // 
-            this.toolStripButton1.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.toolStripButton1.ForeColor = System.Drawing.Color.Black;
-            this.toolStripButton1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton1.Image")));
-            this.toolStripButton1.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton1.Margin = new System.Windows.Forms.Padding(2);
-            this.toolStripButton1.Name = "toolStripButton1";
-            this.toolStripButton1.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
-            this.toolStripButton1.Size = new System.Drawing.Size(154, 44);
-            this.toolStripButton1.Text = "Dashboard";
+            this.dashboardBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.dashboardBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.dashboardBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dashboardBtn.ForeColor = System.Drawing.Color.Black;
+            this.dashboardBtn.Image = ((System.Drawing.Image)(resources.GetObject("dashboardBtn.Image")));
+            this.dashboardBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.dashboardBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.dashboardBtn.Name = "dashboardBtn";
+            this.dashboardBtn.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
+            this.dashboardBtn.Size = new System.Drawing.Size(154, 44);
+            this.dashboardBtn.Text = "Dashboard";
             // 
-            // toolStripButton2
+            // posBtn
             // 
-            this.toolStripButton2.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripButton2.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.toolStripButton2.ForeColor = System.Drawing.Color.Black;
-            this.toolStripButton2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton2.Image")));
-            this.toolStripButton2.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton2.Margin = new System.Windows.Forms.Padding(2);
-            this.toolStripButton2.Name = "toolStripButton2";
-            this.toolStripButton2.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
-            this.toolStripButton2.Size = new System.Drawing.Size(170, 44);
-            this.toolStripButton2.Text = "POS";
+            this.posBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.posBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.posBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.posBtn.ForeColor = System.Drawing.Color.Black;
+            this.posBtn.Image = ((System.Drawing.Image)(resources.GetObject("posBtn.Image")));
+            this.posBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.posBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.posBtn.Name = "posBtn";
+            this.posBtn.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
+            this.posBtn.Size = new System.Drawing.Size(154, 44);
+            this.posBtn.Text = "POS";
             // 
-            // toolStripButton3
+            // profileBtn
             // 
-            this.toolStripButton3.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripButton3.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.toolStripButton3.ForeColor = System.Drawing.Color.Black;
-            this.toolStripButton3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton3.Image")));
-            this.toolStripButton3.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton3.Margin = new System.Windows.Forms.Padding(2);
-            this.toolStripButton3.Name = "toolStripButton3";
-            this.toolStripButton3.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
-            this.toolStripButton3.Size = new System.Drawing.Size(170, 44);
-            this.toolStripButton3.Text = "Profile";
+            this.profileBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.profileBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.profileBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.profileBtn.ForeColor = System.Drawing.Color.Black;
+            this.profileBtn.Image = ((System.Drawing.Image)(resources.GetObject("profileBtn.Image")));
+            this.profileBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.profileBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.profileBtn.Name = "profileBtn";
+            this.profileBtn.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
+            this.profileBtn.Size = new System.Drawing.Size(154, 44);
+            this.profileBtn.Text = "Profile";
             // 
-            // toolStripButton4
+            // lookupsBtn
             // 
-            this.toolStripButton4.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripButton4.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.toolStripButton4.ForeColor = System.Drawing.Color.Black;
-            this.toolStripButton4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton4.Image")));
-            this.toolStripButton4.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton4.Margin = new System.Windows.Forms.Padding(2);
-            this.toolStripButton4.Name = "toolStripButton4";
-            this.toolStripButton4.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
-            this.toolStripButton4.Size = new System.Drawing.Size(170, 44);
-            this.toolStripButton4.Text = "Lookups";
+            this.lookupsBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.lookupsBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.lookupsBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lookupsBtn.ForeColor = System.Drawing.Color.Black;
+            this.lookupsBtn.Image = ((System.Drawing.Image)(resources.GetObject("lookupsBtn.Image")));
+            this.lookupsBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.lookupsBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.lookupsBtn.Name = "lookupsBtn";
+            this.lookupsBtn.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
+            this.lookupsBtn.Size = new System.Drawing.Size(154, 44);
+            this.lookupsBtn.Text = "Lookups";
             // 
-            // toolStripButton5
+            // returnsBtn
             // 
-            this.toolStripButton5.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripButton5.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.toolStripButton5.ForeColor = System.Drawing.Color.Black;
-            this.toolStripButton5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton5.Image")));
-            this.toolStripButton5.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton5.Margin = new System.Windows.Forms.Padding(2);
-            this.toolStripButton5.Name = "toolStripButton5";
-            this.toolStripButton5.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
-            this.toolStripButton5.Size = new System.Drawing.Size(170, 44);
-            this.toolStripButton5.Text = "Returns";
+            this.returnsBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.returnsBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.returnsBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.returnsBtn.ForeColor = System.Drawing.Color.Black;
+            this.returnsBtn.Image = ((System.Drawing.Image)(resources.GetObject("returnsBtn.Image")));
+            this.returnsBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.returnsBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.returnsBtn.Name = "returnsBtn";
+            this.returnsBtn.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
+            this.returnsBtn.Size = new System.Drawing.Size(154, 44);
+            this.returnsBtn.Text = "Returns";
             // 
-            // toolStripButton6
+            // membersBtn
             // 
-            this.toolStripButton6.BackColor = System.Drawing.SystemColors.Control;
-            this.toolStripButton6.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.toolStripButton6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.toolStripButton6.ForeColor = System.Drawing.Color.Black;
-            this.toolStripButton6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripButton6.Image")));
-            this.toolStripButton6.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.toolStripButton6.Margin = new System.Windows.Forms.Padding(2);
-            this.toolStripButton6.Name = "toolStripButton6";
-            this.toolStripButton6.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
-            this.toolStripButton6.Size = new System.Drawing.Size(170, 44);
-            this.toolStripButton6.Text = "VIP Members";
+            this.membersBtn.BackColor = System.Drawing.SystemColors.Control;
+            this.membersBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.membersBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.membersBtn.ForeColor = System.Drawing.Color.Black;
+            this.membersBtn.Image = ((System.Drawing.Image)(resources.GetObject("membersBtn.Image")));
+            this.membersBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.membersBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.membersBtn.Name = "membersBtn";
+            this.membersBtn.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
+            this.membersBtn.Size = new System.Drawing.Size(154, 44);
+            this.membersBtn.Text = "VIP Members";
             // 
-            // InsideLayout
+            // SideNav
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.toolStrip1);
-            this.Name = "InsideLayout";
+            this.Name = "SideNav";
             this.Size = new System.Drawing.Size(178, 641);
             this.toolStrip1.ResumeLayout(false);
             this.toolStrip1.PerformLayout();
@@ -160,11 +160,11 @@
         #endregion
 
         private ToolStrip toolStrip1;
-        private ToolStripButton toolStripButton1;
-        private ToolStripButton toolStripButton2;
-        private ToolStripButton toolStripButton3;
-        private ToolStripButton toolStripButton4;
-        private ToolStripButton toolStripButton5;
-        private ToolStripButton toolStripButton6;
+        private ToolStripButton dashboardBtn;
+        private ToolStripButton posBtn;
+        private ToolStripButton profileBtn;
+        private ToolStripButton lookupsBtn;
+        private ToolStripButton returnsBtn;
+        private ToolStripButton membersBtn;
     }
 }
