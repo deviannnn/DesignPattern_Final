@@ -8,21 +8,19 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace YameStore.Screen.Login
+namespace YameStore.Screen.Initial
 {
-    public partial class LoginForm : Form
+    public partial class ForgotPasswordForm : Form
     {
-        public event EventHandler LabelClicked;
-
-        public LoginForm()
+        public ForgotPasswordForm()
         {
             InitializeComponent();
         }
 
-
-        private void forgotPasswordBtn_Click(object sender, EventArgs e)
+        private void backLoginBtn_Click(object sender, EventArgs e)
         {
-            LabelClicked?.Invoke(this, EventArgs.Empty);
+            Close();
+            new LoginForm().Show();
         }
     }
 }

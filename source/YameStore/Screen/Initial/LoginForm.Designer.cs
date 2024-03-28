@@ -1,4 +1,4 @@
-﻿namespace YameStore.Screen.Login
+﻿namespace YameStore.Screen.Initial
 {
     partial class LoginForm
     {
@@ -36,9 +36,14 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.forgotPasswordBtn = new System.Windows.Forms.Label();
             this.loginBtn = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.initialLayout1 = new YameStore.Screen.Initial.InitialLayout();
+            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -120,19 +125,53 @@
             this.loginBtn.Text = "LOG IN";
             this.loginBtn.UseVisualStyleBackColor = false;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.initialLayout1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panel3.Location = new System.Drawing.Point(0, 0);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(480, 644);
+            this.panel3.TabIndex = 8;
+            // 
+            // initialLayout1
+            // 
+            this.initialLayout1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("initialLayout1.BackgroundImage")));
+            this.initialLayout1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.initialLayout1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.initialLayout1.Location = new System.Drawing.Point(0, 0);
+            this.initialLayout1.Name = "initialLayout1";
+            this.initialLayout1.Size = new System.Drawing.Size(480, 644);
+            this.initialLayout1.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.panel2);
+            this.panel4.Controls.Add(this.panel1);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(480, 0);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(522, 644);
+            this.panel4.TabIndex = 9;
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(522, 644);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.ClientSize = new System.Drawing.Size(1002, 644);
+            this.Controls.Add(this.panel4);
+            this.Controls.Add(this.panel3);
+            this.MaximumSize = new System.Drawing.Size(1024, 700);
+            this.MinimumSize = new System.Drawing.Size(1024, 700);
             this.Name = "LoginForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -146,5 +185,8 @@
         private Panel panel2;
         private Button loginBtn;
         private Label forgotPasswordBtn;
+        private Panel panel3;
+        private Panel panel4;
+        private InitialLayout initialLayout1;
     }
 }
