@@ -16,5 +16,15 @@ namespace YameStore.Screen.POS
         {
             InitializeComponent();
         }
+
+        private void checkinBtn_Click(object sender, EventArgs e)
+        {
+            new CheckinForm().ShowDialog();
+        }
+
+        private void payBtn_Click(object sender, EventArgs e)
+        {
+            new PayForm().ShowDialog();
+        }
     }
 }

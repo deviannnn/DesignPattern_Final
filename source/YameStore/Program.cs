@@ -16,7 +16,7 @@ namespace YameStore
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new PosForm());
+            Application.Run(new QL_Kho("123"));
         }
     }
 }

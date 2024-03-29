@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace YameStore
+namespace YameStore.Screen.POS
 {
-    public partial class Bankingonline : Form
+    public partial class CheckinForm : Form
     {
-        public Bankingonline()
+        public CheckinForm()
         {
             InitializeComponent();
         }

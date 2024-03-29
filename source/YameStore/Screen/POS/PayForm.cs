@@ -8,19 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace YameStore
+namespace YameStore.Screen.POS
 {
-    public partial class Passwordbankingonline : Form
+    public partial class PayForm : Form
     {
-        public Passwordbankingonline()
+        public PayForm()
         {
             InitializeComponent();
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            new Bankingonline().Show();
-            this.Hide();
         }
     }
 }

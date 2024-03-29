@@ -660,10 +660,10 @@
             this.panel_Thanhtoantienmat.Controls.Add(this.label15);
             this.panel_Thanhtoantienmat.Controls.Add(this.label20);
             this.panel_Thanhtoantienmat.Controls.Add(this.label21);
-            this.panel_Thanhtoantienmat.Location = new System.Drawing.Point(836, 444);
+            this.panel_Thanhtoantienmat.Location = new System.Drawing.Point(1, 271);
             this.panel_Thanhtoantienmat.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.panel_Thanhtoantienmat.Name = "panel_Thanhtoantienmat";
-            this.panel_Thanhtoantienmat.Size = new System.Drawing.Size(643, 1079);
+            this.panel_Thanhtoantienmat.Size = new System.Drawing.Size(643, 934);
             this.panel_Thanhtoantienmat.TabIndex = 51;
             // 
             // label2
@@ -1142,10 +1142,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1946, 1106);
+            this.Controls.Add(this.panel_Thanhtoantienmat);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.txt_tongsp);
             this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.panel_Thanhtoantienmat);
             this.Controls.Add(this.panel_Bankingonline);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.numUD_soluong);
