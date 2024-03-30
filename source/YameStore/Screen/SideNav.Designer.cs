@@ -34,7 +34,6 @@
             this.posBtn = new System.Windows.Forms.ToolStripButton();
             this.profileBtn = new System.Windows.Forms.ToolStripButton();
             this.lookupsBtn = new System.Windows.Forms.ToolStripButton();
-            this.returnsBtn = new System.Windows.Forms.ToolStripButton();
             this.membersBtn = new System.Windows.Forms.ToolStripButton();
             this.toolStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -50,7 +49,6 @@
             this.posBtn,
             this.profileBtn,
             this.lookupsBtn,
-            this.returnsBtn,
             this.membersBtn});
             this.toolStrip1.Location = new System.Drawing.Point(0, 0);
             this.toolStrip1.Name = "toolStrip1";
@@ -115,20 +113,6 @@
             this.lookupsBtn.Size = new System.Drawing.Size(154, 44);
             this.lookupsBtn.Text = "Lookups";
             // 
-            // returnsBtn
-            // 
-            this.returnsBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.returnsBtn.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
-            this.returnsBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.returnsBtn.ForeColor = System.Drawing.Color.Black;
-            this.returnsBtn.Image = ((System.Drawing.Image)(resources.GetObject("returnsBtn.Image")));
-            this.returnsBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.returnsBtn.Margin = new System.Windows.Forms.Padding(2);
-            this.returnsBtn.Name = "returnsBtn";
-            this.returnsBtn.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
-            this.returnsBtn.Size = new System.Drawing.Size(154, 44);
-            this.returnsBtn.Text = "Returns";
-            // 
             // membersBtn
             // 
             this.membersBtn.BackColor = System.Drawing.SystemColors.Control;
@@ -164,7 +148,6 @@
         private ToolStripButton posBtn;
         private ToolStripButton profileBtn;
         private ToolStripButton lookupsBtn;
-        private ToolStripButton returnsBtn;
         private ToolStripButton membersBtn;
     }
 }

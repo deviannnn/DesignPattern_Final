@@ -45,20 +45,18 @@
             this.voucherTbox = new System.Windows.Forms.TextBox();
             this.voucherLabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.cancelBtn = new System.Windows.Forms.Button();
+            this.exitBtn = new System.Windows.Forms.Button();
             this.payBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
             this.membersGbox = new System.Windows.Forms.GroupBox();
-            this.checkinBtn = new System.Windows.Forms.Button();
             this.txt_hoten = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.infoGbox = new System.Windows.Forms.GroupBox();
             this.dateTbox = new System.Windows.Forms.TextBox();
-            this.dateLabel = new System.Windows.Forms.Label();
-            this.cashierLabel = new System.Windows.Forms.Label();
-            this.cashierTbox = new System.Windows.Forms.TextBox();
             this.detailsLView = new System.Windows.Forms.ListView();
             this.colLView0 = new System.Windows.Forms.ColumnHeader();
             this.colLView1 = new System.Windows.Forms.ColumnHeader();
@@ -70,7 +68,21 @@
             this.scanTbox = new System.Windows.Forms.TextBox();
             this.addBtn = new System.Windows.Forms.Button();
             this.quantitySelector = new System.Windows.Forms.NumericUpDown();
-            this.reloadBtn = new System.Windows.Forms.Button();
+            this.clearCartBtn = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.clearCartMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.newTransMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.exitMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.aToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.undoMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.redoMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.newCardMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.reissueCardMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.exchangesMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.checkoutMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
             this.panel1.SuspendLayout();
             this.paymentGbox.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -79,9 +91,11 @@
             this.panel6.SuspendLayout();
             this.membersGbox.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.infoGbox.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quantitySelector)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
@@ -89,10 +103,10 @@
             this.panel1.Controls.Add(this.paymentGbox);
             this.panel1.Controls.Add(this.panel4);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(964, 0);
+            this.panel1.Location = new System.Drawing.Point(964, 33);
             this.panel1.Name = "panel1";
             this.panel1.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.panel1.Size = new System.Drawing.Size(550, 744);
+            this.panel1.Size = new System.Drawing.Size(550, 711);
             this.panel1.TabIndex = 0;
             // 
             // paymentGbox
@@ -101,11 +115,12 @@
             this.paymentGbox.Controls.Add(this.tableLayoutPanel1);
             this.paymentGbox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.paymentGbox.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.paymentGbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
             this.paymentGbox.Location = new System.Drawing.Point(4, 0);
             this.paymentGbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.paymentGbox.Name = "paymentGbox";
-            this.paymentGbox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.paymentGbox.Size = new System.Drawing.Size(546, 630);
+            this.paymentGbox.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
+            this.paymentGbox.Size = new System.Drawing.Size(546, 597);
             this.paymentGbox.TabIndex = 1;
             this.paymentGbox.TabStop = false;
             this.paymentGbox.Text = "Payment";
@@ -113,7 +128,7 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 168F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 169F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.subtotalLabel, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.discountLabel, 0, 3);
@@ -129,7 +144,7 @@
             this.tableLayoutPanel1.Controls.Add(this.voucherTbox, 0, 4);
             this.tableLayoutPanel1.Controls.Add(this.voucherLabel, 0, 5);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(4, 32);
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 32);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 7;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
@@ -140,17 +155,18 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(538, 593);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(546, 560);
             this.tableLayoutPanel1.TabIndex = 51;
             // 
             // subtotalLabel
             // 
             this.subtotalLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.subtotalLabel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.subtotalLabel.Location = new System.Drawing.Point(4, 168);
+            this.subtotalLabel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.subtotalLabel.ForeColor = System.Drawing.Color.Black;
+            this.subtotalLabel.Location = new System.Drawing.Point(4, 158);
             this.subtotalLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.subtotalLabel.Name = "subtotalLabel";
-            this.subtotalLabel.Size = new System.Drawing.Size(160, 84);
+            this.subtotalLabel.Size = new System.Drawing.Size(161, 79);
             this.subtotalLabel.TabIndex = 24;
             this.subtotalLabel.Text = "Sub Total";
             this.subtotalLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -158,11 +174,12 @@
             // discountLabel
             // 
             this.discountLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.discountLabel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.discountLabel.Location = new System.Drawing.Point(4, 252);
+            this.discountLabel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.discountLabel.ForeColor = System.Drawing.Color.Black;
+            this.discountLabel.Location = new System.Drawing.Point(4, 237);
             this.discountLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.discountLabel.Name = "discountLabel";
-            this.discountLabel.Size = new System.Drawing.Size(160, 84);
+            this.discountLabel.Size = new System.Drawing.Size(161, 79);
             this.discountLabel.TabIndex = 25;
             this.discountLabel.Text = "Total Discounts";
             this.discountLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -170,11 +187,12 @@
             // totalamountLabel
             // 
             this.totalamountLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.totalamountLabel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.totalamountLabel.Location = new System.Drawing.Point(4, 504);
+            this.totalamountLabel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.totalamountLabel.ForeColor = System.Drawing.Color.Black;
+            this.totalamountLabel.Location = new System.Drawing.Point(4, 474);
             this.totalamountLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.totalamountLabel.Name = "totalamountLabel";
-            this.totalamountLabel.Size = new System.Drawing.Size(160, 89);
+            this.totalamountLabel.Size = new System.Drawing.Size(161, 86);
             this.totalamountLabel.TabIndex = 33;
             this.totalamountLabel.Text = "Total Amount";
             this.totalamountLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -185,11 +203,11 @@
             this.voucherDiscountTbox.BackColor = System.Drawing.Color.Blue;
             this.voucherDiscountTbox.Font = new System.Drawing.Font("Segoe UI Semibold", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.voucherDiscountTbox.ForeColor = System.Drawing.Color.Lime;
-            this.voucherDiscountTbox.Location = new System.Drawing.Point(168, 429);
+            this.voucherDiscountTbox.Location = new System.Drawing.Point(169, 401);
             this.voucherDiscountTbox.Margin = new System.Windows.Forms.Padding(0);
             this.voucherDiscountTbox.Name = "voucherDiscountTbox";
             this.voucherDiscountTbox.ReadOnly = true;
-            this.voucherDiscountTbox.Size = new System.Drawing.Size(370, 66);
+            this.voucherDiscountTbox.Size = new System.Drawing.Size(377, 66);
             this.voucherDiscountTbox.TabIndex = 32;
             this.voucherDiscountTbox.Text = "None";
             this.voucherDiscountTbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -200,11 +218,11 @@
             this.totalAmountTbox.BackColor = System.Drawing.Color.Blue;
             this.totalAmountTbox.Font = new System.Drawing.Font("Segoe UI Semibold", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.totalAmountTbox.ForeColor = System.Drawing.Color.Lime;
-            this.totalAmountTbox.Location = new System.Drawing.Point(168, 515);
+            this.totalAmountTbox.Location = new System.Drawing.Point(169, 484);
             this.totalAmountTbox.Margin = new System.Windows.Forms.Padding(0);
             this.totalAmountTbox.Name = "totalAmountTbox";
             this.totalAmountTbox.ReadOnly = true;
-            this.totalAmountTbox.Size = new System.Drawing.Size(370, 66);
+            this.totalAmountTbox.Size = new System.Drawing.Size(377, 66);
             this.totalAmountTbox.TabIndex = 34;
             this.totalAmountTbox.Text = "0";
             this.totalAmountTbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -215,11 +233,11 @@
             this.membersDiscountTbox.BackColor = System.Drawing.Color.White;
             this.membersDiscountTbox.Enabled = false;
             this.membersDiscountTbox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.membersDiscountTbox.Location = new System.Drawing.Point(168, 106);
+            this.membersDiscountTbox.Location = new System.Drawing.Point(169, 99);
             this.membersDiscountTbox.Margin = new System.Windows.Forms.Padding(0);
             this.membersDiscountTbox.Name = "membersDiscountTbox";
             this.membersDiscountTbox.ReadOnly = true;
-            this.membersDiscountTbox.Size = new System.Drawing.Size(370, 39);
+            this.membersDiscountTbox.Size = new System.Drawing.Size(377, 39);
             this.membersDiscountTbox.TabIndex = 38;
             this.membersDiscountTbox.TabStop = false;
             this.membersDiscountTbox.Text = "0";
@@ -228,11 +246,12 @@
             // membersLabel
             // 
             this.membersLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.membersLabel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.membersLabel.Location = new System.Drawing.Point(4, 84);
+            this.membersLabel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.membersLabel.ForeColor = System.Drawing.Color.Black;
+            this.membersLabel.Location = new System.Drawing.Point(4, 79);
             this.membersLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.membersLabel.Name = "membersLabel";
-            this.membersLabel.Size = new System.Drawing.Size(160, 84);
+            this.membersLabel.Size = new System.Drawing.Size(161, 79);
             this.membersLabel.TabIndex = 37;
             this.membersLabel.Text = "Members %";
             this.membersLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -243,11 +262,11 @@
             this.subTotalTbox.BackColor = System.Drawing.Color.Blue;
             this.subTotalTbox.Font = new System.Drawing.Font("Segoe UI Semibold", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.subTotalTbox.ForeColor = System.Drawing.Color.Lime;
-            this.subTotalTbox.Location = new System.Drawing.Point(168, 177);
+            this.subTotalTbox.Location = new System.Drawing.Point(169, 164);
             this.subTotalTbox.Margin = new System.Windows.Forms.Padding(0);
             this.subTotalTbox.Name = "subTotalTbox";
             this.subTotalTbox.ReadOnly = true;
-            this.subTotalTbox.Size = new System.Drawing.Size(370, 66);
+            this.subTotalTbox.Size = new System.Drawing.Size(377, 66);
             this.subTotalTbox.TabIndex = 19;
             this.subTotalTbox.Text = "0";
             this.subTotalTbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -258,11 +277,11 @@
             this.totalDiscountTbox.BackColor = System.Drawing.Color.Blue;
             this.totalDiscountTbox.Font = new System.Drawing.Font("Segoe UI Semibold", 22F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.totalDiscountTbox.ForeColor = System.Drawing.Color.Lime;
-            this.totalDiscountTbox.Location = new System.Drawing.Point(168, 261);
+            this.totalDiscountTbox.Location = new System.Drawing.Point(169, 243);
             this.totalDiscountTbox.Margin = new System.Windows.Forms.Padding(0);
             this.totalDiscountTbox.Name = "totalDiscountTbox";
             this.totalDiscountTbox.ReadOnly = true;
-            this.totalDiscountTbox.Size = new System.Drawing.Size(370, 66);
+            this.totalDiscountTbox.Size = new System.Drawing.Size(377, 66);
             this.totalDiscountTbox.TabIndex = 28;
             this.totalDiscountTbox.Text = "0";
             this.totalDiscountTbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -270,6 +289,7 @@
             // methodsPaySelector
             // 
             this.methodsPaySelector.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.methodsPaySelector.BackColor = System.Drawing.Color.White;
             this.methodsPaySelector.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.methodsPaySelector.FormattingEnabled = true;
             this.methodsPaySelector.Items.AddRange(new object[] {
@@ -277,21 +297,22 @@
             "Banking",
             "Momo",
             "ZaloPay"});
-            this.methodsPaySelector.Location = new System.Drawing.Point(168, 22);
+            this.methodsPaySelector.Location = new System.Drawing.Point(169, 19);
             this.methodsPaySelector.Margin = new System.Windows.Forms.Padding(0);
             this.methodsPaySelector.Name = "methodsPaySelector";
-            this.methodsPaySelector.Size = new System.Drawing.Size(370, 40);
+            this.methodsPaySelector.Size = new System.Drawing.Size(377, 40);
             this.methodsPaySelector.TabIndex = 46;
             this.methodsPaySelector.Text = "Cash";
             // 
             // methodsLabel
             // 
             this.methodsLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.methodsLabel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.methodsLabel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.methodsLabel.ForeColor = System.Drawing.Color.Black;
             this.methodsLabel.Location = new System.Drawing.Point(4, 0);
             this.methodsLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.methodsLabel.Name = "methodsLabel";
-            this.methodsLabel.Size = new System.Drawing.Size(160, 84);
+            this.methodsLabel.Size = new System.Drawing.Size(161, 79);
             this.methodsLabel.TabIndex = 47;
             this.methodsLabel.Text = "Methods";
             this.methodsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -299,53 +320,55 @@
             // voucherTbox
             // 
             this.voucherTbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.voucherTbox.BackColor = System.Drawing.Color.White;
             this.tableLayoutPanel1.SetColumnSpan(this.voucherTbox, 2);
             this.voucherTbox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.voucherTbox.Location = new System.Drawing.Point(4, 358);
+            this.voucherTbox.Location = new System.Drawing.Point(4, 336);
             this.voucherTbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.voucherTbox.MaxLength = 18;
             this.voucherTbox.Name = "voucherTbox";
             this.voucherTbox.PlaceholderText = "Voucher Code";
-            this.voucherTbox.Size = new System.Drawing.Size(530, 39);
+            this.voucherTbox.Size = new System.Drawing.Size(538, 39);
             this.voucherTbox.TabIndex = 2;
             this.voucherTbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // voucherLabel
             // 
             this.voucherLabel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.voucherLabel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.voucherLabel.Location = new System.Drawing.Point(4, 420);
+            this.voucherLabel.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.voucherLabel.ForeColor = System.Drawing.Color.Black;
+            this.voucherLabel.Location = new System.Drawing.Point(4, 395);
             this.voucherLabel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.voucherLabel.Name = "voucherLabel";
-            this.voucherLabel.Size = new System.Drawing.Size(160, 84);
+            this.voucherLabel.Size = new System.Drawing.Size(161, 79);
             this.voucherLabel.TabIndex = 31;
             this.voucherLabel.Text = "Voucher";
             this.voucherLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.cancelBtn);
+            this.panel4.Controls.Add(this.exitBtn);
             this.panel4.Controls.Add(this.payBtn);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel4.Location = new System.Drawing.Point(4, 630);
+            this.panel4.Location = new System.Drawing.Point(4, 597);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(546, 114);
             this.panel4.TabIndex = 0;
             // 
-            // cancelBtn
+            // exitBtn
             // 
-            this.cancelBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
-            this.cancelBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.cancelBtn.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.cancelBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.cancelBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.cancelBtn.ForeColor = System.Drawing.Color.White;
-            this.cancelBtn.Location = new System.Drawing.Point(0, 57);
-            this.cancelBtn.Name = "cancelBtn";
-            this.cancelBtn.Size = new System.Drawing.Size(546, 57);
-            this.cancelBtn.TabIndex = 1;
-            this.cancelBtn.Text = "CANCEL";
-            this.cancelBtn.UseVisualStyleBackColor = false;
+            this.exitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.exitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.exitBtn.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.exitBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.exitBtn.ForeColor = System.Drawing.Color.White;
+            this.exitBtn.Location = new System.Drawing.Point(0, 57);
+            this.exitBtn.Name = "exitBtn";
+            this.exitBtn.Size = new System.Drawing.Size(546, 57);
+            this.exitBtn.TabIndex = 1;
+            this.exitBtn.Text = "NEW";
+            this.exitBtn.UseVisualStyleBackColor = false;
             // 
             // payBtn
             // 
@@ -370,9 +393,9 @@
             this.panel2.Controls.Add(this.panel6);
             this.panel2.Controls.Add(this.panel3);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel2.Location = new System.Drawing.Point(0, 0);
+            this.panel2.Location = new System.Drawing.Point(4, 33);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(964, 230);
+            this.panel2.Size = new System.Drawing.Size(960, 230);
             this.panel2.TabIndex = 1;
             // 
             // label1
@@ -380,10 +403,10 @@
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 22F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(272, 135);
+            this.label1.Location = new System.Drawing.Point(272, 113);
             this.label1.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(692, 95);
+            this.label1.Size = new System.Drawing.Size(688, 117);
             this.label1.TabIndex = 48;
             this.label1.Text = "SALES INVOICE";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -395,37 +418,24 @@
             this.panel6.Location = new System.Drawing.Point(272, 0);
             this.panel6.Name = "panel6";
             this.panel6.Padding = new System.Windows.Forms.Padding(4, 0, 0, 0);
-            this.panel6.Size = new System.Drawing.Size(692, 135);
+            this.panel6.Size = new System.Drawing.Size(688, 113);
             this.panel6.TabIndex = 50;
             // 
             // membersGbox
             // 
             this.membersGbox.BackColor = System.Drawing.SystemColors.Control;
-            this.membersGbox.Controls.Add(this.checkinBtn);
             this.membersGbox.Controls.Add(this.txt_hoten);
             this.membersGbox.Dock = System.Windows.Forms.DockStyle.Fill;
             this.membersGbox.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.membersGbox.ForeColor = System.Drawing.Color.Black;
+            this.membersGbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
             this.membersGbox.Location = new System.Drawing.Point(4, 0);
             this.membersGbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.membersGbox.Name = "membersGbox";
             this.membersGbox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.membersGbox.Size = new System.Drawing.Size(688, 135);
+            this.membersGbox.Size = new System.Drawing.Size(684, 113);
             this.membersGbox.TabIndex = 47;
             this.membersGbox.TabStop = false;
             this.membersGbox.Text = "VIP Members";
-            // 
-            // checkinBtn
-            // 
-            this.checkinBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.checkinBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkinBtn.Location = new System.Drawing.Point(501, 59);
-            this.checkinBtn.Name = "checkinBtn";
-            this.checkinBtn.Size = new System.Drawing.Size(181, 39);
-            this.checkinBtn.TabIndex = 24;
-            this.checkinBtn.Text = "checkin";
-            this.checkinBtn.UseVisualStyleBackColor = true;
-            this.checkinBtn.Click += new System.EventHandler(this.checkinBtn_Click);
             // 
             // txt_hoten
             // 
@@ -433,18 +443,20 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.txt_hoten.BackColor = System.Drawing.Color.White;
             this.txt_hoten.Enabled = false;
-            this.txt_hoten.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.txt_hoten.Location = new System.Drawing.Point(8, 59);
+            this.txt_hoten.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.txt_hoten.ForeColor = System.Drawing.Color.Black;
+            this.txt_hoten.Location = new System.Drawing.Point(8, 47);
             this.txt_hoten.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.txt_hoten.Name = "txt_hoten";
             this.txt_hoten.ReadOnly = true;
-            this.txt_hoten.Size = new System.Drawing.Size(486, 39);
+            this.txt_hoten.Size = new System.Drawing.Size(668, 39);
             this.txt_hoten.TabIndex = 23;
             this.txt_hoten.TabStop = false;
             this.txt_hoten.Text = "Walk-in customer";
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.groupBox1);
             this.panel3.Controls.Add(this.infoGbox);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
@@ -453,70 +465,71 @@
             this.panel3.Size = new System.Drawing.Size(272, 230);
             this.panel3.TabIndex = 49;
             // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.SystemColors.Control;
+            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.groupBox1.Location = new System.Drawing.Point(0, 113);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Size = new System.Drawing.Size(272, 113);
+            this.groupBox1.TabIndex = 57;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Cashier";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.BackColor = System.Drawing.Color.White;
+            this.textBox1.Enabled = false;
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
+            this.textBox1.Location = new System.Drawing.Point(8, 47);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(256, 39);
+            this.textBox1.TabIndex = 14;
+            this.textBox1.TabStop = false;
+            this.textBox1.Text = "Staff";
+            // 
             // infoGbox
             // 
             this.infoGbox.BackColor = System.Drawing.SystemColors.Control;
             this.infoGbox.Controls.Add(this.dateTbox);
-            this.infoGbox.Controls.Add(this.dateLabel);
-            this.infoGbox.Controls.Add(this.cashierLabel);
-            this.infoGbox.Controls.Add(this.cashierTbox);
-            this.infoGbox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.infoGbox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.infoGbox.Dock = System.Windows.Forms.DockStyle.Top;
+            this.infoGbox.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.infoGbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
             this.infoGbox.Location = new System.Drawing.Point(0, 0);
             this.infoGbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.infoGbox.Name = "infoGbox";
             this.infoGbox.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.infoGbox.Size = new System.Drawing.Size(272, 226);
+            this.infoGbox.Size = new System.Drawing.Size(272, 113);
             this.infoGbox.TabIndex = 56;
             this.infoGbox.TabStop = false;
+            this.infoGbox.Text = "Date";
             // 
             // dateTbox
             // 
+            this.dateTbox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.dateTbox.BackColor = System.Drawing.Color.White;
             this.dateTbox.Enabled = false;
-            this.dateTbox.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.dateTbox.Location = new System.Drawing.Point(1, 59);
+            this.dateTbox.Font = new System.Drawing.Font("Segoe UI Light", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.dateTbox.ForeColor = System.Drawing.Color.Black;
+            this.dateTbox.Location = new System.Drawing.Point(8, 47);
             this.dateTbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dateTbox.Name = "dateTbox";
             this.dateTbox.ReadOnly = true;
-            this.dateTbox.Size = new System.Drawing.Size(270, 39);
+            this.dateTbox.Size = new System.Drawing.Size(257, 39);
             this.dateTbox.TabIndex = 14;
             this.dateTbox.TabStop = false;
             this.dateTbox.Text = "Staff";
-            // 
-            // dateLabel
-            // 
-            this.dateLabel.AutoSize = true;
-            this.dateLabel.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.dateLabel.Location = new System.Drawing.Point(1, 25);
-            this.dateLabel.Name = "dateLabel";
-            this.dateLabel.Size = new System.Drawing.Size(57, 28);
-            this.dateLabel.TabIndex = 13;
-            this.dateLabel.Text = "Date";
-            // 
-            // cashierLabel
-            // 
-            this.cashierLabel.AutoSize = true;
-            this.cashierLabel.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.cashierLabel.Location = new System.Drawing.Point(1, 128);
-            this.cashierLabel.Name = "cashierLabel";
-            this.cashierLabel.Size = new System.Drawing.Size(82, 28);
-            this.cashierLabel.TabIndex = 12;
-            this.cashierLabel.Text = "Cashier";
-            // 
-            // cashierTbox
-            // 
-            this.cashierTbox.BackColor = System.Drawing.Color.White;
-            this.cashierTbox.Enabled = false;
-            this.cashierTbox.Font = new System.Drawing.Font("Segoe UI Semilight", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.cashierTbox.Location = new System.Drawing.Point(1, 164);
-            this.cashierTbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.cashierTbox.Name = "cashierTbox";
-            this.cashierTbox.ReadOnly = true;
-            this.cashierTbox.Size = new System.Drawing.Size(270, 39);
-            this.cashierTbox.TabIndex = 8;
-            this.cashierTbox.TabStop = false;
-            this.cashierTbox.Text = "Staff";
             // 
             // detailsLView
             // 
@@ -535,10 +548,10 @@
             this.detailsLView.HoverSelection = true;
             this.detailsLView.ImeMode = System.Windows.Forms.ImeMode.On;
             this.detailsLView.LabelWrap = false;
-            this.detailsLView.Location = new System.Drawing.Point(0, 295);
+            this.detailsLView.Location = new System.Drawing.Point(4, 328);
             this.detailsLView.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.detailsLView.Name = "detailsLView";
-            this.detailsLView.Size = new System.Drawing.Size(964, 449);
+            this.detailsLView.Size = new System.Drawing.Size(960, 416);
             this.detailsLView.TabIndex = 40;
             this.detailsLView.UseCompatibleStateImageBehavior = false;
             this.detailsLView.View = System.Windows.Forms.View.Details;
@@ -578,25 +591,26 @@
             this.panel5.Controls.Add(this.scanTbox);
             this.panel5.Controls.Add(this.addBtn);
             this.panel5.Controls.Add(this.quantitySelector);
-            this.panel5.Controls.Add(this.reloadBtn);
+            this.panel5.Controls.Add(this.clearCartBtn);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel5.Location = new System.Drawing.Point(0, 230);
+            this.panel5.Location = new System.Drawing.Point(4, 263);
             this.panel5.Name = "panel5";
             this.panel5.Padding = new System.Windows.Forms.Padding(0, 0, 0, 4);
-            this.panel5.Size = new System.Drawing.Size(964, 65);
+            this.panel5.Size = new System.Drawing.Size(960, 65);
             this.panel5.TabIndex = 3;
             // 
             // scanTbox
             // 
             this.scanTbox.BackColor = System.Drawing.Color.White;
             this.scanTbox.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.scanTbox.Font = new System.Drawing.Font("Segoe UI Light", 20F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.scanTbox.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.scanTbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
             this.scanTbox.Location = new System.Drawing.Point(97, 0);
             this.scanTbox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.scanTbox.MaxLength = 10;
             this.scanTbox.Name = "scanTbox";
             this.scanTbox.PlaceholderText = "Products Code";
-            this.scanTbox.Size = new System.Drawing.Size(625, 61);
+            this.scanTbox.Size = new System.Drawing.Size(621, 61);
             this.scanTbox.TabIndex = 21;
             // 
             // addBtn
@@ -604,9 +618,9 @@
             this.addBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(173)))), ((int)(((byte)(55)))));
             this.addBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.addBtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.addBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.addBtn.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.addBtn.ForeColor = System.Drawing.Color.White;
-            this.addBtn.Location = new System.Drawing.Point(722, 0);
+            this.addBtn.Location = new System.Drawing.Point(718, 0);
             this.addBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.addBtn.Name = "addBtn";
             this.addBtn.Size = new System.Drawing.Size(121, 61);
@@ -636,33 +650,146 @@
             0,
             0});
             // 
-            // reloadBtn
+            // clearCartBtn
             // 
-            this.reloadBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.reloadBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.reloadBtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.reloadBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.reloadBtn.ForeColor = System.Drawing.Color.White;
-            this.reloadBtn.Location = new System.Drawing.Point(843, 0);
-            this.reloadBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.reloadBtn.Name = "reloadBtn";
-            this.reloadBtn.Size = new System.Drawing.Size(121, 61);
-            this.reloadBtn.TabIndex = 44;
-            this.reloadBtn.Text = "Reload";
-            this.reloadBtn.UseVisualStyleBackColor = false;
+            this.clearCartBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.clearCartBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.clearCartBtn.Dock = System.Windows.Forms.DockStyle.Right;
+            this.clearCartBtn.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.clearCartBtn.ForeColor = System.Drawing.Color.White;
+            this.clearCartBtn.Location = new System.Drawing.Point(839, 0);
+            this.clearCartBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.clearCartBtn.Name = "clearCartBtn";
+            this.clearCartBtn.Size = new System.Drawing.Size(121, 61);
+            this.clearCartBtn.TabIndex = 44;
+            this.clearCartBtn.Text = "Clear Cart";
+            this.clearCartBtn.UseVisualStyleBackColor = false;
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.settingToolStripMenuItem,
+            this.aToolStripMenuItem,
+            this.toolsToolStripMenuItem,
+            this.checkoutMenuBtn});
+            this.menuStrip1.Location = new System.Drawing.Point(4, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1510, 33);
+            this.menuStrip1.TabIndex = 41;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // settingToolStripMenuItem
+            // 
+            this.settingToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.clearCartMenuBtn,
+            this.newTransMenuBtn,
+            this.exitMenuBtn});
+            this.settingToolStripMenuItem.Name = "settingToolStripMenuItem";
+            this.settingToolStripMenuItem.Size = new System.Drawing.Size(84, 29);
+            this.settingToolStripMenuItem.Text = "S̲etting";
+            // 
+            // clearCartMenuBtn
+            // 
+            this.clearCartMenuBtn.Name = "clearCartMenuBtn";
+            this.clearCartMenuBtn.ShortcutKeyDisplayString = "Ctrl+C";
+            this.clearCartMenuBtn.Size = new System.Drawing.Size(306, 34);
+            this.clearCartMenuBtn.Text = "C̲lear Cart";
+            // 
+            // newTransMenuBtn
+            // 
+            this.newTransMenuBtn.Name = "newTransMenuBtn";
+            this.newTransMenuBtn.ShortcutKeyDisplayString = "Ctrl+N";
+            this.newTransMenuBtn.Size = new System.Drawing.Size(306, 34);
+            this.newTransMenuBtn.Text = "N̲ew Transaction";
+            // 
+            // exitMenuBtn
+            // 
+            this.exitMenuBtn.Name = "exitMenuBtn";
+            this.exitMenuBtn.Size = new System.Drawing.Size(306, 34);
+            this.exitMenuBtn.Text = "E̲xit";
+            // 
+            // aToolStripMenuItem
+            // 
+            this.aToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.undoMenuBtn,
+            this.redoMenuBtn});
+            this.aToolStripMenuItem.Name = "aToolStripMenuItem";
+            this.aToolStripMenuItem.Size = new System.Drawing.Size(58, 29);
+            this.aToolStripMenuItem.Text = "E̲dit";
+            // 
+            // undoMenuBtn
+            // 
+            this.undoMenuBtn.Name = "undoMenuBtn";
+            this.undoMenuBtn.ShortcutKeyDisplayString = "Ctrl+Z";
+            this.undoMenuBtn.Size = new System.Drawing.Size(219, 34);
+            this.undoMenuBtn.Text = "U̲ndo";
+            // 
+            // redoMenuBtn
+            // 
+            this.redoMenuBtn.Name = "redoMenuBtn";
+            this.redoMenuBtn.ShortcutKeyDisplayString = "Ctrl+Y";
+            this.redoMenuBtn.Size = new System.Drawing.Size(219, 34);
+            this.redoMenuBtn.Text = "R̲edo";
+            // 
+            // toolsToolStripMenuItem
+            // 
+            this.toolsToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.newCardMenuBtn,
+            this.reissueCardMenuBtn,
+            this.toolStripSeparator1,
+            this.exchangesMenuBtn});
+            this.toolsToolStripMenuItem.Name = "toolsToolStripMenuItem";
+            this.toolsToolStripMenuItem.Size = new System.Drawing.Size(71, 29);
+            this.toolsToolStripMenuItem.Text = "T̲ools";
+            // 
+            // newCardMenuBtn
+            // 
+            this.newCardMenuBtn.Name = "newCardMenuBtn";
+            this.newCardMenuBtn.Size = new System.Drawing.Size(287, 34);
+            this.newCardMenuBtn.Text = "N̲ew Member Card";
+            // 
+            // reissueCardMenuBtn
+            // 
+            this.reissueCardMenuBtn.Name = "reissueCardMenuBtn";
+            this.reissueCardMenuBtn.Size = new System.Drawing.Size(287, 34);
+            this.reissueCardMenuBtn.Text = "R̲eissue Member Card";
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(284, 6);
+            // 
+            // exchangesMenuBtn
+            // 
+            this.exchangesMenuBtn.Name = "exchangesMenuBtn";
+            this.exchangesMenuBtn.Size = new System.Drawing.Size(287, 34);
+            this.exchangesMenuBtn.Text = "E̲xchanges";
+            this.exchangesMenuBtn.Click += new System.EventHandler(this.exchangesMenuBtn_Click);
+            // 
+            // checkoutMenuBtn
+            // 
+            this.checkoutMenuBtn.Name = "checkoutMenuBtn";
+            this.checkoutMenuBtn.Size = new System.Drawing.Size(102, 29);
+            this.checkoutMenuBtn.Text = "C̲heckout";
+            this.checkoutMenuBtn.Click += new System.EventHandler(this.checkOutToolStripMenuItem_Click);
             // 
             // PosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1514, 744);
+            this.ClientSize = new System.Drawing.Size(1518, 744);
             this.Controls.Add(this.detailsLView);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.menuStrip1);
+            this.MainMenuStrip = this.menuStrip1;
             this.MinimumSize = new System.Drawing.Size(1536, 800);
             this.Name = "PosForm";
+            this.Padding = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "PosForm";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
@@ -676,12 +803,17 @@
             this.membersGbox.ResumeLayout(false);
             this.membersGbox.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.infoGbox.ResumeLayout(false);
             this.infoGbox.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.quantitySelector)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -705,7 +837,7 @@
         private Label voucherLabel;
         private Label totalamountLabel;
         private Button payBtn;
-        private Button cancelBtn;
+        private Button exitBtn;
         private TableLayoutPanel tableLayoutPanel1;
         private ListView detailsLView;
         private ColumnHeader colLView0;
@@ -717,18 +849,30 @@
         private NumericUpDown quantitySelector;
         private TextBox scanTbox;
         private Button addBtn;
-        private Button reloadBtn;
+        private Button clearCartBtn;
         private GroupBox membersGbox;
         private TextBox txt_hoten;
-        private Button checkinBtn;
         private Label label1;
         private Panel panel6;
         private Panel panel3;
         private GroupBox infoGbox;
-        private TextBox cashierTbox;
-        private Label dateLabel;
-        private Label cashierLabel;
         private TextBox dateTbox;
         private ColumnHeader colLView5;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem aToolStripMenuItem;
+        private ToolStripMenuItem toolsToolStripMenuItem;
+        private ToolStripMenuItem exchangesMenuBtn;
+        private ToolStripMenuItem undoMenuBtn;
+        private ToolStripMenuItem redoMenuBtn;
+        private ToolStripMenuItem settingToolStripMenuItem;
+        private ToolStripMenuItem clearCartMenuBtn;
+        private ToolStripMenuItem newTransMenuBtn;
+        private ToolStripMenuItem exitMenuBtn;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripMenuItem newCardMenuBtn;
+        private ToolStripMenuItem reissueCardMenuBtn;
+        private ToolStripMenuItem checkoutMenuBtn;
+        private GroupBox groupBox1;
+        private TextBox textBox1;
     }
 }

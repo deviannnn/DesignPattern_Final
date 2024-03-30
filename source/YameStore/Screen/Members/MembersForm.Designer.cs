@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.insideLayout1 = new YameStore.Screen.SideNav();
+            this.SideNav = new YameStore.Screen.SideNav();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -42,13 +42,13 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // insideLayout1
+            // SideNav
             // 
-            this.insideLayout1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.insideLayout1.Location = new System.Drawing.Point(0, 0);
-            this.insideLayout1.Name = "insideLayout1";
-            this.insideLayout1.Size = new System.Drawing.Size(175, 744);
-            this.insideLayout1.TabIndex = 0;
+            this.SideNav.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SideNav.Location = new System.Drawing.Point(0, 0);
+            this.SideNav.Name = "SideNav";
+            this.SideNav.Size = new System.Drawing.Size(175, 744);
+            this.SideNav.TabIndex = 0;
             // 
             // panel1
             // 
@@ -80,7 +80,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 62;
             this.dataGridView1.RowTemplate.Height = 33;
-            this.dataGridView1.Size = new System.Drawing.Size(1248, 496);
+            this.dataGridView1.Size = new System.Drawing.Size(1242, 496);
             this.dataGridView1.TabIndex = 0;
             // 
             // panel2
@@ -101,7 +101,7 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(907, 133);
+            this.button2.Location = new System.Drawing.Point(901, 133);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(133, 42);
             this.button2.TabIndex = 3;
@@ -115,7 +115,7 @@
             this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
             this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(740, 133);
+            this.button1.Location = new System.Drawing.Point(734, 133);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(133, 42);
             this.button1.TabIndex = 2;
@@ -130,7 +130,7 @@
             this.textBox1.Location = new System.Drawing.Point(306, 133);
             this.textBox1.Name = "textBox1";
             this.textBox1.PlaceholderText = "Code or Phone number";
-            this.textBox1.Size = new System.Drawing.Size(400, 42);
+            this.textBox1.Size = new System.Drawing.Size(394, 42);
             this.textBox1.TabIndex = 0;
             // 
             // MembersForm
@@ -139,7 +139,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1514, 744);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.insideLayout1);
+            this.Controls.Add(this.SideNav);
             this.MinimumSize = new System.Drawing.Size(1536, 800);
             this.Name = "MembersForm";
             this.Text = "LookupsForm";
@@ -155,7 +155,7 @@
 
         #endregion
 
-        private SideNav insideLayout1;
+        private SideNav SideNav;
         private Panel panel1;
         private Panel panel2;
         private Button button2;

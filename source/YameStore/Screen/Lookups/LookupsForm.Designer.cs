@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.insideLayout1 = new YameStore.Screen.SideNav();
+            this.SideNav = new YameStore.Screen.SideNav();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -42,13 +42,13 @@
             this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
-            // insideLayout1
+            // SideNav
             // 
-            this.insideLayout1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.insideLayout1.Location = new System.Drawing.Point(0, 0);
-            this.insideLayout1.Name = "insideLayout1";
-            this.insideLayout1.Size = new System.Drawing.Size(175, 744);
-            this.insideLayout1.TabIndex = 0;
+            this.SideNav.Dock = System.Windows.Forms.DockStyle.Left;
+            this.SideNav.Location = new System.Drawing.Point(0, 0);
+            this.SideNav.Name = "SideNav";
+            this.SideNav.Size = new System.Drawing.Size(175, 744);
+            this.SideNav.TabIndex = 0;
             // 
             // panel1
             // 
@@ -139,7 +139,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1514, 744);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.insideLayout1);
+            this.Controls.Add(this.SideNav);
             this.MinimumSize = new System.Drawing.Size(1536, 800);
             this.Name = "LookupsForm";
             this.Text = "LookupsForm";
@@ -155,7 +155,7 @@
 
         #endregion
 
-        private SideNav insideLayout1;
+        private SideNav SideNav;
         private Panel panel1;
         private Panel panel2;
         private Button button2;
