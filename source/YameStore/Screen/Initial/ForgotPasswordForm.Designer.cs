@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForgotPasswordForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -37,13 +36,10 @@
             this.backLoginBtn = new System.Windows.Forms.Label();
             this.resetPasswordBtn = new System.Windows.Forms.Button();
             this.inputResetTbox = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.initialLayout1 = new YameStore.Screen.Initial.InitialLayout();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -107,6 +103,7 @@
             // 
             this.backLoginBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.backLoginBtn.AutoSize = true;
+            this.backLoginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.backLoginBtn.Location = new System.Drawing.Point(199, 317);
             this.backLoginBtn.Name = "backLoginBtn";
             this.backLoginBtn.Size = new System.Drawing.Size(115, 25);
@@ -118,6 +115,7 @@
             // 
             this.resetPasswordBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.resetPasswordBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
+            this.resetPasswordBtn.Cursor = System.Windows.Forms.Cursors.Hand;
             this.resetPasswordBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.resetPasswordBtn.ForeColor = System.Drawing.Color.White;
             this.resetPasswordBtn.Location = new System.Drawing.Point(37, 211);
@@ -137,31 +135,12 @@
             this.inputResetTbox.Size = new System.Drawing.Size(448, 39);
             this.inputResetTbox.TabIndex = 8;
             // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.initialLayout1);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(480, 644);
-            this.panel3.TabIndex = 10;
-            // 
-            // initialLayout1
-            // 
-            this.initialLayout1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("initialLayout1.BackgroundImage")));
-            this.initialLayout1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.initialLayout1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.initialLayout1.Location = new System.Drawing.Point(0, 0);
-            this.initialLayout1.Name = "initialLayout1";
-            this.initialLayout1.Size = new System.Drawing.Size(480, 644);
-            this.initialLayout1.TabIndex = 0;
-            // 
             // panel4
             // 
             this.panel4.Controls.Add(this.panel2);
             this.panel4.Controls.Add(this.panel1);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(480, 0);
+            this.panel4.Location = new System.Drawing.Point(0, 0);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(522, 644);
             this.panel4.TabIndex = 11;
@@ -170,11 +149,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1002, 644);
+            this.ClientSize = new System.Drawing.Size(522, 644);
             this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.MaximumSize = new System.Drawing.Size(1024, 700);
-            this.MinimumSize = new System.Drawing.Size(1024, 700);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximumSize = new System.Drawing.Size(522, 644);
+            this.MinimumSize = new System.Drawing.Size(522, 644);
             this.Name = "ForgotPasswordForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgotPasswordForm";
@@ -182,7 +161,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -198,8 +176,6 @@
         public TextBox inputResetTbox;
         private Label label3;
         private Label label2;
-        private Panel panel3;
-        private InitialLayout initialLayout1;
         private Panel panel4;
     }
 }

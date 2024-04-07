@@ -12,6 +12,8 @@ namespace YameStore.Screen.Initial
 {
     public partial class ForgotPasswordForm : Form
     {
+        public event EventHandler? BackLoginClicked;
+
         public ForgotPasswordForm()
         {
             InitializeComponent();
@@ -19,8 +21,7 @@ namespace YameStore.Screen.Initial
 
         private void backLoginBtn_Click(object sender, EventArgs e)
         {
-            Close();
-            new LoginForm().Show();
+            BackLoginClicked?.Invoke(this, EventArgs.Empty);
         }
     }
 }

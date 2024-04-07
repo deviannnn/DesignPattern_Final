@@ -12,7 +12,8 @@ namespace YameStore.Screen.Initial
 {
     public partial class LoginForm : Form
     {
-        public static bool singleHided = false;
+        public event EventHandler? ForgotPasswordClicked, SuccessfulLogin;
+
         public LoginForm()
         {
             InitializeComponent();
@@ -20,8 +21,21 @@ namespace YameStore.Screen.Initial
 
         private void forgotPasswordBtn_Click(object sender, EventArgs e)
         {
-            if (singleHided) Close(); else Hide(); singleHided = true;
-            new ForgotPasswordForm().Show();
+            ForgotPasswordClicked?.Invoke(this, EventArgs.Empty);
+        }
+
+        private void loginBtn_Click(object sender, EventArgs e)
+        {
+            string usname = usnameTbox.Text;
+            string password = passwordTbox.Text;
+            if (usname == "admin" && password == "admin")
+            {
+                SuccessfulLogin?.Invoke(this, EventArgs.Empty);
+            }
+            else
+            {
+                MessageBox.Show("Username or password is incorrect!", "Login Fail", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

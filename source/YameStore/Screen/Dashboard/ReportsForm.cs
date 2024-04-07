@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace YameStore.Screen
+namespace YameStore.Screen.Dashboard
 {
-    public partial class SideNav : UserControl
+    public partial class ReportsForm : Form
     {
-        public SideNav()
+        public ReportsForm()
         {
             InitializeComponent();
         }

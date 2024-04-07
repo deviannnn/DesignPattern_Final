@@ -1,6 +1,6 @@
 ﻿namespace YameStore.Screen.Dashboard
 {
-    partial class MainDashboard
+    partial class ReportsForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,33 +28,36 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.sideNav1 = new YameStore.Screen.SideNav();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
-            // sideNav1
+            // label1
             // 
-            this.sideNav1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.sideNav1.Location = new System.Drawing.Point(0, 0);
-            this.sideNav1.Name = "sideNav1";
-            this.sideNav1.Size = new System.Drawing.Size(175, 744);
-            this.sideNav1.TabIndex = 0;
+            this.label1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 28F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(1300, 74);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Reports";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // MainDashboard
+            // ReportsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1514, 744);
-            this.Controls.Add(this.sideNav1);
-            this.MinimumSize = new System.Drawing.Size(1536, 800);
-            this.Name = "MainDashboard";
-            this.Text = "MainDashboard";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.ClientSize = new System.Drawing.Size(1300, 688);
+            this.Controls.Add(this.label1);
+            this.MinimumSize = new System.Drawing.Size(1322, 744);
+            this.Name = "ReportsForm";
+            this.Text = "Reports";
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private SideNav sideNav1;
+        private Label label1;
     }
 }

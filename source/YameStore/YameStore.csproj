@@ -14,7 +14,8 @@
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Office.Interop.Excel" Version="15.0.4795.1001" />
-		<PackageReference Include="System.Data.SqlClient" Version="4.8.4" />
+		<PackageReference Include="ScottPlot.WinForms" Version="5.0.23" />
+		<PackageReference Include="System.Data.SqlClient" Version="4.8.6" />
 	</ItemGroup>
 
 	<ItemGroup>
