@@ -29,202 +29,262 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.formsPlot3 = new ScottPlot.WinForms.FormsPlot();
-            this.formsPlot4 = new ScottPlot.WinForms.FormsPlot();
-            this.formsPlot2 = new ScottPlot.WinForms.FormsPlot();
-            this.formsPlot1 = new ScottPlot.WinForms.FormsPlot();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.salesReportBtn = new System.Windows.Forms.Label();
+            this.totalSalesLabel = new System.Windows.Forms.Label();
+            this.totalSalesChart = new ScottPlot.WinForms.FormsPlot();
+            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.chartPanel1 = new System.Windows.Forms.Panel();
+            this.chartPanel4 = new System.Windows.Forms.Panel();
+            this.tempReportBtn = new System.Windows.Forms.Label();
+            this.tempLabel = new System.Windows.Forms.Label();
+            this.tempChart = new ScottPlot.WinForms.FormsPlot();
+            this.chartPanel3 = new System.Windows.Forms.Panel();
+            this.productsReportBtn = new System.Windows.Forms.Label();
+            this.topProductsLabel = new System.Windows.Forms.Label();
+            this.topProductsChart = new ScottPlot.WinForms.FormsPlot();
+            this.chartPanel2 = new System.Windows.Forms.Panel();
+            this.ordersReportBtn = new System.Windows.Forms.Label();
+            this.totalOrdersLabel = new System.Windows.Forms.Label();
+            this.totalOrdersChart = new ScottPlot.WinForms.FormsPlot();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
+            this.chartPanel1.SuspendLayout();
+            this.chartPanel4.SuspendLayout();
+            this.chartPanel3.SuspendLayout();
+            this.chartPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.dateTimePicker2);
             this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1300, 92);
+            this.panel1.Size = new System.Drawing.Size(1322, 130);
             this.panel1.TabIndex = 6;
             // 
-            // pictureBox1
+            // dateTimePicker2
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox1.Image = global::YameStore.Properties.Resources.icons8_analysis_32;
-            this.pictureBox1.Location = new System.Drawing.Point(569, 3);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(78, 34);
-            this.pictureBox1.TabIndex = 3;
-            this.pictureBox1.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Location = new System.Drawing.Point(3, 0);
-            this.label1.Name = "label1";
-            this.label1.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.label1.Size = new System.Drawing.Size(319, 40);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Total sales";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // tableLayoutPanel1
-            // 
-            this.tableLayoutPanel1.ColumnCount = 4;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox3, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox4, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox2, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.formsPlot3, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.formsPlot4, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.formsPlot2, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.formsPlot1, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 0, 2);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 92);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 4;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 40F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1300, 596);
-            this.tableLayoutPanel1.TabIndex = 8;
-            // 
-            // formsPlot3
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.formsPlot3, 2);
-            this.formsPlot3.DisplayScale = 1.5F;
-            this.formsPlot3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.formsPlot3.Location = new System.Drawing.Point(3, 341);
-            this.formsPlot3.Name = "formsPlot3";
-            this.formsPlot3.Size = new System.Drawing.Size(644, 252);
-            this.formsPlot3.TabIndex = 2;
-            // 
-            // formsPlot4
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.formsPlot4, 2);
-            this.formsPlot4.DisplayScale = 1.5F;
-            this.formsPlot4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.formsPlot4.Location = new System.Drawing.Point(653, 341);
-            this.formsPlot4.Name = "formsPlot4";
-            this.formsPlot4.Size = new System.Drawing.Size(644, 252);
-            this.formsPlot4.TabIndex = 3;
-            // 
-            // formsPlot2
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.formsPlot2, 2);
-            this.formsPlot2.DisplayScale = 1.5F;
-            this.formsPlot2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.formsPlot2.Location = new System.Drawing.Point(3, 43);
-            this.formsPlot2.Name = "formsPlot2";
-            this.formsPlot2.Size = new System.Drawing.Size(644, 252);
-            this.formsPlot2.TabIndex = 1;
-            // 
-            // formsPlot1
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.formsPlot1, 2);
-            this.formsPlot1.DisplayScale = 1.5F;
-            this.formsPlot1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.formsPlot1.Location = new System.Drawing.Point(653, 43);
-            this.formsPlot1.Name = "formsPlot1";
-            this.formsPlot1.Size = new System.Drawing.Size(644, 252);
-            this.formsPlot1.TabIndex = 0;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox2.Image = global::YameStore.Properties.Resources.icons8_analysis_32;
-            this.pictureBox2.Location = new System.Drawing.Point(1219, 3);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(78, 34);
-            this.pictureBox2.TabIndex = 5;
-            this.pictureBox2.TabStop = false;
-            // 
-            // label2
-            // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Location = new System.Drawing.Point(653, 0);
-            this.label2.Name = "label2";
-            this.label2.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.label2.Size = new System.Drawing.Size(319, 40);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Total orders";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox3.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox3.Image = global::YameStore.Properties.Resources.icons8_analysis_32;
-            this.pictureBox3.Location = new System.Drawing.Point(569, 301);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(78, 34);
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // label3
-            // 
-            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Location = new System.Drawing.Point(3, 298);
-            this.label3.Name = "label3";
-            this.label3.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.label3.Size = new System.Drawing.Size(319, 40);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Top selling products";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pictureBox4.Image = global::YameStore.Properties.Resources.icons8_analysis_32;
-            this.pictureBox4.Location = new System.Drawing.Point(1219, 301);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(78, 34);
-            this.pictureBox4.TabIndex = 9;
-            this.pictureBox4.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Location = new System.Drawing.Point(653, 298);
-            this.label4.Name = "label4";
-            this.label4.Padding = new System.Windows.Forms.Padding(40, 0, 0, 0);
-            this.label4.Size = new System.Drawing.Size(319, 40);
-            this.label4.TabIndex = 8;
-            this.label4.Text = "Total sales";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dateTimePicker2.Location = new System.Drawing.Point(43, 68);
+            this.dateTimePicker2.Name = "dateTimePicker2";
+            this.dateTimePicker2.Size = new System.Drawing.Size(300, 31);
+            this.dateTimePicker2.TabIndex = 1;
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(22, 33);
+            this.dateTimePicker1.Location = new System.Drawing.Point(43, 31);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(300, 31);
             this.dateTimePicker1.TabIndex = 0;
+            // 
+            // salesReportBtn
+            // 
+            this.salesReportBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.salesReportBtn.AutoSize = true;
+            this.salesReportBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.salesReportBtn.Image = global::YameStore.Properties.Resources.icons8_analysis_32;
+            this.salesReportBtn.Location = new System.Drawing.Point(576, 0);
+            this.salesReportBtn.Name = "salesReportBtn";
+            this.salesReportBtn.Size = new System.Drawing.Size(35, 32);
+            this.salesReportBtn.TabIndex = 3;
+            this.salesReportBtn.Text = "   ";
+            // 
+            // totalSalesLabel
+            // 
+            this.totalSalesLabel.AutoSize = true;
+            this.totalSalesLabel.BackColor = System.Drawing.Color.Transparent;
+            this.totalSalesLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.totalSalesLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.totalSalesLabel.Location = new System.Drawing.Point(40, 0);
+            this.totalSalesLabel.Name = "totalSalesLabel";
+            this.totalSalesLabel.Size = new System.Drawing.Size(106, 28);
+            this.totalSalesLabel.TabIndex = 5;
+            this.totalSalesLabel.Text = "Total sales";
+            this.totalSalesLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // totalSalesChart
+            // 
+            this.totalSalesChart.DisplayScale = 1.5F;
+            this.totalSalesChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.totalSalesChart.Location = new System.Drawing.Point(0, 0);
+            this.totalSalesChart.Name = "totalSalesChart";
+            this.totalSalesChart.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.totalSalesChart.Size = new System.Drawing.Size(655, 286);
+            this.totalSalesChart.TabIndex = 4;
+            // 
+            // tableLayoutPanel1
+            // 
+            this.tableLayoutPanel1.ColumnCount = 2;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Controls.Add(this.chartPanel1, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.chartPanel4, 1, 1);
+            this.tableLayoutPanel1.Controls.Add(this.chartPanel3, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.chartPanel2, 1, 0);
+            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 130);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.RowCount = 2;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1322, 614);
+            this.tableLayoutPanel1.TabIndex = 8;
+            // 
+            // chartPanel1
+            // 
+            this.chartPanel1.Controls.Add(this.salesReportBtn);
+            this.chartPanel1.Controls.Add(this.totalSalesLabel);
+            this.chartPanel1.Controls.Add(this.totalSalesChart);
+            this.chartPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartPanel1.Location = new System.Drawing.Point(3, 3);
+            this.chartPanel1.Name = "chartPanel1";
+            this.chartPanel1.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
+            this.chartPanel1.Size = new System.Drawing.Size(655, 301);
+            this.chartPanel1.TabIndex = 6;
+            // 
+            // chartPanel4
+            // 
+            this.chartPanel4.Controls.Add(this.tempReportBtn);
+            this.chartPanel4.Controls.Add(this.tempLabel);
+            this.chartPanel4.Controls.Add(this.tempChart);
+            this.chartPanel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartPanel4.Location = new System.Drawing.Point(664, 310);
+            this.chartPanel4.Name = "chartPanel4";
+            this.chartPanel4.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
+            this.chartPanel4.Size = new System.Drawing.Size(655, 301);
+            this.chartPanel4.TabIndex = 10;
+            // 
+            // tempReportBtn
+            // 
+            this.tempReportBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.tempReportBtn.AutoSize = true;
+            this.tempReportBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tempReportBtn.Image = global::YameStore.Properties.Resources.icons8_analysis_32;
+            this.tempReportBtn.Location = new System.Drawing.Point(576, 15);
+            this.tempReportBtn.Name = "tempReportBtn";
+            this.tempReportBtn.Size = new System.Drawing.Size(35, 32);
+            this.tempReportBtn.TabIndex = 3;
+            this.tempReportBtn.Text = "   ";
+            // 
+            // tempLabel
+            // 
+            this.tempLabel.AutoSize = true;
+            this.tempLabel.BackColor = System.Drawing.Color.Transparent;
+            this.tempLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tempLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.tempLabel.Location = new System.Drawing.Point(40, 15);
+            this.tempLabel.Name = "tempLabel";
+            this.tempLabel.Size = new System.Drawing.Size(62, 28);
+            this.tempLabel.TabIndex = 5;
+            this.tempLabel.Text = "Temp";
+            this.tempLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // tempChart
+            // 
+            this.tempChart.DisplayScale = 1.5F;
+            this.tempChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tempChart.Location = new System.Drawing.Point(0, 15);
+            this.tempChart.Name = "tempChart";
+            this.tempChart.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.tempChart.Size = new System.Drawing.Size(655, 286);
+            this.tempChart.TabIndex = 4;
+            // 
+            // chartPanel3
+            // 
+            this.chartPanel3.Controls.Add(this.productsReportBtn);
+            this.chartPanel3.Controls.Add(this.topProductsLabel);
+            this.chartPanel3.Controls.Add(this.topProductsChart);
+            this.chartPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartPanel3.Location = new System.Drawing.Point(3, 310);
+            this.chartPanel3.Name = "chartPanel3";
+            this.chartPanel3.Padding = new System.Windows.Forms.Padding(0, 15, 0, 0);
+            this.chartPanel3.Size = new System.Drawing.Size(655, 301);
+            this.chartPanel3.TabIndex = 9;
+            // 
+            // productsReportBtn
+            // 
+            this.productsReportBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.productsReportBtn.AutoSize = true;
+            this.productsReportBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.productsReportBtn.Image = global::YameStore.Properties.Resources.icons8_analysis_32;
+            this.productsReportBtn.Location = new System.Drawing.Point(576, 15);
+            this.productsReportBtn.Name = "productsReportBtn";
+            this.productsReportBtn.Size = new System.Drawing.Size(35, 32);
+            this.productsReportBtn.TabIndex = 3;
+            this.productsReportBtn.Text = "   ";
+            // 
+            // topProductsLabel
+            // 
+            this.topProductsLabel.AutoSize = true;
+            this.topProductsLabel.BackColor = System.Drawing.Color.Transparent;
+            this.topProductsLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.topProductsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.topProductsLabel.Location = new System.Drawing.Point(40, 15);
+            this.topProductsLabel.Name = "topProductsLabel";
+            this.topProductsLabel.Size = new System.Drawing.Size(191, 28);
+            this.topProductsLabel.TabIndex = 5;
+            this.topProductsLabel.Text = "Top selling products";
+            this.topProductsLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // topProductsChart
+            // 
+            this.topProductsChart.DisplayScale = 1.5F;
+            this.topProductsChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.topProductsChart.Location = new System.Drawing.Point(0, 15);
+            this.topProductsChart.Name = "topProductsChart";
+            this.topProductsChart.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.topProductsChart.Size = new System.Drawing.Size(655, 286);
+            this.topProductsChart.TabIndex = 4;
+            // 
+            // chartPanel2
+            // 
+            this.chartPanel2.Controls.Add(this.ordersReportBtn);
+            this.chartPanel2.Controls.Add(this.totalOrdersLabel);
+            this.chartPanel2.Controls.Add(this.totalOrdersChart);
+            this.chartPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.chartPanel2.Location = new System.Drawing.Point(664, 3);
+            this.chartPanel2.Name = "chartPanel2";
+            this.chartPanel2.Padding = new System.Windows.Forms.Padding(0, 0, 0, 15);
+            this.chartPanel2.Size = new System.Drawing.Size(655, 301);
+            this.chartPanel2.TabIndex = 8;
+            // 
+            // ordersReportBtn
+            // 
+            this.ordersReportBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.ordersReportBtn.AutoSize = true;
+            this.ordersReportBtn.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.ordersReportBtn.Image = global::YameStore.Properties.Resources.icons8_analysis_32;
+            this.ordersReportBtn.Location = new System.Drawing.Point(576, 0);
+            this.ordersReportBtn.Name = "ordersReportBtn";
+            this.ordersReportBtn.Size = new System.Drawing.Size(35, 32);
+            this.ordersReportBtn.TabIndex = 3;
+            this.ordersReportBtn.Text = "   ";
+            // 
+            // totalOrdersLabel
+            // 
+            this.totalOrdersLabel.AutoSize = true;
+            this.totalOrdersLabel.BackColor = System.Drawing.Color.Transparent;
+            this.totalOrdersLabel.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.totalOrdersLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.totalOrdersLabel.Location = new System.Drawing.Point(40, 0);
+            this.totalOrdersLabel.Name = "totalOrdersLabel";
+            this.totalOrdersLabel.Size = new System.Drawing.Size(119, 28);
+            this.totalOrdersLabel.TabIndex = 5;
+            this.totalOrdersLabel.Text = "Total orders";
+            this.totalOrdersLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // totalOrdersChart
+            // 
+            this.totalOrdersChart.DisplayScale = 1.5F;
+            this.totalOrdersChart.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.totalOrdersChart.Location = new System.Drawing.Point(0, 0);
+            this.totalOrdersChart.Name = "totalOrdersChart";
+            this.totalOrdersChart.Padding = new System.Windows.Forms.Padding(0, 5, 0, 0);
+            this.totalOrdersChart.Size = new System.Drawing.Size(655, 286);
+            this.totalOrdersChart.TabIndex = 4;
             // 
             // AnalyticsForm
             // 
@@ -233,15 +293,20 @@
             this.ClientSize = new System.Drawing.Size(1300, 688);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.panel1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MinimumSize = new System.Drawing.Size(1322, 744);
             this.Name = "AnalyticsForm";
             this.Text = "Analytics";
             this.panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.tableLayoutPanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            this.chartPanel1.ResumeLayout(false);
+            this.chartPanel1.PerformLayout();
+            this.chartPanel4.ResumeLayout(false);
+            this.chartPanel4.PerformLayout();
+            this.chartPanel3.ResumeLayout(false);
+            this.chartPanel3.PerformLayout();
+            this.chartPanel2.ResumeLayout(false);
+            this.chartPanel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -249,20 +314,26 @@
         #endregion
         private Panel panel1;
         private TableLayoutPanel tableLayoutPanel1;
-        private ScottPlot.WinForms.FormsPlot formsPlot4;
-        private ScottPlot.WinForms.FormsPlot formsPlot3;
-        private ScottPlot.WinForms.FormsPlot formsPlot2;
-        private ScottPlot.WinForms.FormsPlot formsPlot1;
-        private Panel panel2;
-        private Label label1;
-        private PictureBox pictureBox1;
-        private Panel panel3;
+        private ScottPlot.WinForms.FormsPlot totalSalesChart;
+        private Panel chartPanel1;
         private PictureBox pictureBox4;
-        private Label label4;
         private PictureBox pictureBox3;
-        private Label label3;
+        private Label totalSalesLabel;
         private PictureBox pictureBox2;
-        private Label label2;
+        private Label salesReportBtn;
         private DateTimePicker dateTimePicker1;
+        private Panel chartPanel4;
+        private ScottPlot.WinForms.FormsPlot tempChart;
+        private Label tempReportBtn;
+        private Label tempLabel;
+        private Panel chartPanel3;
+        private ScottPlot.WinForms.FormsPlot topProductsChart;
+        private Label productsReportBtn;
+        private Label topProductsLabel;
+        private Panel chartPanel2;
+        private ScottPlot.WinForms.FormsPlot totalOrdersChart;
+        private Label ordersReportBtn;
+        private Label totalOrdersLabel;
+        private DateTimePicker dateTimePicker2;
     }
 }

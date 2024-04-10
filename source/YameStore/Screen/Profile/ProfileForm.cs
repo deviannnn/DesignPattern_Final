@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace YameStore.Screen.Members
+namespace YameStore.Screen.Profile
 {
-    public partial class MembersForm : Form
+    public partial class ProfileForm : Form
     {
-        public MembersForm()
+        public ProfileForm()
         {
             InitializeComponent();
         }

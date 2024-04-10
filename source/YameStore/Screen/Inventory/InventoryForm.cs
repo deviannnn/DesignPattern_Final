@@ -11,9 +11,9 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using TextBox = System.Windows.Forms.TextBox;
 
-namespace YameStore
+namespace YameStore.Screen.Inventory
 {
-    public partial class QL_KHO : Form
+    public partial class InventoryForm : Form
     {
         SqlConnection con = new YameDatabase().getConnection();
         SqlDataAdapter adapter;
@@ -21,11 +21,12 @@ namespace YameStore
         DataTable dt;
         DataTable dtall;
         public string manv = "";
-        public QL_KHO(string manv)
+
+        public InventoryForm()
         {
             InitializeComponent();
-            this.manv = manv;
         }
+
         private void QL_Kho_Load(object sender, EventArgs e)
         {
             showAll();
@@ -573,6 +574,21 @@ namespace YameStore
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.' || (e.KeyChar == '.' && (tab5_cbb_phantram.Text.Length == 0 || tab5_cbb_phantram.Text.IndexOf('.') != -1))))
                 e.Handled = true;
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label29_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label25_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

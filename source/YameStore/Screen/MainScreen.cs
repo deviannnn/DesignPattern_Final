@@ -9,30 +9,26 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using YameStore.Screen.Dashboard;
 using YameStore.Screen.Lookups;
-using YameStore.Screen.Members;
+using YameStore.Screen.Customers;
+using YameStore.Screen.POS;
+using YameStore.Screen.Profile;
+using YameStore.Screen.Inventory;
 
 namespace YameStore.Screen
 {
     public partial class MainScreen : Form
     {
-        readonly static LookupsForm lookups = new();
-        readonly static MembersForm members = new();
         readonly static AnalyticsForm analytics = new();
         readonly static ReportsForm reports = new();
+        readonly static PosForm pos = new();
+        readonly static ProfileForm profile = new();
+        readonly static LookupsForm lookups = new();
+        readonly static CustomersForm members = new();
+        readonly static InventoryForm inventory = new();
 
         public MainScreen()
         {
             InitializeComponent();
-        }
-
-        private void SetupLookupsForm()
-        {
-            SetupForm(lookups);
-        }
-
-        private void SetupMembersForm()
-        {
-            SetupForm(members);
         }
 
         private void SetupAnalyticsForm()
@@ -44,6 +40,26 @@ namespace YameStore.Screen
         {
             SetupForm(reports);
         }
+        
+        private void SetupProfileForm()
+        {
+            SetupForm(profile);
+        }
+
+        private void SetupLookupsForm()
+        {
+            SetupForm(lookups);
+        }
+
+        private void SetupCustomersForm()
+        {
+            SetupForm(members);
+        }
+
+        private void SetupInventoryForm()
+        {
+            SetupForm(inventory);
+        }
 
         private void SetupForm(Form form)
         {
@@ -54,24 +70,39 @@ namespace YameStore.Screen
             form.Show();
         }
 
-        private void lookupsBtn_Click(object sender, EventArgs e)
-        {
-            SetupLookupsForm();
-        }
-
-        private void customersBtn_Click(object sender, EventArgs e)
-        {
-            SetupMembersForm();
-        }
-
-        private void analyticsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void analyticsTab_Click(object sender, EventArgs e)
         {
             SetupAnalyticsForm();
         }
 
-        private void reportsToolStripMenuItem_Click(object sender, EventArgs e)
+        private void reportsTab_Click(object sender, EventArgs e)
         {
             SetupReportsForm();
+        }
+
+        private void posTab_Click(object sender, EventArgs e)
+        {
+            pos.Show();
+        }
+
+        private void profileTab_Click(object sender, EventArgs e)
+        {
+            SetupProfileForm();
+        }
+
+        private void lookupsTab_Click(object sender, EventArgs e)
+        {
+            SetupLookupsForm();
+        }
+
+        private void customersTab_Click(object sender, EventArgs e)
+        {
+            SetupCustomersForm();
+        }
+
+        private void inventoryTab_Click(object sender, EventArgs e)
+        {
+            SetupInventoryForm();
         }
     }
 }

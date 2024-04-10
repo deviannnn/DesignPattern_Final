@@ -29,13 +29,17 @@
         private void InitializeComponent()
         {
             this.navbar = new System.Windows.Forms.ToolStrip();
-            this.dashboardBtn = new System.Windows.Forms.ToolStripDropDownButton();
-            this.analyticsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.posBtn = new System.Windows.Forms.ToolStripButton();
-            this.profileBtn = new System.Windows.Forms.ToolStripButton();
-            this.lookupsBtn = new System.Windows.Forms.ToolStripButton();
-            this.customersBtn = new System.Windows.Forms.ToolStripButton();
+            this.dashboardTab = new System.Windows.Forms.ToolStripDropDownButton();
+            this.analyticsTab = new System.Windows.Forms.ToolStripMenuItem();
+            this.reportsTab = new System.Windows.Forms.ToolStripMenuItem();
+            this.posTab = new System.Windows.Forms.ToolStripButton();
+            this.profileTab = new System.Windows.Forms.ToolStripButton();
+            this.lookupsTab = new System.Windows.Forms.ToolStripButton();
+            this.customersTab = new System.Windows.Forms.ToolStripButton();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.inventoryTab = new System.Windows.Forms.ToolStripButton();
+            this.staffTab = new System.Windows.Forms.ToolStripButton();
+            this.logoutTab = new System.Windows.Forms.ToolStripButton();
             this.contentPanel = new System.Windows.Forms.Panel();
             this.navbar.SuspendLayout();
             this.SuspendLayout();
@@ -47,122 +51,189 @@
             this.navbar.GripStyle = System.Windows.Forms.ToolStripGripStyle.Hidden;
             this.navbar.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.navbar.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.dashboardBtn,
-            this.posBtn,
-            this.profileBtn,
-            this.lookupsBtn,
-            this.customersBtn});
+            this.dashboardTab,
+            this.posTab,
+            this.profileTab,
+            this.lookupsTab,
+            this.customersTab,
+            this.toolStripSeparator1,
+            this.inventoryTab,
+            this.staffTab,
+            this.logoutTab});
             this.navbar.Location = new System.Drawing.Point(0, 0);
             this.navbar.Name = "navbar";
             this.navbar.Padding = new System.Windows.Forms.Padding(1);
-            this.navbar.Size = new System.Drawing.Size(192, 744);
+            this.navbar.Size = new System.Drawing.Size(171, 744);
             this.navbar.TabIndex = 1;
             this.navbar.Text = "toolStrip1";
             // 
-            // dashboardBtn
+            // dashboardTab
             // 
-            this.dashboardBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.dashboardBtn.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.analyticsToolStripMenuItem,
-            this.reportsToolStripMenuItem});
-            this.dashboardBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dashboardBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
-            this.dashboardBtn.Image = global::YameStore.Properties.Resources.icons8_store_481;
-            this.dashboardBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.dashboardBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.dashboardBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 5);
-            this.dashboardBtn.Name = "dashboardBtn";
-            this.dashboardBtn.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
-            this.dashboardBtn.Size = new System.Drawing.Size(183, 44);
-            this.dashboardBtn.Text = "Dashboard";
-            this.dashboardBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dashboardTab.BackColor = System.Drawing.SystemColors.Control;
+            this.dashboardTab.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.analyticsTab,
+            this.reportsTab});
+            this.dashboardTab.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.dashboardTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
+            this.dashboardTab.Image = global::YameStore.Properties.Resources.icons8_store_481;
+            this.dashboardTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.dashboardTab.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.dashboardTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 5);
+            this.dashboardTab.Name = "dashboardTab";
+            this.dashboardTab.Padding = new System.Windows.Forms.Padding(5, 10, 0, 10);
+            this.dashboardTab.Size = new System.Drawing.Size(162, 52);
+            this.dashboardTab.Text = "Dashboard";
+            this.dashboardTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // analyticsToolStripMenuItem
+            // analyticsTab
             // 
-            this.analyticsToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
-            this.analyticsToolStripMenuItem.Image = global::YameStore.Properties.Resources.icons8_bar_chart_48;
-            this.analyticsToolStripMenuItem.Name = "analyticsToolStripMenuItem";
-            this.analyticsToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
-            this.analyticsToolStripMenuItem.Text = "Analytics";
-            this.analyticsToolStripMenuItem.Click += new System.EventHandler(this.analyticsToolStripMenuItem_Click);
+            this.analyticsTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
+            this.analyticsTab.Image = global::YameStore.Properties.Resources.icons8_bar_chart_48;
+            this.analyticsTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.analyticsTab.Name = "analyticsTab";
+            this.analyticsTab.Padding = new System.Windows.Forms.Padding(0);
+            this.analyticsTab.Size = new System.Drawing.Size(201, 32);
+            this.analyticsTab.Text = "Analytics";
+            this.analyticsTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.analyticsTab.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
+            this.analyticsTab.Click += new System.EventHandler(this.analyticsTab_Click);
             // 
-            // reportsToolStripMenuItem
+            // reportsTab
             // 
-            this.reportsToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
-            this.reportsToolStripMenuItem.Image = global::YameStore.Properties.Resources.icons8_analysis_48;
-            this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(270, 36);
-            this.reportsToolStripMenuItem.Text = "Reports";
-            this.reportsToolStripMenuItem.Click += new System.EventHandler(this.reportsToolStripMenuItem_Click);
+            this.reportsTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
+            this.reportsTab.Image = global::YameStore.Properties.Resources.icons8_analysis_48;
+            this.reportsTab.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.reportsTab.Name = "reportsTab";
+            this.reportsTab.Padding = new System.Windows.Forms.Padding(0);
+            this.reportsTab.Size = new System.Drawing.Size(201, 32);
+            this.reportsTab.Text = "Reports";
+            this.reportsTab.Click += new System.EventHandler(this.reportsTab_Click);
             // 
-            // posBtn
+            // posTab
             // 
-            this.posBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.posBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.posBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
-            this.posBtn.Image = global::YameStore.Properties.Resources.icons8_old_computer_48;
-            this.posBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.posBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.posBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 5);
-            this.posBtn.Name = "posBtn";
-            this.posBtn.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
-            this.posBtn.Size = new System.Drawing.Size(183, 44);
-            this.posBtn.Text = "POS";
-            this.posBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.posTab.BackColor = System.Drawing.SystemColors.Control;
+            this.posTab.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.posTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
+            this.posTab.Image = global::YameStore.Properties.Resources.icons8_old_computer_48;
+            this.posTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.posTab.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.posTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 5);
+            this.posTab.Name = "posTab";
+            this.posTab.Padding = new System.Windows.Forms.Padding(5, 10, 0, 10);
+            this.posTab.Size = new System.Drawing.Size(162, 52);
+            this.posTab.Text = "Point of Sale";
+            this.posTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.posTab.Click += new System.EventHandler(this.posTab_Click);
             // 
-            // profileBtn
+            // profileTab
             // 
-            this.profileBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.profileBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.profileBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
-            this.profileBtn.Image = global::YameStore.Properties.Resources.icons8_admin_settings_male_48;
-            this.profileBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.profileBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.profileBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 5);
-            this.profileBtn.Name = "profileBtn";
-            this.profileBtn.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
-            this.profileBtn.Size = new System.Drawing.Size(183, 44);
-            this.profileBtn.Text = "Profile";
-            this.profileBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.profileTab.BackColor = System.Drawing.SystemColors.Control;
+            this.profileTab.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.profileTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
+            this.profileTab.Image = global::YameStore.Properties.Resources.icons8_admin_settings_male_48;
+            this.profileTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.profileTab.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.profileTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 5);
+            this.profileTab.Name = "profileTab";
+            this.profileTab.Padding = new System.Windows.Forms.Padding(5, 10, 0, 10);
+            this.profileTab.Size = new System.Drawing.Size(162, 52);
+            this.profileTab.Text = "Profile";
+            this.profileTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.profileTab.Click += new System.EventHandler(this.profileTab_Click);
             // 
-            // lookupsBtn
+            // lookupsTab
             // 
-            this.lookupsBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.lookupsBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.lookupsBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
-            this.lookupsBtn.Image = global::YameStore.Properties.Resources.icons8_magnifying_glass_48;
-            this.lookupsBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lookupsBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.lookupsBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 5);
-            this.lookupsBtn.Name = "lookupsBtn";
-            this.lookupsBtn.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
-            this.lookupsBtn.Size = new System.Drawing.Size(183, 44);
-            this.lookupsBtn.Text = "Lookups";
-            this.lookupsBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lookupsBtn.Click += new System.EventHandler(this.lookupsBtn_Click);
+            this.lookupsTab.BackColor = System.Drawing.SystemColors.Control;
+            this.lookupsTab.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.lookupsTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
+            this.lookupsTab.Image = global::YameStore.Properties.Resources.icons8_magnifying_glass_48;
+            this.lookupsTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lookupsTab.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.lookupsTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 5);
+            this.lookupsTab.Name = "lookupsTab";
+            this.lookupsTab.Padding = new System.Windows.Forms.Padding(5, 10, 0, 10);
+            this.lookupsTab.Size = new System.Drawing.Size(162, 52);
+            this.lookupsTab.Text = "Lookups";
+            this.lookupsTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lookupsTab.Click += new System.EventHandler(this.lookupsTab_Click);
             // 
-            // customersBtn
+            // customersTab
             // 
-            this.customersBtn.BackColor = System.Drawing.SystemColors.Control;
-            this.customersBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.customersBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
-            this.customersBtn.Image = global::YameStore.Properties.Resources.icons8_person_48;
-            this.customersBtn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.customersBtn.ImageTransparentColor = System.Drawing.Color.Magenta;
-            this.customersBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 5);
-            this.customersBtn.Name = "customersBtn";
-            this.customersBtn.Padding = new System.Windows.Forms.Padding(15, 6, 15, 6);
-            this.customersBtn.Size = new System.Drawing.Size(183, 44);
-            this.customersBtn.Text = "Customer";
-            this.customersBtn.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.customersBtn.Click += new System.EventHandler(this.customersBtn_Click);
+            this.customersTab.BackColor = System.Drawing.SystemColors.Control;
+            this.customersTab.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.customersTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
+            this.customersTab.Image = global::YameStore.Properties.Resources.icons8_person_48;
+            this.customersTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.customersTab.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.customersTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 5);
+            this.customersTab.Name = "customersTab";
+            this.customersTab.Padding = new System.Windows.Forms.Padding(5, 10, 0, 10);
+            this.customersTab.Size = new System.Drawing.Size(162, 52);
+            this.customersTab.Text = "Customers";
+            this.customersTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.customersTab.Click += new System.EventHandler(this.customersTab_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(166, 6);
+            // 
+            // inventoryTab
+            // 
+            this.inventoryTab.BackColor = System.Drawing.SystemColors.Control;
+            this.inventoryTab.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.inventoryTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
+            this.inventoryTab.Image = global::YameStore.Properties.Resources.icons8_product_management_48;
+            this.inventoryTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.inventoryTab.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.inventoryTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 5);
+            this.inventoryTab.Name = "inventoryTab";
+            this.inventoryTab.Padding = new System.Windows.Forms.Padding(5, 10, 0, 10);
+            this.inventoryTab.Size = new System.Drawing.Size(162, 52);
+            this.inventoryTab.Text = "Inventory";
+            this.inventoryTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.inventoryTab.ToolTipText = "Inventory";
+            this.inventoryTab.Click += new System.EventHandler(this.inventoryTab_Click);
+            // 
+            // staffTab
+            // 
+            this.staffTab.BackColor = System.Drawing.SystemColors.Control;
+            this.staffTab.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.staffTab.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
+            this.staffTab.Image = global::YameStore.Properties.Resources.icons8_people_48;
+            this.staffTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.staffTab.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.staffTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 5);
+            this.staffTab.Name = "staffTab";
+            this.staffTab.Padding = new System.Windows.Forms.Padding(5, 10, 0, 10);
+            this.staffTab.Size = new System.Drawing.Size(162, 52);
+            this.staffTab.Text = "Staff";
+            this.staffTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.staffTab.ToolTipText = "Staff";
+            // 
+            // logoutTab
+            // 
+            this.logoutTab.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
+            this.logoutTab.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
+            this.logoutTab.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.logoutTab.ForeColor = System.Drawing.Color.White;
+            this.logoutTab.Image = global::YameStore.Properties.Resources.icons8_log_out_481;
+            this.logoutTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logoutTab.ImageTransparentColor = System.Drawing.Color.Magenta;
+            this.logoutTab.Margin = new System.Windows.Forms.Padding(2, 2, 2, 5);
+            this.logoutTab.Name = "logoutTab";
+            this.logoutTab.Padding = new System.Windows.Forms.Padding(5, 10, 0, 10);
+            this.logoutTab.Size = new System.Drawing.Size(162, 52);
+            this.logoutTab.Text = "Logout";
+            this.logoutTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.logoutTab.ToolTipText = "Log out";
             // 
             // contentPanel
             // 
             this.contentPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.contentPanel.Location = new System.Drawing.Point(192, 0);
+            this.contentPanel.Location = new System.Drawing.Point(171, 0);
             this.contentPanel.Name = "contentPanel";
-            this.contentPanel.Size = new System.Drawing.Size(1322, 744);
+            this.contentPanel.Size = new System.Drawing.Size(1343, 744);
             this.contentPanel.TabIndex = 2;
             // 
             // MainScreen
@@ -187,13 +258,17 @@
         #endregion
 
         private ToolStrip navbar;
-        private ToolStripDropDownButton dashboardBtn;
-        private ToolStripMenuItem analyticsToolStripMenuItem;
-        private ToolStripMenuItem reportsToolStripMenuItem;
-        private ToolStripButton posBtn;
-        private ToolStripButton profileBtn;
-        private ToolStripButton lookupsBtn;
-        private ToolStripButton customersBtn;
+        private ToolStripDropDownButton dashboardTab;
+        private ToolStripMenuItem analyticsTab;
+        private ToolStripMenuItem reportsTab;
+        private ToolStripButton posTab;
+        private ToolStripButton profileTab;
+        private ToolStripButton lookupsTab;
+        private ToolStripButton customersTab;
         private Panel contentPanel;
+        private ToolStripButton inventoryTab;
+        private ToolStripSeparator toolStripSeparator1;
+        private ToolStripButton staffTab;
+        private ToolStripButton logoutTab;
     }
 }

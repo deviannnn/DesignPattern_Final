@@ -137,7 +137,7 @@
             // 
             this.changeDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.changeDisplay.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.changeDisplay.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.changeDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
             this.changeDisplay.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.changeDisplay.Location = new System.Drawing.Point(452, 55);
             this.changeDisplay.Name = "changeDisplay";
@@ -150,7 +150,7 @@
             // 
             this.totalPayableDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.totalPayableDisplay.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.totalPayableDisplay.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.totalPayableDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
             this.totalPayableDisplay.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.totalPayableDisplay.Location = new System.Drawing.Point(144, 110);
             this.totalPayableDisplay.Name = "totalPayableDisplay";
@@ -163,7 +163,7 @@
             // 
             this.totalDiscountDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.totalDiscountDisplay.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.totalDiscountDisplay.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.totalDiscountDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
             this.totalDiscountDisplay.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.totalDiscountDisplay.Location = new System.Drawing.Point(144, 55);
             this.totalDiscountDisplay.Name = "totalDiscountDisplay";
@@ -176,7 +176,7 @@
             // 
             this.totalItemsDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.totalItemsDisplay.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.totalItemsDisplay.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.totalItemsDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
             this.totalItemsDisplay.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.totalItemsDisplay.Location = new System.Drawing.Point(452, 0);
             this.totalItemsDisplay.Name = "totalItemsDisplay";
@@ -237,7 +237,7 @@
             // 
             this.totalOriginDisplay.Dock = System.Windows.Forms.DockStyle.Fill;
             this.totalOriginDisplay.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.totalOriginDisplay.ForeColor = System.Drawing.Color.MidnightBlue;
+            this.totalOriginDisplay.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
             this.totalOriginDisplay.ImageAlign = System.Drawing.ContentAlignment.BottomCenter;
             this.totalOriginDisplay.Location = new System.Drawing.Point(144, 0);
             this.totalOriginDisplay.Name = "totalOriginDisplay";

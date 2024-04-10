@@ -57,4 +57,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="label10.Text" xml:space="preserve">
+    <value>- The "Code" must have 7 characters.
+- The "Unit Price" just needs to be entered from the number before the thousand VND part.
+   E.g. 100,000 VND -&gt; Just enter 100.
+
+- Type 1: Clothing products (T-shirts, shirts, Jacket,...) and Underwears.
+               Includes sizes S, M, L, XL
+
+- Type 2: Pants products (Elastic pants, Pants jeans, trousers,...).
+               Includes sizes 29, 30, 31, 32, 33
+
+- Type 3: Footwear products (Western shoes, Shoes sports, Flip-flops,...).
+               Includes sizes 40, 41, 42, 43
+
+- Type 4: Accessory products (Glasses, Backpacks, Bags, Wallets, Hats, Belts,...)
+               Only FREE SIZE</value>
+  </data>
 </root>

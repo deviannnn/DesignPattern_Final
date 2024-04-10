@@ -33,7 +33,10 @@
 			<AutoGen>True</AutoGen>
 			<DependentUpon>Resources.resx</DependentUpon>
 		</Compile>
-		<Compile Update="Screen\Members\MembersForm.cs">
+		<Compile Update="Screen\Inventory\InventoryForm.cs">
+		  <SubType>Form</SubType>
+		</Compile>
+		<Compile Update="Screen\Customers\CustomersForm.cs">
 		  <SubType>Form</SubType>
 		</Compile>
 	</ItemGroup>

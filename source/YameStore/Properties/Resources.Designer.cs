@@ -153,6 +153,16 @@ namespace YameStore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_log_out_481 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-log-out-481", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_magnifying_glass_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-magnifying-glass-48", resourceCulture);
@@ -173,9 +183,29 @@ namespace YameStore.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_people_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-people-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_person_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-person-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_product_management_48 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-product-management-48", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

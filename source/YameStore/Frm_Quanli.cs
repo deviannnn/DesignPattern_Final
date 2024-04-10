@@ -23,7 +23,7 @@ namespace YameStore
         }
         private void button2_Click(object sender, EventArgs e)
         {
-            new QL_Kho(this.manv).Show();
+            new QL_KHO(this.manv).Show();
             this.Close();
         }
 

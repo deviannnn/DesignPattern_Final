@@ -18,15 +18,15 @@ namespace YameStore.Screen.Dashboard
             double[] dataX = { 1, 2, 3, 4, 5 };
             double[] dataY = { 1, 4, 9, 16, 25 };
 
-            formsPlot1.Plot.Add.Scatter(dataX, dataY);
-            formsPlot2.Plot.Add.Scatter(dataX, dataY);
-            formsPlot3.Plot.Add.Scatter(dataX, dataY);
-            formsPlot4.Plot.Add.Scatter(dataX, dataY);
+            totalSalesChart.Plot.Add.Scatter(dataX, dataY);
+            totalOrdersChart.Plot.Add.Scatter(dataX, dataY);
+            topProductsChart.Plot.Add.Scatter(dataX, dataY);
+            tempChart.Plot.Add.Scatter(dataX, dataY);
 
-            formsPlot1.Refresh();
-            formsPlot2.Refresh();
-            formsPlot3.Refresh();
-            formsPlot4.Refresh();
+            totalSalesChart.Refresh();
+            totalOrdersChart.Refresh();
+            topProductsChart.Refresh();
+            tempChart.Refresh();
         }
     }
 }
