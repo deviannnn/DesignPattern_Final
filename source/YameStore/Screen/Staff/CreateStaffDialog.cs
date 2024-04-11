@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace YameStore.Screen.POS
+namespace YameStore.Screen.Staff
 {
-    public partial class ScanInvoiceForm : Form
+    public partial class CreateStaffDialog : Form
     {
-        public ScanInvoiceForm()
+        public CreateStaffDialog()
         {
             InitializeComponent();
         }

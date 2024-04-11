@@ -1,6 +1,6 @@
 ﻿namespace YameStore.Screen.POS
 {
-    partial class ExchangesForm
+    partial class ExchangesDialog
     {
         /// <summary>
         /// Required designer variable.

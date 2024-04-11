@@ -1,6 +1,6 @@
 ﻿namespace YameStore.Screen.POS
 {
-    partial class PayForm
+    partial class PayDialog
     {
         /// <summary>
         /// Required designer variable.

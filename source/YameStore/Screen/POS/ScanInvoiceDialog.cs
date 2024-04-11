@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace YameStore.Screen.POS
 {
-    public partial class ExchangesForm : Form
+    public partial class ScanInvoiceDialog : Form
     {
-        public ExchangesForm()
+        public ScanInvoiceDialog()
         {
             InitializeComponent();
         }

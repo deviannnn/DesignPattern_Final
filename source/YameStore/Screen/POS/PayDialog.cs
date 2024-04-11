@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace YameStore.Screen.POS
 {
-    public partial class CheckoutForm : Form
+    public partial class PayDialog : Form
     {
-        public CheckoutForm()
+        public PayDialog()
         {
             InitializeComponent();
         }

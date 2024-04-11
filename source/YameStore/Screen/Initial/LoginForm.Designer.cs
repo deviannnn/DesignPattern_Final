@@ -61,6 +61,7 @@
             this.usnameTbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.usnameTbox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.usnameTbox.Location = new System.Drawing.Point(37, 73);
+            this.usnameTbox.MaxLength = 20;
             this.usnameTbox.Name = "usnameTbox";
             this.usnameTbox.PlaceholderText = "Username";
             this.usnameTbox.Size = new System.Drawing.Size(448, 39);
@@ -71,6 +72,7 @@
             this.passwordTbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.passwordTbox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.passwordTbox.Location = new System.Drawing.Point(37, 142);
+            this.passwordTbox.MaxLength = 20;
             this.passwordTbox.Name = "passwordTbox";
             this.passwordTbox.PasswordChar = '•';
             this.passwordTbox.PlaceholderText = "Password";
@@ -103,9 +105,11 @@
             this.forgotPasswordBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.forgotPasswordBtn.AutoSize = true;
             this.forgotPasswordBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.forgotPasswordBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.forgotPasswordBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
             this.forgotPasswordBtn.Location = new System.Drawing.Point(37, 317);
             this.forgotPasswordBtn.Name = "forgotPasswordBtn";
-            this.forgotPasswordBtn.Size = new System.Drawing.Size(156, 25);
+            this.forgotPasswordBtn.Size = new System.Drawing.Size(149, 25);
             this.forgotPasswordBtn.TabIndex = 7;
             this.forgotPasswordBtn.Text = "Forgot password?";
             this.forgotPasswordBtn.Click += new System.EventHandler(this.forgotPasswordBtn_Click);
@@ -115,7 +119,7 @@
             this.loginBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.loginBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
             this.loginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loginBtn.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.loginBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.loginBtn.ForeColor = System.Drawing.Color.White;
             this.loginBtn.Location = new System.Drawing.Point(37, 211);
             this.loginBtn.Name = "loginBtn";

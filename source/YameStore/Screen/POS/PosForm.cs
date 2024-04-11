@@ -19,17 +19,17 @@ namespace YameStore.Screen.POS
 
         private void payBtn_Click(object sender, EventArgs e)
         {
-            new PayForm().ShowDialog();
+            new PayDialog().ShowDialog();
         }
 
         private void checkOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new CheckoutForm().ShowDialog();
+            new CheckoutDialog().ShowDialog();
         }
 
         private void exchangesMenuBtn_Click(object sender, EventArgs e)
         {
-            new ScanInvoiceForm().ShowDialog();
+            new ScanInvoiceDialog().ShowDialog();
         }
     }
 }

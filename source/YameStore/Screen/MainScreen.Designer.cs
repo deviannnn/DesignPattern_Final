@@ -92,7 +92,7 @@
             this.analyticsTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.analyticsTab.Name = "analyticsTab";
             this.analyticsTab.Padding = new System.Windows.Forms.Padding(0);
-            this.analyticsTab.Size = new System.Drawing.Size(201, 32);
+            this.analyticsTab.Size = new System.Drawing.Size(270, 32);
             this.analyticsTab.Text = "Analytics";
             this.analyticsTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.analyticsTab.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
@@ -105,7 +105,7 @@
             this.reportsTab.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.reportsTab.Name = "reportsTab";
             this.reportsTab.Padding = new System.Windows.Forms.Padding(0);
-            this.reportsTab.Size = new System.Drawing.Size(201, 32);
+            this.reportsTab.Size = new System.Drawing.Size(270, 32);
             this.reportsTab.Text = "Reports";
             this.reportsTab.Click += new System.EventHandler(this.reportsTab_Click);
             // 
@@ -210,6 +210,7 @@
             this.staffTab.Text = "Staff";
             this.staffTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.staffTab.ToolTipText = "Staff";
+            this.staffTab.Click += new System.EventHandler(this.staffTab_Click);
             // 
             // logoutTab
             // 

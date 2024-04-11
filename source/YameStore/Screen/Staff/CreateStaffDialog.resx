@@ -57,24 +57,4 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="label10.Text" xml:space="preserve">
-    <value>- The "Code" must have 7 characters.
-
-- The "Cost" &amp;&amp; "Unit Price" just needs to be entered from the number before the thousand VND part.
-   E.g. 100,000 VND → Just enter 100.
-
-- Size choosing
-→ S, M, L, XL: Clothing products  &amp;&amp;  Underwear
-    E.g. T-shirts, Shirts, Jacket,...
-
-→ 29, 30, 31, 32, 33: Pants products
-    E.g. Elastic pants, Pants jeans, Trousers,...
-
-→ 40, 41, 42, 43: Footwear products
-    E.g. Western shoes, Shoes sports, Flip-flops,...
-
-→ FREE SIZE: Accessory products
-    E.g. Glasses, Backpacks, Bags, Wallets, Hats, Belts,...
-</value>
-  </data>
 </root>

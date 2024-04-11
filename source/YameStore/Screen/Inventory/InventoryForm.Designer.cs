@@ -256,10 +256,12 @@
             // 
             this.tab2_label_s5.AutoSize = true;
             this.tab2_label_s5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tab2_label_s5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tab2_label_s5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.tab2_label_s5.Location = new System.Drawing.Point(12, 0);
             this.tab2_label_s5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab2_label_s5.Name = "tab2_label_s5";
-            this.tab2_label_s5.Size = new System.Drawing.Size(31, 28);
+            this.tab2_label_s5.Size = new System.Drawing.Size(30, 28);
             this.tab2_label_s5.TabIndex = 45;
             this.tab2_label_s5.Text = "s5";
             this.tab2_label_s5.Visible = false;
@@ -331,8 +333,8 @@
             // tab2_labelsoluong
             // 
             this.tab2_labelsoluong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tab2_labelsoluong.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tab2_labelsoluong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.tab2_labelsoluong.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tab2_labelsoluong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.tab2_labelsoluong.Location = new System.Drawing.Point(4, 450);
             this.tab2_labelsoluong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab2_labelsoluong.Name = "tab2_labelsoluong";
@@ -346,6 +348,8 @@
             // 
             this.tab2_label_s4.AutoSize = true;
             this.tab2_label_s4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tab2_label_s4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tab2_label_s4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.tab2_label_s4.Location = new System.Drawing.Point(6, 0);
             this.tab2_label_s4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab2_label_s4.Name = "tab2_label_s4";
@@ -358,10 +362,12 @@
             // 
             this.tab2_label_s3.AutoSize = true;
             this.tab2_label_s3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tab2_label_s3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tab2_label_s3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.tab2_label_s3.Location = new System.Drawing.Point(6, 0);
             this.tab2_label_s3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab2_label_s3.Name = "tab2_label_s3";
-            this.tab2_label_s3.Size = new System.Drawing.Size(31, 28);
+            this.tab2_label_s3.Size = new System.Drawing.Size(30, 28);
             this.tab2_label_s3.TabIndex = 34;
             this.tab2_label_s3.Text = "s3";
             this.tab2_label_s3.Visible = false;
@@ -370,10 +376,12 @@
             // 
             this.tab2_label_s2.AutoSize = true;
             this.tab2_label_s2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tab2_label_s2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tab2_label_s2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.tab2_label_s2.Location = new System.Drawing.Point(6, 0);
             this.tab2_label_s2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab2_label_s2.Name = "tab2_label_s2";
-            this.tab2_label_s2.Size = new System.Drawing.Size(31, 28);
+            this.tab2_label_s2.Size = new System.Drawing.Size(30, 28);
             this.tab2_label_s2.TabIndex = 33;
             this.tab2_label_s2.Text = "s2";
             this.tab2_label_s2.Visible = false;
@@ -382,10 +390,12 @@
             // 
             this.tab2_label_s1.AutoSize = true;
             this.tab2_label_s1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tab2_label_s1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tab2_label_s1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.tab2_label_s1.Location = new System.Drawing.Point(0, 0);
             this.tab2_label_s1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab2_label_s1.Name = "tab2_label_s1";
-            this.tab2_label_s1.Size = new System.Drawing.Size(31, 28);
+            this.tab2_label_s1.Size = new System.Drawing.Size(28, 28);
             this.tab2_label_s1.TabIndex = 32;
             this.tab2_label_s1.Text = "s1";
             this.tab2_label_s1.Visible = false;
@@ -393,8 +403,8 @@
             // label18
             // 
             this.label18.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label18.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.label18.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.label18.Location = new System.Drawing.Point(4, 360);
             this.label18.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label18.Name = "label18";
@@ -410,16 +420,16 @@
             this.tab2_cbb_loaisp.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tab2_cbb_loaisp.FormattingEnabled = true;
             this.tab2_cbb_loaisp.Items.AddRange(new object[] {
-            "Loại 1",
-            "Loại 2",
-            "Loại 3",
-            "Loại 4"});
+            "Clothing and Underwear",
+            "Pants",
+            "Footwear",
+            "Accessories"});
             this.tab2_cbb_loaisp.Location = new System.Drawing.Point(119, 387);
             this.tab2_cbb_loaisp.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.tab2_cbb_loaisp.Name = "tab2_cbb_loaisp";
             this.tab2_cbb_loaisp.Size = new System.Drawing.Size(570, 36);
             this.tab2_cbb_loaisp.TabIndex = 5;
-            this.tab2_cbb_loaisp.Text = "(Chọn loại sản phẩm)";
+            this.tab2_cbb_loaisp.Text = "(Choose one)";
             this.tab2_cbb_loaisp.SelectedIndexChanged += new System.EventHandler(this.tab2_cbb_loaisp_SelectedIndexChanged);
             // 
             // tab2_txt_dongia
@@ -435,8 +445,8 @@
             // label12
             // 
             this.label12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label12.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.label12.Location = new System.Drawing.Point(4, 270);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
@@ -448,8 +458,8 @@
             // label7
             // 
             this.label7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.label7.Location = new System.Drawing.Point(234, 180);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
@@ -469,7 +479,7 @@
             this.tab2_btn_them.Name = "tab2_btn_them";
             this.tab2_btn_them.Size = new System.Drawing.Size(175, 60);
             this.tab2_btn_them.TabIndex = 19;
-            this.tab2_btn_them.Text = "Xác nhận";
+            this.tab2_btn_them.Text = "Create";
             this.tab2_btn_them.UseVisualStyleBackColor = false;
             this.tab2_btn_them.Visible = false;
             this.tab2_btn_them.Click += new System.EventHandler(this.tab2_btn_them_Click);
@@ -503,8 +513,8 @@
             // label3
             // 
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.label3.Location = new System.Drawing.Point(4, 90);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -516,8 +526,8 @@
             // label4
             // 
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.label4.Location = new System.Drawing.Point(4, 0);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
@@ -525,7 +535,6 @@
             this.label4.TabIndex = 0;
             this.label4.Text = "Code:";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // tab1_btn_hientatca
             // 
@@ -579,7 +588,7 @@
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Blue;
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
@@ -739,8 +748,8 @@
             // label2
             // 
             this.label2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.label2.Location = new System.Drawing.Point(464, 180);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
@@ -807,8 +816,8 @@
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.label1.Location = new System.Drawing.Point(4, 180);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
@@ -1008,10 +1017,12 @@
             // 
             this.tab4_label_s5.AutoSize = true;
             this.tab4_label_s5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tab4_label_s5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tab4_label_s5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.tab4_label_s5.Location = new System.Drawing.Point(18, 0);
             this.tab4_label_s5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab4_label_s5.Name = "tab4_label_s5";
-            this.tab4_label_s5.Size = new System.Drawing.Size(31, 28);
+            this.tab4_label_s5.Size = new System.Drawing.Size(30, 28);
             this.tab4_label_s5.TabIndex = 58;
             this.tab4_label_s5.Text = "s5";
             this.tab4_label_s5.Visible = false;
@@ -1047,10 +1058,12 @@
             // 
             this.tab4_labelconlai_s5.AutoSize = true;
             this.tab4_labelconlai_s5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tab4_labelconlai_s5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tab4_labelconlai_s5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
             this.tab4_labelconlai_s5.Location = new System.Drawing.Point(18, 0);
             this.tab4_labelconlai_s5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab4_labelconlai_s5.Name = "tab4_labelconlai_s5";
-            this.tab4_labelconlai_s5.Size = new System.Drawing.Size(31, 28);
+            this.tab4_labelconlai_s5.Size = new System.Drawing.Size(30, 28);
             this.tab4_labelconlai_s5.TabIndex = 71;
             this.tab4_labelconlai_s5.Text = "s5";
             this.tab4_labelconlai_s5.Visible = false;
@@ -1086,6 +1099,8 @@
             // 
             this.tab4_label_s4.AutoSize = true;
             this.tab4_label_s4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tab4_label_s4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tab4_label_s4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.tab4_label_s4.Location = new System.Drawing.Point(9, 0);
             this.tab4_label_s4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab4_label_s4.Name = "tab4_label_s4";
@@ -1125,10 +1140,12 @@
             // 
             this.tab4_label_s2.AutoSize = true;
             this.tab4_label_s2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tab4_label_s2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tab4_label_s2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.tab4_label_s2.Location = new System.Drawing.Point(9, 0);
             this.tab4_label_s2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab4_label_s2.Name = "tab4_label_s2";
-            this.tab4_label_s2.Size = new System.Drawing.Size(31, 28);
+            this.tab4_label_s2.Size = new System.Drawing.Size(30, 28);
             this.tab4_label_s2.TabIndex = 54;
             this.tab4_label_s2.Text = "s2";
             this.tab4_label_s2.Visible = false;
@@ -1164,6 +1181,8 @@
             // 
             this.tab4_labelconlai_s4.AutoSize = true;
             this.tab4_labelconlai_s4.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tab4_labelconlai_s4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tab4_labelconlai_s4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
             this.tab4_labelconlai_s4.Location = new System.Drawing.Point(9, 0);
             this.tab4_labelconlai_s4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab4_labelconlai_s4.Name = "tab4_labelconlai_s4";
@@ -1203,10 +1222,12 @@
             // 
             this.tab4_labelconlai_s3.AutoSize = true;
             this.tab4_labelconlai_s3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tab4_labelconlai_s3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tab4_labelconlai_s3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
             this.tab4_labelconlai_s3.Location = new System.Drawing.Point(9, 0);
             this.tab4_labelconlai_s3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab4_labelconlai_s3.Name = "tab4_labelconlai_s3";
-            this.tab4_labelconlai_s3.Size = new System.Drawing.Size(31, 28);
+            this.tab4_labelconlai_s3.Size = new System.Drawing.Size(30, 28);
             this.tab4_labelconlai_s3.TabIndex = 69;
             this.tab4_labelconlai_s3.Text = "s3";
             this.tab4_labelconlai_s3.Visible = false;
@@ -1242,10 +1263,12 @@
             // 
             this.tab4_labelconlai_s2.AutoSize = true;
             this.tab4_labelconlai_s2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tab4_labelconlai_s2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tab4_labelconlai_s2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
             this.tab4_labelconlai_s2.Location = new System.Drawing.Point(9, 0);
             this.tab4_labelconlai_s2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab4_labelconlai_s2.Name = "tab4_labelconlai_s2";
-            this.tab4_labelconlai_s2.Size = new System.Drawing.Size(31, 28);
+            this.tab4_labelconlai_s2.Size = new System.Drawing.Size(30, 28);
             this.tab4_labelconlai_s2.TabIndex = 68;
             this.tab4_labelconlai_s2.Text = "s2";
             this.tab4_labelconlai_s2.Visible = false;
@@ -1253,8 +1276,8 @@
             // label29
             // 
             this.label29.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label29.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.label29.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label29.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.label29.Location = new System.Drawing.Point(4, 0);
             this.label29.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label29.Name = "label29";
@@ -1262,13 +1285,12 @@
             this.label29.TabIndex = 0;
             this.label29.Text = "Code:";
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.label29.Click += new System.EventHandler(this.label29_Click);
             // 
             // tab4_labelconlai
             // 
             this.tab4_labelconlai.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tab4_labelconlai.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tab4_labelconlai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.tab4_labelconlai.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tab4_labelconlai.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.tab4_labelconlai.Location = new System.Drawing.Point(4, 181);
             this.tab4_labelconlai.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab4_labelconlai.Name = "tab4_labelconlai";
@@ -1323,10 +1345,12 @@
             // 
             this.tab4_labelconlai_s1.AutoSize = true;
             this.tab4_labelconlai_s1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tab4_labelconlai_s1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tab4_labelconlai_s1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(82)))), ((int)(((byte)(255)))));
             this.tab4_labelconlai_s1.Location = new System.Drawing.Point(0, 0);
             this.tab4_labelconlai_s1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab4_labelconlai_s1.Name = "tab4_labelconlai_s1";
-            this.tab4_labelconlai_s1.Size = new System.Drawing.Size(31, 28);
+            this.tab4_labelconlai_s1.Size = new System.Drawing.Size(28, 28);
             this.tab4_labelconlai_s1.TabIndex = 67;
             this.tab4_labelconlai_s1.Text = "s1";
             this.tab4_labelconlai_s1.Visible = false;
@@ -1362,10 +1386,12 @@
             // 
             this.tab4_label_s1.AutoSize = true;
             this.tab4_label_s1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tab4_label_s1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tab4_label_s1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.tab4_label_s1.Location = new System.Drawing.Point(0, 0);
             this.tab4_label_s1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab4_label_s1.Name = "tab4_label_s1";
-            this.tab4_label_s1.Size = new System.Drawing.Size(31, 28);
+            this.tab4_label_s1.Size = new System.Drawing.Size(28, 28);
             this.tab4_label_s1.TabIndex = 53;
             this.tab4_label_s1.Text = "s1";
             this.tab4_label_s1.Visible = false;
@@ -1401,10 +1427,12 @@
             // 
             this.tab4_label_s3.AutoSize = true;
             this.tab4_label_s3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tab4_label_s3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.tab4_label_s3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(0)))), ((int)(((byte)(128)))));
             this.tab4_label_s3.Location = new System.Drawing.Point(9, 0);
             this.tab4_label_s3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab4_label_s3.Name = "tab4_label_s3";
-            this.tab4_label_s3.Size = new System.Drawing.Size(31, 28);
+            this.tab4_label_s3.Size = new System.Drawing.Size(30, 28);
             this.tab4_label_s3.TabIndex = 55;
             this.tab4_label_s3.Text = "s3";
             this.tab4_label_s3.Visible = false;
@@ -1412,8 +1440,8 @@
             // label25
             // 
             this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label25.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.label25.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label25.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.label25.Location = new System.Drawing.Point(620, 0);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
@@ -1421,7 +1449,6 @@
             this.label25.TabIndex = 60;
             this.label25.Text = "Name:";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label25.Click += new System.EventHandler(this.label25_Click);
             // 
             // tab4_txt_tensp
             // 
@@ -1441,8 +1468,8 @@
             // tab4_labelsoluong
             // 
             this.tab4_labelsoluong.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tab4_labelsoluong.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.tab4_labelsoluong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.tab4_labelsoluong.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.tab4_labelsoluong.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.tab4_labelsoluong.Location = new System.Drawing.Point(4, 362);
             this.tab4_labelsoluong.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.tab4_labelsoluong.Name = "tab4_labelsoluong";

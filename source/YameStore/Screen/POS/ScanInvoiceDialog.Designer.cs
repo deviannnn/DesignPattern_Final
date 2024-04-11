@@ -1,6 +1,6 @@
 ﻿namespace YameStore.Screen.POS
 {
-    partial class ScanInvoiceForm
+    partial class ScanInvoiceDialog
     {
         /// <summary>
         /// Required designer variable.

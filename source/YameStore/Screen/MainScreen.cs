@@ -13,6 +13,7 @@ using YameStore.Screen.Customers;
 using YameStore.Screen.POS;
 using YameStore.Screen.Profile;
 using YameStore.Screen.Inventory;
+using YameStore.Screen.Staff;
 
 namespace YameStore.Screen
 {
@@ -25,6 +26,7 @@ namespace YameStore.Screen
         readonly static LookupsForm lookups = new();
         readonly static CustomersForm members = new();
         readonly static InventoryForm inventory = new();
+        readonly static StaffForm staff = new();
 
         public MainScreen()
         {
@@ -59,6 +61,11 @@ namespace YameStore.Screen
         private void SetupInventoryForm()
         {
             SetupForm(inventory);
+        }
+
+        private void SetupStaffForm()
+        {
+            SetupForm(staff);
         }
 
         private void SetupForm(Form form)
@@ -103,6 +110,11 @@ namespace YameStore.Screen
         private void inventoryTab_Click(object sender, EventArgs e)
         {
             SetupInventoryForm();
+        }
+
+        private void staffTab_Click(object sender, EventArgs e)
+        {
+            SetupStaffForm();
         }
     }
 }

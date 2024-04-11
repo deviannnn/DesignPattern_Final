@@ -85,7 +85,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(522, 52);
             this.label3.TabIndex = 12;
-            this.label3.Text = "Enter your gmail, phone, or account_id \r\nand then we\'ll send you a new password.";
+            this.label3.Text = "Enter your gmail, phone, or YameID \r\nand then we\'ll send you a new password.";
             this.label3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
             // 
             // label2
@@ -104,6 +104,7 @@
             this.backLoginBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.backLoginBtn.AutoSize = true;
             this.backLoginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.backLoginBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
             this.backLoginBtn.Location = new System.Drawing.Point(199, 317);
             this.backLoginBtn.Name = "backLoginBtn";
             this.backLoginBtn.Size = new System.Drawing.Size(115, 25);
@@ -116,7 +117,7 @@
             this.resetPasswordBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.resetPasswordBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
             this.resetPasswordBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.resetPasswordBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.resetPasswordBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.resetPasswordBtn.ForeColor = System.Drawing.Color.White;
             this.resetPasswordBtn.Location = new System.Drawing.Point(37, 211);
             this.resetPasswordBtn.Name = "resetPasswordBtn";
@@ -131,7 +132,7 @@
             this.inputResetTbox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.inputResetTbox.Location = new System.Drawing.Point(37, 142);
             this.inputResetTbox.Name = "inputResetTbox";
-            this.inputResetTbox.PlaceholderText = "Username";
+            this.inputResetTbox.PlaceholderText = "Gmail, Phone or YameID ";
             this.inputResetTbox.Size = new System.Drawing.Size(448, 39);
             this.inputResetTbox.TabIndex = 8;
             // 

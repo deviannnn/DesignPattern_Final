@@ -126,7 +126,7 @@ namespace YameStore.Screen.Inventory
             tab2_label_s5.Visible = true; tab2_num_s5.Visible = true; tab2_num_s5.Value = 0;
             switch (tab2_cbb_loaisp.Text)
             {
-                case "Loại 1":
+                case "Clothing and Underwear":
                     tab2_label_s1.Text = "S";
                     tab2_label_s2.Text = "M";
                     tab2_label_s3.Text = "L";
@@ -135,7 +135,7 @@ namespace YameStore.Screen.Inventory
                     tab2_num_s5.Visible = false;
                     break;
 
-                case "Loại 2":
+                case "Pants":
                     tab2_label_s1.Text = "29";
                     tab2_label_s2.Text = "30";
                     tab2_label_s3.Text = "31";
@@ -143,7 +143,7 @@ namespace YameStore.Screen.Inventory
                     tab2_label_s5.Text = "33";
                     break;
 
-                case "Loại 3":
+                case "Footwear":
                     tab2_label_s1.Text = "40";
                     tab2_label_s2.Text = "41";
                     tab2_label_s3.Text = "42";
@@ -169,7 +169,7 @@ namespace YameStore.Screen.Inventory
             tab2_txt_dongia.Text = "";
             tab2_num_phantramgiam.Value = 0;
             tab2_cbb_loaisp.SelectedIndex = -1;
-            tab2_cbb_loaisp.Text = "(Chọn loại sản phẩm)";
+            tab2_cbb_loaisp.Text = "(Choose one)";
             tab2_label_s1.Visible = false; tab2_num_s1.Visible = false; tab2_num_s1.Value = 0;
             tab2_label_s2.Visible = false; tab2_num_s2.Visible = false; tab2_num_s2.Value = 0;
             tab2_label_s3.Visible = false; tab2_num_s3.Visible = false; tab2_num_s3.Value = 0;
@@ -220,11 +220,11 @@ namespace YameStore.Screen.Inventory
         private string[] getSoluong()
         {
             string[] soluongArray = new string[] { 
-                tab2_num_s1.Value.ToString(), 
-                tab2_num_s2.Value.ToString(), 
-                tab2_num_s3.Value.ToString(), 
-                tab2_num_s4.Value.ToString(), 
-                tab2_num_s5.Value.ToString() 
+                tab2_num_s1.Value.ToString(),
+                tab2_num_s2.Value.ToString(),
+                tab2_num_s3.Value.ToString(),
+                tab2_num_s4.Value.ToString(),
+                tab2_num_s5.Value.ToString()
             };
             return soluongArray;
         }
@@ -574,21 +574,6 @@ namespace YameStore.Screen.Inventory
         {
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar) && (e.KeyChar != '.' || (e.KeyChar == '.' && (tab5_cbb_phantram.Text.Length == 0 || tab5_cbb_phantram.Text.IndexOf('.') != -1))))
                 e.Handled = true;
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label29_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label25_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

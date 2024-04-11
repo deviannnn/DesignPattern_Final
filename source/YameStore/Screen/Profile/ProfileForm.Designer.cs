@@ -39,29 +39,26 @@
             this.cityTbox = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.districtTbox = new System.Windows.Forms.TextBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.birthdayTbox = new System.Windows.Forms.DateTimePicker();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.nameTbox = new System.Windows.Forms.TextBox();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.roleTbox = new System.Windows.Forms.TextBox();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.gmailTbox = new System.Windows.Forms.TextBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.genderTbox = new System.Windows.Forms.ComboBox();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.phoneTbox = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.numTbox = new System.Windows.Forms.TextBox();
             this.panel15 = new System.Windows.Forms.Panel();
             this.addressTbox = new System.Windows.Forms.TextBox();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.gmailTbox = new System.Windows.Forms.TextBox();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.phoneTbox = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.genderTbox = new System.Windows.Forms.ComboBox();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.roleTbox = new System.Windows.Forms.TextBox();
             this.panel12 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -75,6 +72,9 @@
             this.label14 = new System.Windows.Forms.Label();
             this.curPwTbox = new System.Windows.Forms.TextBox();
             this.updatePwBtn = new System.Windows.Forms.Button();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -82,20 +82,20 @@
             this.panel11.SuspendLayout();
             this.panel10.SuspendLayout();
             this.panel9.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
             this.panel15.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.panel12.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel14.SuspendLayout();
             this.panel13.SuspendLayout();
             this.panel16.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel3
@@ -129,7 +129,7 @@
             this.groupBox1.Controls.Add(this.tableLayoutPanel1);
             this.groupBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox1.Font = new System.Drawing.Font("Segoe UI", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
             this.groupBox1.Location = new System.Drawing.Point(0, 0);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1292, 473);
@@ -150,14 +150,14 @@
             this.tableLayoutPanel1.Controls.Add(this.updateProfileBtn, 5, 3);
             this.tableLayoutPanel1.Controls.Add(this.panel10, 5, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel9, 4, 2);
-            this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.panel2, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel5, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel6, 2, 1);
-            this.tableLayoutPanel1.Controls.Add(this.panel4, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.panel7, 4, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel8, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel15, 1, 2);
+            this.tableLayoutPanel1.Controls.Add(this.panel4, 5, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel2, 2, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel3, 0, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel5, 1, 0);
+            this.tableLayoutPanel1.Controls.Add(this.panel6, 0, 1);
+            this.tableLayoutPanel1.Controls.Add(this.panel7, 3, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 41);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -186,6 +186,7 @@
             this.wardTbox.ForeColor = System.Drawing.Color.Black;
             this.wardTbox.Location = new System.Drawing.Point(12, 67);
             this.wardTbox.Name = "wardTbox";
+            this.wardTbox.PlaceholderText = "Ward";
             this.wardTbox.Size = new System.Drawing.Size(184, 34);
             this.wardTbox.TabIndex = 14;
             // 
@@ -220,6 +221,7 @@
             this.cityTbox.ForeColor = System.Drawing.Color.Black;
             this.cityTbox.Location = new System.Drawing.Point(12, 67);
             this.cityTbox.Name = "cityTbox";
+            this.cityTbox.PlaceholderText = "City";
             this.cityTbox.Size = new System.Drawing.Size(186, 34);
             this.cityTbox.TabIndex = 16;
             // 
@@ -240,65 +242,31 @@
             this.districtTbox.ForeColor = System.Drawing.Color.Black;
             this.districtTbox.Location = new System.Drawing.Point(12, 67);
             this.districtTbox.Name = "districtTbox";
+            this.districtTbox.PlaceholderText = "District";
             this.districtTbox.Size = new System.Drawing.Size(184, 34);
             this.districtTbox.TabIndex = 15;
             // 
-            // panel3
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.panel3, 2);
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Controls.Add(this.birthdayTbox);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(3, 110);
-            this.panel3.Name = "panel3";
-            this.panel3.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
-            this.panel3.Size = new System.Drawing.Size(422, 101);
-            this.panel3.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
-            this.label2.Location = new System.Drawing.Point(12, 39);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 28);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Birthday";
-            // 
-            // birthdayTbox
-            // 
-            this.birthdayTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.birthdayTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.birthdayTbox.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.birthdayTbox.Location = new System.Drawing.Point(12, 67);
-            this.birthdayTbox.MinDate = new System.DateTime(1990, 1, 1, 0, 0, 0, 0);
-            this.birthdayTbox.Name = "birthdayTbox";
-            this.birthdayTbox.Size = new System.Drawing.Size(398, 34);
-            this.birthdayTbox.TabIndex = 18;
-            // 
             // panel2
             // 
-            this.tableLayoutPanel1.SetColumnSpan(this.panel2, 2);
+            this.tableLayoutPanel1.SetColumnSpan(this.panel2, 3);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.nameTbox);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Location = new System.Drawing.Point(431, 3);
             this.panel2.Name = "panel2";
             this.panel2.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
-            this.panel2.Size = new System.Drawing.Size(422, 101);
+            this.panel2.Size = new System.Drawing.Size(636, 101);
             this.panel2.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.label1.Location = new System.Drawing.Point(12, 39);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(104, 28);
+            this.label1.Size = new System.Drawing.Size(108, 28);
             this.label1.TabIndex = 0;
             this.label1.Text = "Full Name";
             // 
@@ -309,149 +277,8 @@
             this.nameTbox.ForeColor = System.Drawing.Color.Black;
             this.nameTbox.Location = new System.Drawing.Point(12, 67);
             this.nameTbox.Name = "nameTbox";
-            this.nameTbox.Size = new System.Drawing.Size(398, 34);
+            this.nameTbox.Size = new System.Drawing.Size(612, 34);
             this.nameTbox.TabIndex = 7;
-            // 
-            // panel5
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.panel5, 2);
-            this.panel5.Controls.Add(this.label7);
-            this.panel5.Controls.Add(this.roleTbox);
-            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel5.Location = new System.Drawing.Point(431, 3);
-            this.panel5.Name = "panel5";
-            this.panel5.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
-            this.panel5.Size = new System.Drawing.Size(422, 101);
-            this.panel5.TabIndex = 4;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label7.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
-            this.label7.Location = new System.Drawing.Point(12, 39);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(51, 28);
-            this.label7.TabIndex = 19;
-            this.label7.Text = "Role";
-            // 
-            // roleTbox
-            // 
-            this.roleTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.roleTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.roleTbox.ForeColor = System.Drawing.Color.Black;
-            this.roleTbox.Location = new System.Drawing.Point(12, 67);
-            this.roleTbox.Name = "roleTbox";
-            this.roleTbox.Size = new System.Drawing.Size(398, 34);
-            this.roleTbox.TabIndex = 20;
-            // 
-            // panel6
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.panel6, 2);
-            this.panel6.Controls.Add(this.label3);
-            this.panel6.Controls.Add(this.gmailTbox);
-            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel6.Location = new System.Drawing.Point(431, 110);
-            this.panel6.Name = "panel6";
-            this.panel6.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
-            this.panel6.Size = new System.Drawing.Size(422, 101);
-            this.panel6.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
-            this.label3.Location = new System.Drawing.Point(12, 39);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(64, 28);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Gmail";
-            // 
-            // gmailTbox
-            // 
-            this.gmailTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gmailTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gmailTbox.ForeColor = System.Drawing.Color.Black;
-            this.gmailTbox.Location = new System.Drawing.Point(12, 67);
-            this.gmailTbox.Name = "gmailTbox";
-            this.gmailTbox.Size = new System.Drawing.Size(398, 34);
-            this.gmailTbox.TabIndex = 11;
-            // 
-            // panel4
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.panel4, 2);
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.genderTbox);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel4.Location = new System.Drawing.Point(859, 3);
-            this.panel4.Name = "panel4";
-            this.panel4.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
-            this.panel4.Size = new System.Drawing.Size(424, 101);
-            this.panel4.TabIndex = 3;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
-            this.label6.Location = new System.Drawing.Point(12, 37);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(41, 28);
-            this.label6.TabIndex = 6;
-            this.label6.Text = "I\'m";
-            // 
-            // genderTbox
-            // 
-            this.genderTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.genderTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.genderTbox.ForeColor = System.Drawing.Color.Black;
-            this.genderTbox.FormattingEnabled = true;
-            this.genderTbox.Items.AddRange(new object[] {
-            "Male",
-            "Female"});
-            this.genderTbox.Location = new System.Drawing.Point(12, 65);
-            this.genderTbox.Name = "genderTbox";
-            this.genderTbox.Size = new System.Drawing.Size(400, 36);
-            this.genderTbox.TabIndex = 17;
-            this.genderTbox.Text = "Male";
-            // 
-            // panel7
-            // 
-            this.tableLayoutPanel1.SetColumnSpan(this.panel7, 2);
-            this.panel7.Controls.Add(this.label4);
-            this.panel7.Controls.Add(this.phoneTbox);
-            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel7.Location = new System.Drawing.Point(859, 110);
-            this.panel7.Name = "panel7";
-            this.panel7.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
-            this.panel7.Size = new System.Drawing.Size(424, 101);
-            this.panel7.TabIndex = 1;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
-            this.label4.Location = new System.Drawing.Point(12, 39);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(152, 28);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Phone Number";
-            // 
-            // phoneTbox
-            // 
-            this.phoneTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.phoneTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.phoneTbox.ForeColor = System.Drawing.Color.Black;
-            this.phoneTbox.Location = new System.Drawing.Point(12, 67);
-            this.phoneTbox.Name = "phoneTbox";
-            this.phoneTbox.Size = new System.Drawing.Size(400, 34);
-            this.phoneTbox.TabIndex = 8;
             // 
             // panel8
             // 
@@ -468,11 +295,11 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.label5.Location = new System.Drawing.Point(12, 39);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(85, 28);
+            this.label5.Size = new System.Drawing.Size(87, 28);
             this.label5.TabIndex = 4;
             this.label5.Text = "Address";
             // 
@@ -483,6 +310,7 @@
             this.numTbox.ForeColor = System.Drawing.Color.Black;
             this.numTbox.Location = new System.Drawing.Point(12, 67);
             this.numTbox.Name = "numTbox";
+            this.numTbox.PlaceholderText = "No.";
             this.numTbox.Size = new System.Drawing.Size(184, 34);
             this.numTbox.TabIndex = 12;
             // 
@@ -504,8 +332,148 @@
             this.addressTbox.ForeColor = System.Drawing.Color.Black;
             this.addressTbox.Location = new System.Drawing.Point(12, 67);
             this.addressTbox.Name = "addressTbox";
+            this.addressTbox.PlaceholderText = "Street";
             this.addressTbox.Size = new System.Drawing.Size(398, 34);
             this.addressTbox.TabIndex = 13;
+            // 
+            // panel6
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.panel6, 3);
+            this.panel6.Controls.Add(this.label3);
+            this.panel6.Controls.Add(this.gmailTbox);
+            this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel6.Location = new System.Drawing.Point(3, 110);
+            this.panel6.Name = "panel6";
+            this.panel6.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.panel6.Size = new System.Drawing.Size(636, 101);
+            this.panel6.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
+            this.label3.Location = new System.Drawing.Point(12, 39);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(67, 28);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Gmail";
+            // 
+            // gmailTbox
+            // 
+            this.gmailTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gmailTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.gmailTbox.ForeColor = System.Drawing.Color.Black;
+            this.gmailTbox.Location = new System.Drawing.Point(12, 67);
+            this.gmailTbox.Name = "gmailTbox";
+            this.gmailTbox.Size = new System.Drawing.Size(612, 34);
+            this.gmailTbox.TabIndex = 11;
+            // 
+            // panel7
+            // 
+            this.tableLayoutPanel1.SetColumnSpan(this.panel7, 3);
+            this.panel7.Controls.Add(this.label4);
+            this.panel7.Controls.Add(this.phoneTbox);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel7.Location = new System.Drawing.Point(645, 110);
+            this.panel7.Name = "panel7";
+            this.panel7.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.panel7.Size = new System.Drawing.Size(638, 101);
+            this.panel7.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
+            this.label4.Location = new System.Drawing.Point(12, 39);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(154, 28);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Phone Number";
+            // 
+            // phoneTbox
+            // 
+            this.phoneTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.phoneTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.phoneTbox.ForeColor = System.Drawing.Color.Black;
+            this.phoneTbox.Location = new System.Drawing.Point(12, 67);
+            this.phoneTbox.Name = "phoneTbox";
+            this.phoneTbox.Size = new System.Drawing.Size(614, 34);
+            this.phoneTbox.TabIndex = 8;
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Controls.Add(this.genderTbox);
+            this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel4.Location = new System.Drawing.Point(1073, 3);
+            this.panel4.Name = "panel4";
+            this.panel4.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.panel4.Size = new System.Drawing.Size(210, 101);
+            this.panel4.TabIndex = 3;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
+            this.label6.Location = new System.Drawing.Point(12, 37);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(42, 28);
+            this.label6.TabIndex = 6;
+            this.label6.Text = "I\'m";
+            // 
+            // genderTbox
+            // 
+            this.genderTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.genderTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.genderTbox.ForeColor = System.Drawing.Color.Black;
+            this.genderTbox.FormattingEnabled = true;
+            this.genderTbox.Items.AddRange(new object[] {
+            "Male",
+            "Female"});
+            this.genderTbox.Location = new System.Drawing.Point(12, 65);
+            this.genderTbox.Name = "genderTbox";
+            this.genderTbox.Size = new System.Drawing.Size(186, 36);
+            this.genderTbox.TabIndex = 17;
+            this.genderTbox.Text = "Male";
+            // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.label7);
+            this.panel5.Controls.Add(this.roleTbox);
+            this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel5.Location = new System.Drawing.Point(217, 3);
+            this.panel5.Name = "panel5";
+            this.panel5.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.panel5.Size = new System.Drawing.Size(208, 101);
+            this.panel5.TabIndex = 4;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
+            this.label7.Location = new System.Drawing.Point(12, 39);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(54, 28);
+            this.label7.TabIndex = 19;
+            this.label7.Text = "Role";
+            // 
+            // roleTbox
+            // 
+            this.roleTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.roleTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.roleTbox.ForeColor = System.Drawing.Color.Black;
+            this.roleTbox.Location = new System.Drawing.Point(12, 67);
+            this.roleTbox.Name = "roleTbox";
+            this.roleTbox.Size = new System.Drawing.Size(184, 34);
+            this.roleTbox.TabIndex = 20;
             // 
             // panel12
             // 
@@ -523,7 +491,7 @@
             this.groupBox2.Controls.Add(this.tableLayoutPanel2);
             this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.groupBox2.Font = new System.Drawing.Font("Segoe UI", 14F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.groupBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
             this.groupBox2.Location = new System.Drawing.Point(0, 10);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(1292, 215);
@@ -569,11 +537,11 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label9.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.label9.Location = new System.Drawing.Point(12, 17);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(223, 28);
+            this.label9.Size = new System.Drawing.Size(232, 28);
             this.label9.TabIndex = 6;
             this.label9.Text = "Confirm New Password";
             // 
@@ -604,11 +572,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label8.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.label8.Location = new System.Drawing.Point(12, 17);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(144, 28);
+            this.label8.Size = new System.Drawing.Size(150, 28);
             this.label8.TabIndex = 19;
             this.label8.Text = "New Password";
             // 
@@ -639,11 +607,11 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.label14.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
             this.label14.Location = new System.Drawing.Point(12, 17);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(171, 28);
+            this.label14.Size = new System.Drawing.Size(178, 28);
             this.label14.TabIndex = 0;
             this.label14.Text = "Current Password";
             // 
@@ -672,6 +640,39 @@
             this.updatePwBtn.Text = "UPDATE PASSWORD";
             this.updatePwBtn.UseVisualStyleBackColor = false;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Controls.Add(this.textBox1);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Padding = new System.Windows.Forms.Padding(12, 0, 12, 0);
+            this.panel3.Size = new System.Drawing.Size(208, 101);
+            this.panel3.TabIndex = 11;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(71)))), ((int)(((byte)(103)))));
+            this.label2.Location = new System.Drawing.Point(12, 39);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(83, 28);
+            this.label2.TabIndex = 19;
+            this.label2.Text = "YameID";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.ForeColor = System.Drawing.Color.Black;
+            this.textBox1.Location = new System.Drawing.Point(12, 67);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(184, 34);
+            this.textBox1.TabIndex = 20;
+            // 
             // ProfileForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -693,22 +694,20 @@
             this.panel10.PerformLayout();
             this.panel9.ResumeLayout(false);
             this.panel9.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            this.panel6.ResumeLayout(false);
-            this.panel6.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
             this.panel15.ResumeLayout(false);
             this.panel15.PerformLayout();
+            this.panel6.ResumeLayout(false);
+            this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
             this.panel12.ResumeLayout(false);
             this.groupBox2.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -718,6 +717,8 @@
             this.panel13.PerformLayout();
             this.panel16.ResumeLayout(false);
             this.panel16.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -734,9 +735,6 @@
         private TextBox cityTbox;
         private Panel panel9;
         private TextBox districtTbox;
-        private Panel panel3;
-        private Label label2;
-        private DateTimePicker birthdayTbox;
         private Panel panel2;
         private Label label1;
         private TextBox nameTbox;
@@ -770,5 +768,8 @@
         private Label label14;
         private TextBox curPwTbox;
         private Button updatePwBtn;
+        private Panel panel3;
+        private Label label2;
+        private TextBox textBox1;
     }
 }
