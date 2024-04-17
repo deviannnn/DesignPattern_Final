@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
@@ -16,7 +17,8 @@ namespace YameStore
 
         public SqlConnection getConnection()
         {
-            return new SqlConnection(@"Data Source=BAOTRAN25\SQLEXPRESS;Initial Catalog=YAME;Integrated Security=True");
+            string conStr = ConfigurationManager.ConnectionStrings["DbConnection"].ConnectionString;
+            return new SqlConnection(conStr);
         }
     }
 }

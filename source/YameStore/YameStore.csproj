@@ -48,4 +48,8 @@
 		</EmbeddedResource>
 	</ItemGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\YameDatabase\YameDatabase.csproj" />
+	</ItemGroup>
+
 </Project>

@@ -33,9 +33,9 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.backLoginBtn = new System.Windows.Forms.Label();
-            this.resetPasswordBtn = new System.Windows.Forms.Button();
-            this.inputResetTbox = new System.Windows.Forms.TextBox();
+            this.btnBack = new System.Windows.Forms.Label();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.tbxUsername = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -69,9 +69,9 @@
             // 
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.backLoginBtn);
-            this.panel2.Controls.Add(this.resetPasswordBtn);
-            this.panel2.Controls.Add(this.inputResetTbox);
+            this.panel2.Controls.Add(this.btnBack);
+            this.panel2.Controls.Add(this.btnReset);
+            this.panel2.Controls.Add(this.tbxUsername);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 220);
             this.panel2.Name = "panel2";
@@ -99,42 +99,42 @@
             this.label2.Text = "Trouble logging in?";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // backLoginBtn
+            // btnBack
             // 
-            this.backLoginBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.backLoginBtn.AutoSize = true;
-            this.backLoginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.backLoginBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
-            this.backLoginBtn.Location = new System.Drawing.Point(199, 317);
-            this.backLoginBtn.Name = "backLoginBtn";
-            this.backLoginBtn.Size = new System.Drawing.Size(115, 25);
-            this.backLoginBtn.TabIndex = 10;
-            this.backLoginBtn.Text = "Back to login";
-            this.backLoginBtn.Click += new System.EventHandler(this.backLoginBtn_Click);
+            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnBack.AutoSize = true;
+            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.btnBack.Location = new System.Drawing.Point(199, 317);
+            this.btnBack.Name = "btnBack";
+            this.btnBack.Size = new System.Drawing.Size(115, 25);
+            this.btnBack.TabIndex = 10;
+            this.btnBack.Text = "Back to login";
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
-            // resetPasswordBtn
+            // btnReset
             // 
-            this.resetPasswordBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.resetPasswordBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
-            this.resetPasswordBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.resetPasswordBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.resetPasswordBtn.ForeColor = System.Drawing.Color.White;
-            this.resetPasswordBtn.Location = new System.Drawing.Point(37, 211);
-            this.resetPasswordBtn.Name = "resetPasswordBtn";
-            this.resetPasswordBtn.Size = new System.Drawing.Size(448, 76);
-            this.resetPasswordBtn.TabIndex = 9;
-            this.resetPasswordBtn.Text = "RESET PASSWORD";
-            this.resetPasswordBtn.UseVisualStyleBackColor = false;
+            this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnReset.ForeColor = System.Drawing.Color.White;
+            this.btnReset.Location = new System.Drawing.Point(37, 211);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(448, 76);
+            this.btnReset.TabIndex = 9;
+            this.btnReset.Text = "RESET PASSWORD";
+            this.btnReset.UseVisualStyleBackColor = false;
             // 
-            // inputResetTbox
+            // tbxUsername
             // 
-            this.inputResetTbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.inputResetTbox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.inputResetTbox.Location = new System.Drawing.Point(37, 142);
-            this.inputResetTbox.Name = "inputResetTbox";
-            this.inputResetTbox.PlaceholderText = "Gmail, Phone or YameID ";
-            this.inputResetTbox.Size = new System.Drawing.Size(448, 39);
-            this.inputResetTbox.TabIndex = 8;
+            this.tbxUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbxUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbxUsername.Location = new System.Drawing.Point(37, 142);
+            this.tbxUsername.Name = "tbxUsername";
+            this.tbxUsername.PlaceholderText = "Gmail, Phone or YameID ";
+            this.tbxUsername.Size = new System.Drawing.Size(448, 39);
+            this.tbxUsername.TabIndex = 8;
             // 
             // panel4
             // 
@@ -172,9 +172,9 @@
         private Panel panel1;
         private PictureBox pictureBox1;
         private Panel panel2;
-        private Label backLoginBtn;
-        private Button resetPasswordBtn;
-        public TextBox inputResetTbox;
+        private Label btnBack;
+        private Button btnReset;
+        public TextBox tbxUsername;
         private Label label3;
         private Label label2;
         private Panel panel4;

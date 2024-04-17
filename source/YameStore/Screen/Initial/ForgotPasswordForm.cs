@@ -19,7 +19,7 @@ namespace YameStore.Screen.Initial
             InitializeComponent();
         }
 
-        private void backLoginBtn_Click(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
             BackLoginClicked?.Invoke(this, EventArgs.Empty);
         }

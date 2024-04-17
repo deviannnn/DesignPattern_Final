@@ -30,12 +30,12 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.usnameTbox = new System.Windows.Forms.TextBox();
-            this.passwordTbox = new System.Windows.Forms.TextBox();
+            this.tbxUsername = new System.Windows.Forms.TextBox();
+            this.tbxPassword = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.forgotPasswordBtn = new System.Windows.Forms.Label();
-            this.loginBtn = new System.Windows.Forms.Button();
+            this.btnForgot = new System.Windows.Forms.Label();
+            this.btnLogin = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -56,28 +56,28 @@
             this.pictureBox1.TabIndex = 1;
             this.pictureBox1.TabStop = false;
             // 
-            // usnameTbox
+            // tbxUsername
             // 
-            this.usnameTbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.usnameTbox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.usnameTbox.Location = new System.Drawing.Point(37, 73);
-            this.usnameTbox.MaxLength = 20;
-            this.usnameTbox.Name = "usnameTbox";
-            this.usnameTbox.PlaceholderText = "Username";
-            this.usnameTbox.Size = new System.Drawing.Size(448, 39);
-            this.usnameTbox.TabIndex = 2;
+            this.tbxUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbxUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbxUsername.Location = new System.Drawing.Point(37, 73);
+            this.tbxUsername.MaxLength = 20;
+            this.tbxUsername.Name = "tbxUsername";
+            this.tbxUsername.PlaceholderText = "Username";
+            this.tbxUsername.Size = new System.Drawing.Size(448, 39);
+            this.tbxUsername.TabIndex = 2;
             // 
-            // passwordTbox
+            // tbxPassword
             // 
-            this.passwordTbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.passwordTbox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.passwordTbox.Location = new System.Drawing.Point(37, 142);
-            this.passwordTbox.MaxLength = 20;
-            this.passwordTbox.Name = "passwordTbox";
-            this.passwordTbox.PasswordChar = '•';
-            this.passwordTbox.PlaceholderText = "Password";
-            this.passwordTbox.Size = new System.Drawing.Size(448, 39);
-            this.passwordTbox.TabIndex = 3;
+            this.tbxPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.tbxPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbxPassword.Location = new System.Drawing.Point(37, 142);
+            this.tbxPassword.MaxLength = 20;
+            this.tbxPassword.Name = "tbxPassword";
+            this.tbxPassword.PasswordChar = '•';
+            this.tbxPassword.PlaceholderText = "Password";
+            this.tbxPassword.Size = new System.Drawing.Size(448, 39);
+            this.tbxPassword.TabIndex = 3;
             // 
             // panel1
             // 
@@ -90,44 +90,44 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.forgotPasswordBtn);
-            this.panel2.Controls.Add(this.loginBtn);
-            this.panel2.Controls.Add(this.usnameTbox);
-            this.panel2.Controls.Add(this.passwordTbox);
+            this.panel2.Controls.Add(this.btnForgot);
+            this.panel2.Controls.Add(this.btnLogin);
+            this.panel2.Controls.Add(this.tbxUsername);
+            this.panel2.Controls.Add(this.tbxPassword);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 220);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(522, 424);
             this.panel2.TabIndex = 7;
             // 
-            // forgotPasswordBtn
+            // btnForgot
             // 
-            this.forgotPasswordBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.forgotPasswordBtn.AutoSize = true;
-            this.forgotPasswordBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.forgotPasswordBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
-            this.forgotPasswordBtn.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
-            this.forgotPasswordBtn.Location = new System.Drawing.Point(37, 317);
-            this.forgotPasswordBtn.Name = "forgotPasswordBtn";
-            this.forgotPasswordBtn.Size = new System.Drawing.Size(149, 25);
-            this.forgotPasswordBtn.TabIndex = 7;
-            this.forgotPasswordBtn.Text = "Forgot password?";
-            this.forgotPasswordBtn.Click += new System.EventHandler(this.forgotPasswordBtn_Click);
+            this.btnForgot.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnForgot.AutoSize = true;
+            this.btnForgot.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnForgot.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.btnForgot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.btnForgot.Location = new System.Drawing.Point(37, 317);
+            this.btnForgot.Name = "btnForgot";
+            this.btnForgot.Size = new System.Drawing.Size(149, 25);
+            this.btnForgot.TabIndex = 7;
+            this.btnForgot.Text = "Forgot password?";
+            this.btnForgot.Click += new System.EventHandler(this.btnForgot_Click);
             // 
-            // loginBtn
+            // btnLogin
             // 
-            this.loginBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.loginBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
-            this.loginBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.loginBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.loginBtn.ForeColor = System.Drawing.Color.White;
-            this.loginBtn.Location = new System.Drawing.Point(37, 211);
-            this.loginBtn.Name = "loginBtn";
-            this.loginBtn.Size = new System.Drawing.Size(448, 76);
-            this.loginBtn.TabIndex = 6;
-            this.loginBtn.Text = "LOG IN";
-            this.loginBtn.UseVisualStyleBackColor = false;
-            this.loginBtn.Click += new System.EventHandler(this.loginBtn_Click);
+            this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(37, 211);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(448, 76);
+            this.btnLogin.TabIndex = 6;
+            this.btnLogin.Text = "LOG IN";
+            this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // panel4
             // 
@@ -163,12 +163,12 @@
         #endregion
 
         private PictureBox pictureBox1;
-        public TextBox usnameTbox;
-        public TextBox passwordTbox;
+        public TextBox tbxUsername;
+        public TextBox tbxPassword;
         private Panel panel1;
         private Panel panel2;
-        private Button loginBtn;
-        private Label forgotPasswordBtn;
+        private Button btnLogin;
+        private Label btnForgot;
         private Panel panel4;
     }
 }

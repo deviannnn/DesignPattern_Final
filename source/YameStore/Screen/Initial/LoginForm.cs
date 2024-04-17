@@ -16,18 +16,18 @@ namespace YameStore.Screen.Initial
 
         public LoginForm()
         {
-            InitializeComponent();
+            InitializeComponent();        
         }
 
-        private void forgotPasswordBtn_Click(object sender, EventArgs e)
+        private void btnForgot_Click(object sender, EventArgs e)
         {
             ForgotPasswordClicked?.Invoke(this, EventArgs.Empty);
         }
 
-        private void loginBtn_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
-            string usname = usnameTbox.Text;
-            string password = passwordTbox.Text;
+            string usname = tbxUsername.Text;
+            string password = tbxPassword.Text;
             if (usname == "admin" && password == "admin")
             {
                 SuccessfulLogin?.Invoke(this, EventArgs.Empty);
