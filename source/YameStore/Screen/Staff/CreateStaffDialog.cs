@@ -16,5 +16,12 @@ namespace YameStore.Screen.Staff
         {
             InitializeComponent();
         }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            string name = tbxName.Text;
+            string gender = tbxGender.Text;
+            MessageBox.Show("Hi");
+        }
     }
 }

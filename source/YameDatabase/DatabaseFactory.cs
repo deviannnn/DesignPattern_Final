@@ -10,7 +10,6 @@ namespace YameDatabase
     public abstract class DatabaseFactory
     {
         public string ConnectionStr { get; set; }
-
         public abstract DbConnection CreateConnection();
         public abstract DbConnection CreateConnection(string cnString);
         public abstract DbCommand CreateCommand();
@@ -18,7 +17,6 @@ namespace YameDatabase
         public abstract DbCommand CreateCommand(string cmdText, DbConnection connect);
         public abstract DbDataAdapter CreateDataAdapter();
         public abstract DbDataAdapter CreateDataAdapter(DbCommand selectCmd);
-        public abstract DbDataReader CreateDataReader(DbCommand dbCmd);
         public abstract DbParameter CreateParameter(string name, object value);
         public void AddParameterWithValue(DbCommand command, string parameterName, object value)
         {

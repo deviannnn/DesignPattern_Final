@@ -28,33 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CreateStaffDialog));
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel11 = new System.Windows.Forms.Panel();
-            this.wardTbox = new System.Windows.Forms.TextBox();
+            this.tbxWard = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.genderTbox = new System.Windows.Forms.ComboBox();
+            this.tbxGender = new System.Windows.Forms.ComboBox();
             this.panel10 = new System.Windows.Forms.Panel();
-            this.cityTbox = new System.Windows.Forms.TextBox();
+            this.tbxCity = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.districtTbox = new System.Windows.Forms.TextBox();
+            this.tbxDistrict = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.nameTbox = new System.Windows.Forms.TextBox();
+            this.tbxName = new System.Windows.Forms.TextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
-            this.numTbox = new System.Windows.Forms.TextBox();
+            this.tbxNum = new System.Windows.Forms.TextBox();
             this.panel15 = new System.Windows.Forms.Panel();
-            this.addressTbox = new System.Windows.Forms.TextBox();
+            this.tbxAddress = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.gmailTbox = new System.Windows.Forms.TextBox();
+            this.tbxGmail = new System.Windows.Forms.TextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.phoneTbox = new System.Windows.Forms.TextBox();
-            this.updateProfileBtn = new System.Windows.Forms.Button();
+            this.tbxPhone = new System.Windows.Forms.TextBox();
+            this.btnNext = new YameStore.ColoringButton.ButtonGradientDark();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -111,7 +112,7 @@
             this.tableLayoutPanel1.Controls.Add(this.panel15, 1, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel6, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel7, 3, 1);
-            this.tableLayoutPanel1.Controls.Add(this.updateProfileBtn, 5, 3);
+            this.tableLayoutPanel1.Controls.Add(this.btnNext, 5, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 41);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -125,7 +126,7 @@
             // 
             // panel11
             // 
-            this.panel11.Controls.Add(this.wardTbox);
+            this.panel11.Controls.Add(this.tbxWard);
             this.panel11.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel11.Location = new System.Drawing.Point(427, 195);
             this.panel11.Name = "panel11";
@@ -133,22 +134,22 @@
             this.panel11.Size = new System.Drawing.Size(135, 90);
             this.panel11.TabIndex = 10;
             // 
-            // wardTbox
+            // tbxWard
             // 
-            this.wardTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.wardTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.wardTbox.ForeColor = System.Drawing.Color.Black;
-            this.wardTbox.Location = new System.Drawing.Point(12, 56);
-            this.wardTbox.Name = "wardTbox";
-            this.wardTbox.PlaceholderText = "Ward";
-            this.wardTbox.Size = new System.Drawing.Size(111, 34);
-            this.wardTbox.TabIndex = 14;
+            this.tbxWard.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbxWard.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbxWard.ForeColor = System.Drawing.Color.Black;
+            this.tbxWard.Location = new System.Drawing.Point(12, 56);
+            this.tbxWard.Name = "tbxWard";
+            this.tbxWard.PlaceholderText = "Ward";
+            this.tbxWard.Size = new System.Drawing.Size(111, 34);
+            this.tbxWard.TabIndex = 14;
             // 
             // panel4
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.panel4, 2);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.genderTbox);
+            this.panel4.Controls.Add(this.tbxGender);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(568, 3);
             this.panel4.Name = "panel4";
@@ -168,24 +169,25 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Gender";
             // 
-            // genderTbox
+            // tbxGender
             // 
-            this.genderTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.genderTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.genderTbox.ForeColor = System.Drawing.Color.Black;
-            this.genderTbox.FormattingEnabled = true;
-            this.genderTbox.Items.AddRange(new object[] {
+            this.tbxGender.DisplayMember = "0";
+            this.tbxGender.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbxGender.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbxGender.ForeColor = System.Drawing.Color.Black;
+            this.tbxGender.FormattingEnabled = true;
+            this.tbxGender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.genderTbox.Location = new System.Drawing.Point(12, 54);
-            this.genderTbox.Name = "genderTbox";
-            this.genderTbox.Size = new System.Drawing.Size(257, 36);
-            this.genderTbox.TabIndex = 17;
-            this.genderTbox.Text = "Male";
+            this.tbxGender.Location = new System.Drawing.Point(12, 54);
+            this.tbxGender.Name = "tbxGender";
+            this.tbxGender.Size = new System.Drawing.Size(257, 36);
+            this.tbxGender.TabIndex = 17;
+            this.tbxGender.Text = "Male";
             // 
             // panel10
             // 
-            this.panel10.Controls.Add(this.cityTbox);
+            this.panel10.Controls.Add(this.tbxCity);
             this.panel10.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel10.Location = new System.Drawing.Point(709, 195);
             this.panel10.Name = "panel10";
@@ -193,20 +195,20 @@
             this.panel10.Size = new System.Drawing.Size(140, 90);
             this.panel10.TabIndex = 9;
             // 
-            // cityTbox
+            // tbxCity
             // 
-            this.cityTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.cityTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.cityTbox.ForeColor = System.Drawing.Color.Black;
-            this.cityTbox.Location = new System.Drawing.Point(12, 56);
-            this.cityTbox.Name = "cityTbox";
-            this.cityTbox.PlaceholderText = "City";
-            this.cityTbox.Size = new System.Drawing.Size(116, 34);
-            this.cityTbox.TabIndex = 16;
+            this.tbxCity.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbxCity.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbxCity.ForeColor = System.Drawing.Color.Black;
+            this.tbxCity.Location = new System.Drawing.Point(12, 56);
+            this.tbxCity.Name = "tbxCity";
+            this.tbxCity.PlaceholderText = "City";
+            this.tbxCity.Size = new System.Drawing.Size(116, 34);
+            this.tbxCity.TabIndex = 16;
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.districtTbox);
+            this.panel9.Controls.Add(this.tbxDistrict);
             this.panel9.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel9.Location = new System.Drawing.Point(568, 195);
             this.panel9.Name = "panel9";
@@ -214,22 +216,22 @@
             this.panel9.Size = new System.Drawing.Size(135, 90);
             this.panel9.TabIndex = 8;
             // 
-            // districtTbox
+            // tbxDistrict
             // 
-            this.districtTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.districtTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.districtTbox.ForeColor = System.Drawing.Color.Black;
-            this.districtTbox.Location = new System.Drawing.Point(12, 56);
-            this.districtTbox.Name = "districtTbox";
-            this.districtTbox.PlaceholderText = "District";
-            this.districtTbox.Size = new System.Drawing.Size(111, 34);
-            this.districtTbox.TabIndex = 15;
+            this.tbxDistrict.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbxDistrict.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbxDistrict.ForeColor = System.Drawing.Color.Black;
+            this.tbxDistrict.Location = new System.Drawing.Point(12, 56);
+            this.tbxDistrict.Name = "tbxDistrict";
+            this.tbxDistrict.PlaceholderText = "District";
+            this.tbxDistrict.Size = new System.Drawing.Size(111, 34);
+            this.tbxDistrict.TabIndex = 15;
             // 
             // panel2
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.panel2, 4);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Controls.Add(this.nameTbox);
+            this.panel2.Controls.Add(this.tbxName);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
@@ -249,20 +251,21 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Full Name";
             // 
-            // nameTbox
+            // tbxName
             // 
-            this.nameTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.nameTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nameTbox.ForeColor = System.Drawing.Color.Black;
-            this.nameTbox.Location = new System.Drawing.Point(12, 56);
-            this.nameTbox.Name = "nameTbox";
-            this.nameTbox.Size = new System.Drawing.Size(535, 34);
-            this.nameTbox.TabIndex = 7;
+            this.tbxName.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbxName.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbxName.ForeColor = System.Drawing.Color.Black;
+            this.tbxName.Location = new System.Drawing.Point(12, 56);
+            this.tbxName.Name = "tbxName";
+            this.tbxName.PlaceholderText = "E.g. Nguyen Van A";
+            this.tbxName.Size = new System.Drawing.Size(535, 34);
+            this.tbxName.TabIndex = 7;
             // 
             // panel8
             // 
             this.panel8.Controls.Add(this.label5);
-            this.panel8.Controls.Add(this.numTbox);
+            this.panel8.Controls.Add(this.tbxNum);
             this.panel8.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel8.Location = new System.Drawing.Point(3, 195);
             this.panel8.Name = "panel8";
@@ -282,21 +285,21 @@
             this.label5.TabIndex = 4;
             this.label5.Text = "Address";
             // 
-            // numTbox
+            // tbxNum
             // 
-            this.numTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.numTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.numTbox.ForeColor = System.Drawing.Color.Black;
-            this.numTbox.Location = new System.Drawing.Point(12, 56);
-            this.numTbox.Name = "numTbox";
-            this.numTbox.PlaceholderText = "No.";
-            this.numTbox.Size = new System.Drawing.Size(112, 34);
-            this.numTbox.TabIndex = 12;
+            this.tbxNum.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbxNum.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbxNum.ForeColor = System.Drawing.Color.Black;
+            this.tbxNum.Location = new System.Drawing.Point(12, 56);
+            this.tbxNum.Name = "tbxNum";
+            this.tbxNum.PlaceholderText = "No.";
+            this.tbxNum.Size = new System.Drawing.Size(112, 34);
+            this.tbxNum.TabIndex = 12;
             // 
             // panel15
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.panel15, 2);
-            this.panel15.Controls.Add(this.addressTbox);
+            this.panel15.Controls.Add(this.tbxAddress);
             this.panel15.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel15.Location = new System.Drawing.Point(145, 195);
             this.panel15.Name = "panel15";
@@ -304,22 +307,22 @@
             this.panel15.Size = new System.Drawing.Size(276, 90);
             this.panel15.TabIndex = 7;
             // 
-            // addressTbox
+            // tbxAddress
             // 
-            this.addressTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.addressTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.addressTbox.ForeColor = System.Drawing.Color.Black;
-            this.addressTbox.Location = new System.Drawing.Point(12, 56);
-            this.addressTbox.Name = "addressTbox";
-            this.addressTbox.PlaceholderText = "Street";
-            this.addressTbox.Size = new System.Drawing.Size(252, 34);
-            this.addressTbox.TabIndex = 13;
+            this.tbxAddress.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbxAddress.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbxAddress.ForeColor = System.Drawing.Color.Black;
+            this.tbxAddress.Location = new System.Drawing.Point(12, 56);
+            this.tbxAddress.Name = "tbxAddress";
+            this.tbxAddress.PlaceholderText = "Street";
+            this.tbxAddress.Size = new System.Drawing.Size(252, 34);
+            this.tbxAddress.TabIndex = 13;
             // 
             // panel6
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.panel6, 3);
             this.panel6.Controls.Add(this.label3);
-            this.panel6.Controls.Add(this.gmailTbox);
+            this.panel6.Controls.Add(this.tbxGmail);
             this.panel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel6.Location = new System.Drawing.Point(3, 99);
             this.panel6.Name = "panel6";
@@ -339,21 +342,22 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Gmail";
             // 
-            // gmailTbox
+            // tbxGmail
             // 
-            this.gmailTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gmailTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.gmailTbox.ForeColor = System.Drawing.Color.Black;
-            this.gmailTbox.Location = new System.Drawing.Point(12, 56);
-            this.gmailTbox.Name = "gmailTbox";
-            this.gmailTbox.Size = new System.Drawing.Size(394, 34);
-            this.gmailTbox.TabIndex = 11;
+            this.tbxGmail.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbxGmail.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbxGmail.ForeColor = System.Drawing.Color.Black;
+            this.tbxGmail.Location = new System.Drawing.Point(12, 56);
+            this.tbxGmail.Name = "tbxGmail";
+            this.tbxGmail.PlaceholderText = "E.g. Yame@gmail.com";
+            this.tbxGmail.Size = new System.Drawing.Size(394, 34);
+            this.tbxGmail.TabIndex = 11;
             // 
             // panel7
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.panel7, 3);
             this.panel7.Controls.Add(this.label4);
-            this.panel7.Controls.Add(this.phoneTbox);
+            this.panel7.Controls.Add(this.tbxPhone);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel7.Location = new System.Drawing.Point(427, 99);
             this.panel7.Name = "panel7";
@@ -373,29 +377,31 @@
             this.label4.TabIndex = 3;
             this.label4.Text = "Phone Number";
             // 
-            // phoneTbox
+            // tbxPhone
             // 
-            this.phoneTbox.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.phoneTbox.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.phoneTbox.ForeColor = System.Drawing.Color.Black;
-            this.phoneTbox.Location = new System.Drawing.Point(12, 56);
-            this.phoneTbox.Name = "phoneTbox";
-            this.phoneTbox.Size = new System.Drawing.Size(398, 34);
-            this.phoneTbox.TabIndex = 8;
+            this.tbxPhone.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbxPhone.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbxPhone.ForeColor = System.Drawing.Color.Black;
+            this.tbxPhone.Location = new System.Drawing.Point(12, 56);
+            this.tbxPhone.Name = "tbxPhone";
+            this.tbxPhone.PlaceholderText = "E.g. 0987654321";
+            this.tbxPhone.Size = new System.Drawing.Size(398, 34);
+            this.tbxPhone.TabIndex = 8;
             // 
-            // updateProfileBtn
+            // btnNext
             // 
-            this.updateProfileBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.updateProfileBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
-            this.updateProfileBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.updateProfileBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.updateProfileBtn.ForeColor = System.Drawing.Color.White;
-            this.updateProfileBtn.Location = new System.Drawing.Point(709, 313);
-            this.updateProfileBtn.Name = "updateProfileBtn";
-            this.updateProfileBtn.Size = new System.Drawing.Size(140, 48);
-            this.updateProfileBtn.TabIndex = 5;
-            this.updateProfileBtn.Text = "NEXT";
-            this.updateProfileBtn.UseVisualStyleBackColor = false;
+            this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnNext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNext.BackgroundImage")));
+            this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnNext.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNext.ForeColor = System.Drawing.Color.White;
+            this.btnNext.Location = new System.Drawing.Point(709, 313);
+            this.btnNext.Name = "btnNext";
+            this.btnNext.Size = new System.Drawing.Size(140, 48);
+            this.btnNext.TabIndex = 11;
+            this.btnNext.Text = "NEXT";
+            this.btnNext.UseVisualStyleBackColor = true;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // CreateStaffDialog
             // 
@@ -434,33 +440,32 @@
         }
 
         #endregion
-
-        private Panel panel1;
-        private GroupBox groupBox1;
-        private TableLayoutPanel tableLayoutPanel1;
+        private ComboBox tbxGender;
+        private TextBox tbxName;
+        private TextBox tbxGmail;
+        private TextBox tbxPhone;
+        private TextBox tbxNum;
+        private TextBox tbxAddress;
+        private TextBox tbxWard;
+        private TextBox tbxCity;
+        private TextBox tbxDistrict;
         private Panel panel11;
-        private TextBox wardTbox;
-        private Button updateProfileBtn;
         private Panel panel10;
-        private TextBox cityTbox;
         private Panel panel9;
-        private TextBox districtTbox;
         private Panel panel2;
         private Label label1;
-        private TextBox nameTbox;
-        private Panel panel6;
         private Label label3;
-        private TextBox gmailTbox;
-        private Panel panel4;
         private Label label6;
-        private ComboBox genderTbox;
-        private Panel panel7;
         private Label label4;
-        private TextBox phoneTbox;
-        private Panel panel8;
         private Label label5;
-        private TextBox numTbox;
+        private Panel panel1;
+        private Panel panel4;
+        private Panel panel6;
+        private Panel panel7;
+        private Panel panel8;
         private Panel panel15;
-        private TextBox addressTbox;
+        private TableLayoutPanel tableLayoutPanel1;
+        private GroupBox groupBox1;
+        private ColoringButton.ButtonGradientDark btnNext;
     }
 }

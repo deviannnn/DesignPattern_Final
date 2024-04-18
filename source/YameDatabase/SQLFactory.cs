@@ -50,11 +50,6 @@ namespace YameDatabase
             return new SqlDataAdapter((SqlCommand)selectCmd);
         }
 
-        public override DbDataReader CreateDataReader(DbCommand dbCmd)
-        {
-            return dbCmd.ExecuteReader();
-        }
-
         public override DbParameter CreateParameter(string name, object value)
         {
             return new SqlParameter(name, value);

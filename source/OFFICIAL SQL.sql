@@ -67,6 +67,9 @@ VALUES ('admin@gmail.com', '0123456789', 'admin', N'Admin', 1, N'123 Test Street
 INSERT INTO [ACCOUNT] ([GMAIL], [PHONE], [PASSWORD], [NAME], [GENDER], [ADDRESS])
 VALUES ('staff@gmail.com', '0987654321', 'staff', N'Staff', 0, N'456 Test Avenue');
 
+GO
+SELECT * FROM ACCOUNT WHERE YAME_ID = 'admin@gmail.com' OR GMAIL = 'admin@gmail.com' OR PHONE = 'admin@gmail.com'
+SELECT COUNT(*) FROM ACCOUNT WHERE GMAIL = 'admin@gmail.com' OR PHONE = '2412846371'
 
 GO
 CREATE TABLE USERYAME

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using YameStore.Controllers;
 
 namespace YameStore.Screen.Initial
 {
@@ -26,9 +27,9 @@ namespace YameStore.Screen.Initial
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string usname = tbxUsername.Text;
+            string username = tbxUsername.Text;
             string password = tbxPassword.Text;
-            if (usname == "admin" && password == "admin")
+            if (AccountController.Login(username, password))
             {
                 SuccessfulLogin?.Invoke(this, EventArgs.Empty);
             }

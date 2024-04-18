@@ -49,6 +49,7 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <ProjectReference Include="..\ControlUICustom\ControlUICustom.csproj" />
 	  <ProjectReference Include="..\YameDatabase\YameDatabase.csproj" />
 	</ItemGroup>
 
