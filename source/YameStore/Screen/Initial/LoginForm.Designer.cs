@@ -34,8 +34,8 @@
             this.tbxPassword = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnLogin = new YameStore.ColoringButton.ButtonGradientDark();
             this.btnForgot = new System.Windows.Forms.Label();
-            this.btnLogin = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -90,8 +90,8 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.btnForgot);
             this.panel2.Controls.Add(this.btnLogin);
+            this.panel2.Controls.Add(this.btnForgot);
             this.panel2.Controls.Add(this.tbxUsername);
             this.panel2.Controls.Add(this.tbxPassword);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -99,6 +99,21 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(522, 424);
             this.panel2.TabIndex = 7;
+            // 
+            // btnLogin
+            // 
+            this.btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
+            this.btnLogin.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnLogin.ForeColor = System.Drawing.Color.White;
+            this.btnLogin.Location = new System.Drawing.Point(37, 211);
+            this.btnLogin.Name = "btnLogin";
+            this.btnLogin.Size = new System.Drawing.Size(448, 76);
+            this.btnLogin.TabIndex = 8;
+            this.btnLogin.Text = "LOG IN";
+            this.btnLogin.UseVisualStyleBackColor = true;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // btnForgot
             // 
@@ -113,21 +128,6 @@
             this.btnForgot.TabIndex = 7;
             this.btnForgot.Text = "Forgot password?";
             this.btnForgot.Click += new System.EventHandler(this.btnForgot_Click);
-            // 
-            // btnLogin
-            // 
-            this.btnLogin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
-            this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(37, 211);
-            this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(448, 76);
-            this.btnLogin.TabIndex = 6;
-            this.btnLogin.Text = "LOG IN";
-            this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // panel4
             // 
@@ -167,8 +167,8 @@
         public TextBox tbxPassword;
         private Panel panel1;
         private Panel panel2;
-        private Button btnLogin;
         private Label btnForgot;
         private Panel panel4;
+        private ColoringButton.ButtonGradientDark btnLogin;
     }
 }

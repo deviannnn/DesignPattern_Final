@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using YameStore.DAOs;
 using YameStore.Models;
+using YameStore.Utils;
 
 namespace YameStore.Controllers
 {
@@ -27,8 +28,10 @@ namespace YameStore.Controllers
             if (account == null)
                 return false;
 
+            // set PIN to database
             // sendPIN to account.Gmail
-            return SendPIN(account.Gmail);
+            string PIN = (new Random().Next(999999)).ToString();
+            return Gmail.SendPIN(account.Gmail, PIN);
         }
 
         public static bool Create(Account account)
@@ -36,22 +39,13 @@ namespace YameStore.Controllers
             // encrypt password
             // after inserted successfully then send new password to gmail
             accountDAO.Insert(account);
-            return SendNewPassword(account.Gmail);
-        }
-
-        private static bool SendNewPassword(string gmail)
-        {
-            return true;
-        }
-
-        private static bool SendPIN(string gmail)
-        {
-            return true;
+            return Gmail.SendPassword(account.Gmail, account.Password);
         }
 
         public static bool ConfirmPIN()
         {
-            // after confirmed valid PIN from gmail then send new password to gmail
+            // get PIN from database
+            // validate PIN from gmail
             return true;
         }
 

@@ -28,13 +28,13 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProfileForm));
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel11 = new System.Windows.Forms.Panel();
             this.wardTbox = new System.Windows.Forms.TextBox();
-            this.updateProfileBtn = new System.Windows.Forms.Button();
             this.panel10 = new System.Windows.Forms.Panel();
             this.cityTbox = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
@@ -62,6 +62,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
             this.phoneTbox = new System.Windows.Forms.TextBox();
+            this.btnUpdateProfile = new YameStore.ColoringButton.ButtonGradientDark();
             this.panel12 = new System.Windows.Forms.Panel();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -74,7 +75,7 @@
             this.panel16 = new System.Windows.Forms.Panel();
             this.label14 = new System.Windows.Forms.Label();
             this.curPwTbox = new System.Windows.Forms.TextBox();
-            this.updatePwBtn = new System.Windows.Forms.Button();
+            this.btnUpdatePassword = new YameStore.ColoringButton.ButtonGradientDark();
             this.tableLayoutPanel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -147,7 +148,6 @@
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 16.66666F));
             this.tableLayoutPanel1.Controls.Add(this.panel11, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.updateProfileBtn, 5, 3);
             this.tableLayoutPanel1.Controls.Add(this.panel10, 5, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel9, 4, 2);
             this.tableLayoutPanel1.Controls.Add(this.panel8, 0, 2);
@@ -158,6 +158,7 @@
             this.tableLayoutPanel1.Controls.Add(this.panel5, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.panel6, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.panel7, 3, 1);
+            this.tableLayoutPanel1.Controls.Add(this.btnUpdateProfile, 5, 3);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(3, 41);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
@@ -189,20 +190,6 @@
             this.wardTbox.PlaceholderText = "Ward";
             this.wardTbox.Size = new System.Drawing.Size(184, 34);
             this.wardTbox.TabIndex = 14;
-            // 
-            // updateProfileBtn
-            // 
-            this.updateProfileBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.updateProfileBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
-            this.updateProfileBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.updateProfileBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.updateProfileBtn.ForeColor = System.Drawing.Color.White;
-            this.updateProfileBtn.Location = new System.Drawing.Point(1073, 351);
-            this.updateProfileBtn.Name = "updateProfileBtn";
-            this.updateProfileBtn.Size = new System.Drawing.Size(210, 48);
-            this.updateProfileBtn.TabIndex = 5;
-            this.updateProfileBtn.Text = "UPDATE PROFILE";
-            this.updateProfileBtn.UseVisualStyleBackColor = false;
             // 
             // panel10
             // 
@@ -508,6 +495,21 @@
             this.phoneTbox.Size = new System.Drawing.Size(614, 34);
             this.phoneTbox.TabIndex = 8;
             // 
+            // btnUpdateProfile
+            // 
+            this.btnUpdateProfile.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdateProfile.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdateProfile.BackgroundImage")));
+            this.btnUpdateProfile.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUpdateProfile.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdateProfile.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdateProfile.ForeColor = System.Drawing.Color.White;
+            this.btnUpdateProfile.Location = new System.Drawing.Point(1073, 351);
+            this.btnUpdateProfile.Name = "btnUpdateProfile";
+            this.btnUpdateProfile.Size = new System.Drawing.Size(210, 48);
+            this.btnUpdateProfile.TabIndex = 12;
+            this.btnUpdateProfile.Text = "UPDATE PROFILE";
+            this.btnUpdateProfile.UseVisualStyleBackColor = true;
+            // 
             // panel12
             // 
             this.panel12.Controls.Add(this.groupBox2);
@@ -544,7 +546,7 @@
             this.tableLayoutPanel2.Controls.Add(this.panel14, 4, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel13, 2, 0);
             this.tableLayoutPanel2.Controls.Add(this.panel16, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.updatePwBtn, 5, 1);
+            this.tableLayoutPanel2.Controls.Add(this.btnUpdatePassword, 5, 1);
             this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel2.Location = new System.Drawing.Point(3, 41);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
@@ -659,19 +661,20 @@
             this.curPwTbox.Size = new System.Drawing.Size(396, 34);
             this.curPwTbox.TabIndex = 7;
             // 
-            // updatePwBtn
+            // btnUpdatePassword
             // 
-            this.updatePwBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.updatePwBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
-            this.updatePwBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.updatePwBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.updatePwBtn.ForeColor = System.Drawing.Color.White;
-            this.updatePwBtn.Location = new System.Drawing.Point(1015, 104);
-            this.updatePwBtn.Name = "updatePwBtn";
-            this.updatePwBtn.Size = new System.Drawing.Size(268, 48);
-            this.updatePwBtn.TabIndex = 5;
-            this.updatePwBtn.Text = "UPDATE PASSWORD";
-            this.updatePwBtn.UseVisualStyleBackColor = false;
+            this.btnUpdatePassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnUpdatePassword.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnUpdatePassword.BackgroundImage")));
+            this.btnUpdatePassword.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUpdatePassword.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnUpdatePassword.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnUpdatePassword.ForeColor = System.Drawing.Color.White;
+            this.btnUpdatePassword.Location = new System.Drawing.Point(1015, 104);
+            this.btnUpdatePassword.Name = "btnUpdatePassword";
+            this.btnUpdatePassword.Size = new System.Drawing.Size(268, 48);
+            this.btnUpdatePassword.TabIndex = 9;
+            this.btnUpdatePassword.Text = "UPDATE PASSWORD";
+            this.btnUpdatePassword.UseVisualStyleBackColor = true;
             // 
             // ProfileForm
             // 
@@ -730,7 +733,6 @@
         private TableLayoutPanel tableLayoutPanel1;
         private Panel panel11;
         private TextBox wardTbox;
-        private Button updateProfileBtn;
         private Panel panel10;
         private TextBox cityTbox;
         private Panel panel9;
@@ -767,9 +769,10 @@
         private Panel panel16;
         private Label label14;
         private TextBox curPwTbox;
-        private Button updatePwBtn;
         private Panel panel3;
         private Label label2;
         private TextBox textBox1;
+        private ColoringButton.ButtonGradientDark btnUpdateProfile;
+        private ColoringButton.ButtonGradientDark btnUpdatePassword;
     }
 }

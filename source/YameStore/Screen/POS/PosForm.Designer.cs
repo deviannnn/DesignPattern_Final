@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PosForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.paymentGbox = new System.Windows.Forms.GroupBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
@@ -45,8 +46,6 @@
             this.voucherTbox = new System.Windows.Forms.TextBox();
             this.voucherLabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.exitBtn = new System.Windows.Forms.Button();
-            this.payBtn = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -66,9 +65,7 @@
             this.colLView5 = new System.Windows.Forms.ColumnHeader();
             this.panel5 = new System.Windows.Forms.Panel();
             this.scanTbox = new System.Windows.Forms.TextBox();
-            this.addBtn = new System.Windows.Forms.Button();
             this.quantitySelector = new System.Windows.Forms.NumericUpDown();
-            this.clearCartBtn = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.settingToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.clearCartMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,6 +80,11 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.exchangesMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
             this.checkoutMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnPay = new YameStore.ColoringButton.ButtonGradientDark();
+            this.buttonGradientDanger1 = new YameStore.ColoringButton.ButtonGradientDanger();
+            this.buttonGradientSecondary1 = new YameStore.ColoringButton.ButtonGradientSecondary();
+            this.buttonGradientWarning1 = new YameStore.ColoringButton.ButtonGradientWarning();
+            this.buttonGradientSuccess1 = new YameStore.ColoringButton.ButtonGradientSuccess();
             this.panel1.SuspendLayout();
             this.paymentGbox.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -347,45 +349,14 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.exitBtn);
-            this.panel4.Controls.Add(this.payBtn);
+            this.panel4.Controls.Add(this.buttonGradientSecondary1);
+            this.panel4.Controls.Add(this.buttonGradientDanger1);
+            this.panel4.Controls.Add(this.btnPay);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.panel4.Location = new System.Drawing.Point(4, 597);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(546, 114);
             this.panel4.TabIndex = 0;
-            // 
-            // exitBtn
-            // 
-            this.exitBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(234)))), ((int)(((byte)(6)))), ((int)(((byte)(6)))));
-            this.exitBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.exitBtn.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.exitBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.exitBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.exitBtn.ForeColor = System.Drawing.Color.White;
-            this.exitBtn.Location = new System.Drawing.Point(0, 57);
-            this.exitBtn.Name = "exitBtn";
-            this.exitBtn.Size = new System.Drawing.Size(546, 57);
-            this.exitBtn.TabIndex = 1;
-            this.exitBtn.Text = "NEW";
-            this.exitBtn.UseVisualStyleBackColor = false;
-            // 
-            // payBtn
-            // 
-            this.payBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(70)))));
-            this.payBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.payBtn.Dock = System.Windows.Forms.DockStyle.Top;
-            this.payBtn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
-            this.payBtn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.payBtn.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.payBtn.ForeColor = System.Drawing.Color.White;
-            this.payBtn.Location = new System.Drawing.Point(0, 0);
-            this.payBtn.Name = "payBtn";
-            this.payBtn.Size = new System.Drawing.Size(546, 57);
-            this.payBtn.TabIndex = 0;
-            this.payBtn.Text = "PAY";
-            this.payBtn.UseVisualStyleBackColor = false;
-            this.payBtn.Click += new System.EventHandler(this.payBtn_Click);
             // 
             // panel2
             // 
@@ -589,9 +560,9 @@
             // panel5
             // 
             this.panel5.Controls.Add(this.scanTbox);
-            this.panel5.Controls.Add(this.addBtn);
+            this.panel5.Controls.Add(this.buttonGradientSuccess1);
+            this.panel5.Controls.Add(this.buttonGradientWarning1);
             this.panel5.Controls.Add(this.quantitySelector);
-            this.panel5.Controls.Add(this.clearCartBtn);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel5.Location = new System.Drawing.Point(4, 263);
             this.panel5.Name = "panel5";
@@ -610,23 +581,8 @@
             this.scanTbox.MaxLength = 10;
             this.scanTbox.Name = "scanTbox";
             this.scanTbox.PlaceholderText = "Products Code";
-            this.scanTbox.Size = new System.Drawing.Size(621, 61);
+            this.scanTbox.Size = new System.Drawing.Size(623, 61);
             this.scanTbox.TabIndex = 21;
-            // 
-            // addBtn
-            // 
-            this.addBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(23)))), ((int)(((byte)(173)))), ((int)(((byte)(55)))));
-            this.addBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.addBtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.addBtn.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.addBtn.ForeColor = System.Drawing.Color.White;
-            this.addBtn.Location = new System.Drawing.Point(718, 0);
-            this.addBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.addBtn.Name = "addBtn";
-            this.addBtn.Size = new System.Drawing.Size(121, 61);
-            this.addBtn.TabIndex = 42;
-            this.addBtn.Text = "Add";
-            this.addBtn.UseVisualStyleBackColor = false;
             // 
             // quantitySelector
             // 
@@ -649,21 +605,6 @@
             0,
             0,
             0});
-            // 
-            // clearCartBtn
-            // 
-            this.clearCartBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.clearCartBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.clearCartBtn.Dock = System.Windows.Forms.DockStyle.Right;
-            this.clearCartBtn.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
-            this.clearCartBtn.ForeColor = System.Drawing.Color.White;
-            this.clearCartBtn.Location = new System.Drawing.Point(839, 0);
-            this.clearCartBtn.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.clearCartBtn.Name = "clearCartBtn";
-            this.clearCartBtn.Size = new System.Drawing.Size(121, 61);
-            this.clearCartBtn.TabIndex = 44;
-            this.clearCartBtn.Text = "Clear Cart";
-            this.clearCartBtn.UseVisualStyleBackColor = false;
             // 
             // menuStrip1
             // 
@@ -775,6 +716,79 @@
             this.checkoutMenuBtn.Text = "C̲heckout";
             this.checkoutMenuBtn.Click += new System.EventHandler(this.checkOutToolStripMenuItem_Click);
             // 
+            // btnPay
+            // 
+            this.btnPay.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnPay.BackgroundImage")));
+            this.btnPay.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnPay.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnPay.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnPay.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnPay.ForeColor = System.Drawing.Color.White;
+            this.btnPay.Location = new System.Drawing.Point(0, 0);
+            this.btnPay.Name = "btnPay";
+            this.btnPay.Size = new System.Drawing.Size(546, 57);
+            this.btnPay.TabIndex = 2;
+            this.btnPay.Text = "PAY";
+            this.btnPay.UseVisualStyleBackColor = true;
+            // 
+            // buttonGradientDanger1
+            // 
+            this.buttonGradientDanger1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonGradientDanger1.BackgroundImage")));
+            this.buttonGradientDanger1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonGradientDanger1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonGradientDanger1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonGradientDanger1.ForeColor = System.Drawing.Color.White;
+            this.buttonGradientDanger1.Location = new System.Drawing.Point(273, 57);
+            this.buttonGradientDanger1.Name = "buttonGradientDanger1";
+            this.buttonGradientDanger1.Size = new System.Drawing.Size(273, 57);
+            this.buttonGradientDanger1.TabIndex = 3;
+            this.buttonGradientDanger1.Text = "EXIT";
+            this.buttonGradientDanger1.UseVisualStyleBackColor = true;
+            // 
+            // buttonGradientSecondary1
+            // 
+            this.buttonGradientSecondary1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonGradientSecondary1.BackgroundImage")));
+            this.buttonGradientSecondary1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonGradientSecondary1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.buttonGradientSecondary1.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonGradientSecondary1.ForeColor = System.Drawing.Color.White;
+            this.buttonGradientSecondary1.Location = new System.Drawing.Point(0, 57);
+            this.buttonGradientSecondary1.Name = "buttonGradientSecondary1";
+            this.buttonGradientSecondary1.Size = new System.Drawing.Size(273, 57);
+            this.buttonGradientSecondary1.TabIndex = 4;
+            this.buttonGradientSecondary1.Text = "NEW";
+            this.buttonGradientSecondary1.UseVisualStyleBackColor = true;
+            // 
+            // buttonGradientWarning1
+            // 
+            this.buttonGradientWarning1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonGradientWarning1.BackgroundImage")));
+            this.buttonGradientWarning1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonGradientWarning1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonGradientWarning1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonGradientWarning1.Font = new System.Drawing.Font("Segoe UI", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.buttonGradientWarning1.ForeColor = System.Drawing.Color.White;
+            this.buttonGradientWarning1.Location = new System.Drawing.Point(840, 0);
+            this.buttonGradientWarning1.Name = "buttonGradientWarning1";
+            this.buttonGradientWarning1.Size = new System.Drawing.Size(120, 61);
+            this.buttonGradientWarning1.TabIndex = 43;
+            this.buttonGradientWarning1.Text = "Clear Cart";
+            this.buttonGradientWarning1.UseVisualStyleBackColor = true;
+            // 
+            // buttonGradientSuccess1
+            // 
+            this.buttonGradientSuccess1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonGradientSuccess1.BackgroundImage")));
+            this.buttonGradientSuccess1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonGradientSuccess1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonGradientSuccess1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.buttonGradientSuccess1.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
+            this.buttonGradientSuccess1.ForeColor = System.Drawing.Color.White;
+            this.buttonGradientSuccess1.Location = new System.Drawing.Point(720, 0);
+            this.buttonGradientSuccess1.Name = "buttonGradientSuccess1";
+            this.buttonGradientSuccess1.Size = new System.Drawing.Size(120, 61);
+            this.buttonGradientSuccess1.TabIndex = 44;
+            this.buttonGradientSuccess1.Text = "Add";
+            this.buttonGradientSuccess1.UseVisualStyleBackColor = true;
+            // 
             // PosForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -836,8 +850,6 @@
         private TextBox voucherTbox;
         private Label voucherLabel;
         private Label totalamountLabel;
-        private Button payBtn;
-        private Button exitBtn;
         private TableLayoutPanel tableLayoutPanel1;
         private ListView detailsLView;
         private ColumnHeader colLView0;
@@ -848,8 +860,6 @@
         private Panel panel5;
         private NumericUpDown quantitySelector;
         private TextBox scanTbox;
-        private Button addBtn;
-        private Button clearCartBtn;
         private GroupBox membersGbox;
         private TextBox txt_hoten;
         private Label label1;
@@ -874,5 +884,10 @@
         private ToolStripMenuItem checkoutMenuBtn;
         private GroupBox groupBox1;
         private TextBox textBox1;
+        private ColoringButton.ButtonGradientDanger buttonGradientDanger1;
+        private ColoringButton.ButtonGradientDark btnPay;
+        private ColoringButton.ButtonGradientSecondary buttonGradientSecondary1;
+        private ColoringButton.ButtonGradientSuccess buttonGradientSuccess1;
+        private ColoringButton.ButtonGradientWarning buttonGradientWarning1;
     }
 }

@@ -16,7 +16,7 @@ namespace YameStore
 
         public SqlConnection getConnection()
         {
-            return new SqlConnection(@"Data Source=BAOTRAN25\SQLEXPRESS;Initial Catalog=YAME;Integrated Security=True");
+            return new SqlConnection(@"Data Source=.\SQLEXPRESS;Initial Catalog=YAMEv1;Integrated Security=True");
         }
     }
 }

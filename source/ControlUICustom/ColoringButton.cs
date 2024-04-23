@@ -13,15 +13,11 @@ namespace YameStore.ColoringButton
 {
     public abstract partial class ColoringButton : Button
     {
-        public ColoringButton()
+        public ColoringButton() : base()
         {
-            //InitializeComponent();
-        }
-
-        protected override void OnPaint(PaintEventArgs e)
-        {
-            base.OnPaint(e);
+            InitializeComponent();
             SetBackGround();
+            ForeColor = Color.White;
         }
 
         protected void SetBackGround()
@@ -80,10 +76,7 @@ namespace YameStore.ColoringButton
 
     public class ButtonGradientPrimary : ColoringButton
     {
-        public ButtonGradientPrimary() : base()
-        {
-            ForeColor = Color.White;
-        }
+        public ButtonGradientPrimary() : base() { }
         protected override Color SetColor1()
         {
             return Color.FromArgb(121, 40, 202);
@@ -96,10 +89,7 @@ namespace YameStore.ColoringButton
 
     public class ButtonGradientDanger : ColoringButton
     {
-        public ButtonGradientDanger() : base()
-        {
-            ForeColor = Color.White;
-        }
+        public ButtonGradientDanger() : base() { }
         protected override Color SetColor1()
         {
             return Color.FromArgb(234, 6, 6);
@@ -112,10 +102,7 @@ namespace YameStore.ColoringButton
 
     public class ButtonGradientSuccess : ColoringButton
     {
-        public ButtonGradientSuccess() : base()
-        {
-            ForeColor = Color.White;
-        }
+        public ButtonGradientSuccess() : base() { }
         protected override Color SetColor1()
         {
             return Color.FromArgb(23, 173, 55);
@@ -128,10 +115,7 @@ namespace YameStore.ColoringButton
 
     public class ButtonGradientWarning : ColoringButton
     {
-        public ButtonGradientWarning() : base()
-        {
-            ForeColor = Color.White;
-        }
+        public ButtonGradientWarning() : base() { }
         protected override Color SetColor1()
         {
             return Color.FromArgb(245, 57, 57);
@@ -144,10 +128,7 @@ namespace YameStore.ColoringButton
 
     public class ButtonGradientSecondary : ColoringButton
     {
-        public ButtonGradientSecondary() : base()
-        {
-            ForeColor = Color.White;
-        }
+        public ButtonGradientSecondary() : base() { }
         protected override Color SetColor1()
         {
             return Color.FromArgb(98, 117, 148);
@@ -160,10 +141,7 @@ namespace YameStore.ColoringButton
 
     public class ButtonGradientInfo : ColoringButton
     {
-        public ButtonGradientInfo() : base()
-        {
-            ForeColor = Color.White;
-        }
+        public ButtonGradientInfo() : base() { }
         protected override Color SetColor1()
         {
             return Color.FromArgb(33, 82, 255);

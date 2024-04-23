@@ -173,6 +173,7 @@
             // 
             this.tbxGender.DisplayMember = "0";
             this.tbxGender.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.tbxGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.tbxGender.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbxGender.ForeColor = System.Drawing.Color.Black;
             this.tbxGender.FormattingEnabled = true;
@@ -183,7 +184,6 @@
             this.tbxGender.Name = "tbxGender";
             this.tbxGender.Size = new System.Drawing.Size(257, 36);
             this.tbxGender.TabIndex = 17;
-            this.tbxGender.Text = "Male";
             // 
             // panel10
             // 

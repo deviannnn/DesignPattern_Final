@@ -1,8 +1,7 @@
 ﻿namespace YameStore.ColoringButton
 {
     partial class ColoringButton
-    {
-        /*
+    {        
         /// <summary> 
         /// Required designer variable.
         /// </summary>
@@ -32,6 +31,6 @@
             components = new System.ComponentModel.Container();
         }
 
-        #endregion*/
+        #endregion
     }
 }

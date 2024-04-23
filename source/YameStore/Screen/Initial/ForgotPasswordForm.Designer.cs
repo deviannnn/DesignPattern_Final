@@ -28,13 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForgotPasswordForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.btnReset = new YameStore.ColoringButton.ButtonGradientDark();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Label();
-            this.btnReset = new System.Windows.Forms.Button();
             this.tbxUsername = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
@@ -67,16 +68,30 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.btnReset);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.btnBack);
-            this.panel2.Controls.Add(this.btnReset);
             this.panel2.Controls.Add(this.tbxUsername);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 220);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(522, 424);
             this.panel2.TabIndex = 9;
+            // 
+            // btnReset
+            // 
+            this.btnReset.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnReset.BackgroundImage")));
+            this.btnReset.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnReset.ForeColor = System.Drawing.Color.White;
+            this.btnReset.Location = new System.Drawing.Point(37, 211);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(448, 76);
+            this.btnReset.TabIndex = 13;
+            this.btnReset.Text = "RESET PASSWORD";
+            this.btnReset.UseVisualStyleBackColor = true;
             // 
             // label3
             // 
@@ -111,20 +126,6 @@
             this.btnBack.TabIndex = 10;
             this.btnBack.Text = "Back to login";
             this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
-            // 
-            // btnReset
-            // 
-            this.btnReset.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnReset.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
-            this.btnReset.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnReset.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnReset.ForeColor = System.Drawing.Color.White;
-            this.btnReset.Location = new System.Drawing.Point(37, 211);
-            this.btnReset.Name = "btnReset";
-            this.btnReset.Size = new System.Drawing.Size(448, 76);
-            this.btnReset.TabIndex = 9;
-            this.btnReset.Text = "RESET PASSWORD";
-            this.btnReset.UseVisualStyleBackColor = false;
             // 
             // tbxUsername
             // 
@@ -173,10 +174,10 @@
         private PictureBox pictureBox1;
         private Panel panel2;
         private Label btnBack;
-        private Button btnReset;
         public TextBox tbxUsername;
         private Label label3;
         private Label label2;
         private Panel panel4;
+        private ColoringButton.ButtonGradientDark btnReset;
     }
 }
