@@ -12,14 +12,23 @@ namespace YameStore.Controllers
     public class AccountController
     {
         private static readonly AccountDAO accountDAO = new();
-        public static bool Login(string username, string password)
+        public static Account? Authenticate(string identifier, string password)
         {
-            /*Account? account = accountDAO.GetAccountByIdentifier(username);
-            if (account == null)
-                return false;
+            try
+            {
+                Account? account = accountDAO.GetAccountByIdentifier(identifier);
+                if (account == null)
+                    return null;
 
-            // so sanh account.Password va password*/
-            return username == "admin" && password == "admin";
+                if (account.Password != password)
+                    return null;
+
+                return account;
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
         }
 
         public static bool ResetPassword(string username)

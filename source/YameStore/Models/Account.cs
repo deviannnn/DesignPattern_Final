@@ -27,31 +27,31 @@ namespace YameStore.Models
         public Account(DataRow dataRow)
         {
             ID = (int)dataRow["ID"];
-            YameID = (string)dataRow["YameID"];
-            Gmail = (string)dataRow["Gmail"];
-            Phone = (string)dataRow["Phone"];
-            Password = (string)dataRow["Password"];
-            Name = (string)dataRow["Name"];
-            Gender = (bool)dataRow["Gender"];
-            Address = (string)dataRow["Address"];
-            Locked = (bool)dataRow["Locked"];
-            Active = (bool)dataRow["Active"];
-            Role = (string)dataRow["Role"];
+            YameID = (string)dataRow["YAME_ID"];
+            Gmail = (string)dataRow["GMAIL"];
+            Phone = (string)dataRow["PHONE"];
+            Password = (string)dataRow["PASSWORD"];
+            Name = (string)dataRow["NAME"];
+            Gender = (bool)dataRow["GENDER"];
+            Address = (string)dataRow["ADDRESS"];
+            Locked = (bool)dataRow["LOCKED"];
+            Active = (bool)dataRow["ACTIVE"];
+            Role = (string)dataRow["ROLE"];
         }
 
         public Account(DbDataReader reader)
         {
             ID = (int)reader["ID"];
-            YameID = (string)reader["YameID"];
-            Gmail = (string)reader["Gmail"];
-            Phone = (string)reader["Phone"];
-            Password = (string)reader["Password"];
-            Name = (string)reader["Name"];
-            Gender = (bool)reader["Gender"];
-            Address = (string)reader["Address"];
-            Locked = (bool)reader["Locked"];
-            Active = (bool)reader["Active"];
-            Role = (string)reader["Role"];
+            YameID = (string)reader["YAME_ID"];
+            Gmail = (string)reader["GMAIL"];
+            Phone = (string)reader["PHONE"];
+            Password = (string)reader["PASSWORD"];
+            Name = (string)reader["NAME"];
+            Gender = (bool)reader["GENDER"];
+            Address = (string)reader["ADDRESS"];
+            Locked = (bool)reader["LOCKED"];
+            Active = (bool)reader["ACTIVE"];
+            Role = (string)reader["ROLE"];
         }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -80,9 +81,9 @@ namespace YameStore.DAOs
 
         public Account? GetAccountByIdentifier(string identifier)
         {
-            Account? account = null;
             try
             {
+                Account? account = null;
                 using (var conn = databaseFactory.CreateConnection())
                 {
                     conn.Open();
@@ -97,12 +98,13 @@ namespace YameStore.DAOs
                         account = new Account(reader);
                     }
                 }
+                return account;
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Đã xảy ra lỗi khi lấy thông tin tài khoản theo YameID, Gmail hoặc Phone: " + ex.Message);
+                Debug.WriteLine(ex.Message);
+                throw new Exception("Error! An error occurred. Please try again later", ex);
             }
-            return account;
         }
 
         public bool Update(Account account)
@@ -137,8 +139,8 @@ namespace YameStore.DAOs
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Đã xảy ra lỗi khi cập nhật tài khoản: " + ex.Message);
-                return false;
+                Debug.WriteLine(ex.Message);
+                throw new Exception("Error! An error occurred. Please try again later", ex);
             }
         }
 
@@ -160,14 +162,13 @@ namespace YameStore.DAOs
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Đã xảy ra lỗi khi xóa tài khoản: " + ex.Message);
-                return false;
+                Debug.WriteLine(ex.Message);
+                throw new Exception("Error! An error occurred. Please try again later", ex);
             }
         }
 
         public bool CheckExistingGmail(string gmail)
         {
-            bool exists = false;
             try
             {
                 using (var conn = databaseFactory.CreateConnection())
@@ -179,19 +180,18 @@ namespace YameStore.DAOs
                     databaseFactory.AddParameterWithValue(cmd, "@Gmail", gmail);
 
                     int count = (int)cmd.ExecuteScalar();
-                    exists = count > 0;
+                    return count > 0;
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Đã xảy ra lỗi khi kiểm tra sự tồn tại của Gmail: " + ex.Message);
+                Debug.WriteLine(ex.Message);
+                throw new Exception("Error! An error occurred. Please try again later", ex);
             }
-            return exists;
         }
 
         public bool CheckExistingPhone(string phone)
         {
-            bool exists = false;
             try
             {
                 using (var conn = databaseFactory.CreateConnection())
@@ -203,14 +203,14 @@ namespace YameStore.DAOs
                     databaseFactory.AddParameterWithValue(cmd, "@Phone", phone);
 
                     int count = (int)cmd.ExecuteScalar();
-                    exists = count > 0;
+                    return count > 0;
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Đã xảy ra lỗi khi kiểm tra sự tồn tại của Phone: " + ex.Message);
+                Debug.WriteLine(ex.Message);
+                throw new Exception("Error! An error occurred. Please try again later", ex);
             }
-            return exists;
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace YameStore.Screen.Initial
 {
-    partial class ForgotPasswordForm
+    partial class ActiveForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,16 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ForgotPasswordForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ActiveForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnReset = new YameStore.ColoringButton.ButtonGradientDark();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.btnBack = new System.Windows.Forms.Label();
             this.tbxUsername = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
@@ -58,7 +58,7 @@
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Image = global::YameStore.Properties.Resources.locked_icon;
+            this.pictureBox1.Image = global::YameStore.Properties.Resources._default;
             this.pictureBox1.Location = new System.Drawing.Point(179, 56);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(164, 164);
@@ -68,10 +68,10 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.textBox1);
             this.panel2.Controls.Add(this.btnReset);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.btnBack);
             this.panel2.Controls.Add(this.tbxUsername);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel2.Location = new System.Drawing.Point(0, 220);
@@ -90,7 +90,7 @@
             this.btnReset.Name = "btnReset";
             this.btnReset.Size = new System.Drawing.Size(448, 76);
             this.btnReset.TabIndex = 13;
-            this.btnReset.Text = "RESET PASSWORD";
+            this.btnReset.Text = "UPDATE PASSWORD";
             this.btnReset.UseVisualStyleBackColor = true;
             // 
             // label3
@@ -98,35 +98,22 @@
             this.label3.Dock = System.Windows.Forms.DockStyle.Top;
             this.label3.Location = new System.Drawing.Point(0, 45);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(522, 52);
+            this.label3.Size = new System.Drawing.Size(522, 25);
             this.label3.TabIndex = 12;
-            this.label3.Text = "Enter your gmail, phone, or YameID \r\nand then we\'ll send you a new password";
+            this.label3.Text = "Update your password to continue";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
             // 
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(522, 45);
             this.label2.TabIndex = 11;
-            this.label2.Text = "Trouble logging in?";
+            this.label2.Text = "Name";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnBack
-            // 
-            this.btnBack.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnBack.AutoSize = true;
-            this.btnBack.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBack.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
-            this.btnBack.Location = new System.Drawing.Point(199, 335);
-            this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(115, 25);
-            this.btnBack.TabIndex = 10;
-            this.btnBack.Text = "Back to login";
-            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // tbxUsername
             // 
@@ -134,7 +121,7 @@
             this.tbxUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbxUsername.Location = new System.Drawing.Point(37, 160);
             this.tbxUsername.Name = "tbxUsername";
-            this.tbxUsername.PlaceholderText = "Gmail, Phone or YameID ";
+            this.tbxUsername.PlaceholderText = "Confirm password";
             this.tbxUsername.Size = new System.Drawing.Size(448, 39);
             this.tbxUsername.TabIndex = 8;
             // 
@@ -148,7 +135,18 @@
             this.panel4.Size = new System.Drawing.Size(522, 644);
             this.panel4.TabIndex = 11;
             // 
-            // ForgotPasswordForm
+            // textBox1
+            // 
+            this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
+            this.textBox1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox1.Location = new System.Drawing.Point(37, 91);
+            this.textBox1.MaxLength = 20;
+            this.textBox1.Name = "textBox1";
+            this.textBox1.PlaceholderText = "New password";
+            this.textBox1.Size = new System.Drawing.Size(448, 39);
+            this.textBox1.TabIndex = 14;
+            // 
+            // ActiveForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -157,7 +155,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximumSize = new System.Drawing.Size(522, 644);
             this.MinimumSize = new System.Drawing.Size(522, 644);
-            this.Name = "ForgotPasswordForm";
+            this.Name = "ActiveForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ForgotPasswordForm";
             this.panel1.ResumeLayout(false);
@@ -174,11 +172,11 @@
         private Panel panel1;
         private PictureBox pictureBox1;
         private Panel panel2;
-        private Label btnBack;
         public TextBox tbxUsername;
         private Label label3;
         private Label label2;
         private Panel panel4;
         private ColoringButton.ButtonGradientDark btnReset;
+        public TextBox textBox1;
     }
 }

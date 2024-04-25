@@ -127,8 +127,8 @@
   <data name="pngfind.com-password-icon-png-2021806" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\pngfind.com-password-icon-png-2021806.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="locked-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\locked-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="user-3296" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\user-3296.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="curve" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\curve.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -151,6 +151,9 @@
   <data name="icons8-product-management-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-product-management-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8-log-out-481" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8-log-out-481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8-people-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-people-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -160,8 +163,8 @@
   <data name="password-76-16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\password-76-16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="user-3296" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\user-3296.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="locked-icon" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\locked-icon.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gửi email" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gửi email.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,7 +193,7 @@
   <data name="icons8-person-48" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8-person-48.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8-log-out-481" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8-log-out-481.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="default" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\default.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

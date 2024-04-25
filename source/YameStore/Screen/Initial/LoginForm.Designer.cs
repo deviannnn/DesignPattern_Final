@@ -34,6 +34,7 @@
             this.tbxPassword = new System.Windows.Forms.TextBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
             this.btnLogin = new YameStore.ColoringButton.ButtonGradientDark();
             this.btnForgot = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -60,24 +61,24 @@
             // 
             this.tbxUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tbxUsername.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbxUsername.Location = new System.Drawing.Point(37, 73);
+            this.tbxUsername.Location = new System.Drawing.Point(37, 91);
             this.tbxUsername.MaxLength = 20;
             this.tbxUsername.Name = "tbxUsername";
             this.tbxUsername.PlaceholderText = "Username";
             this.tbxUsername.Size = new System.Drawing.Size(448, 39);
-            this.tbxUsername.TabIndex = 2;
+            this.tbxUsername.TabIndex = 1;
             // 
             // tbxPassword
             // 
             this.tbxPassword.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.tbxPassword.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbxPassword.Location = new System.Drawing.Point(37, 142);
+            this.tbxPassword.Location = new System.Drawing.Point(37, 160);
             this.tbxPassword.MaxLength = 20;
             this.tbxPassword.Name = "tbxPassword";
             this.tbxPassword.PasswordChar = '•';
             this.tbxPassword.PlaceholderText = "Password";
             this.tbxPassword.Size = new System.Drawing.Size(448, 39);
-            this.tbxPassword.TabIndex = 3;
+            this.tbxPassword.TabIndex = 2;
             // 
             // panel1
             // 
@@ -90,6 +91,7 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.btnLogin);
             this.panel2.Controls.Add(this.btnForgot);
             this.panel2.Controls.Add(this.tbxUsername);
@@ -100,6 +102,18 @@
             this.panel2.Size = new System.Drawing.Size(522, 424);
             this.panel2.TabIndex = 7;
             // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(522, 45);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "Welcome Yame User";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // btnLogin
             // 
             this.btnLogin.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnLogin.BackgroundImage")));
@@ -107,10 +121,10 @@
             this.btnLogin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.btnLogin.ForeColor = System.Drawing.Color.White;
-            this.btnLogin.Location = new System.Drawing.Point(37, 211);
+            this.btnLogin.Location = new System.Drawing.Point(37, 229);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(448, 76);
-            this.btnLogin.TabIndex = 8;
+            this.btnLogin.TabIndex = 3;
             this.btnLogin.Text = "LOG IN";
             this.btnLogin.UseVisualStyleBackColor = true;
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -122,10 +136,10 @@
             this.btnForgot.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnForgot.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
             this.btnForgot.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
-            this.btnForgot.Location = new System.Drawing.Point(37, 317);
+            this.btnForgot.Location = new System.Drawing.Point(37, 335);
             this.btnForgot.Name = "btnForgot";
             this.btnForgot.Size = new System.Drawing.Size(149, 25);
-            this.btnForgot.TabIndex = 7;
+            this.btnForgot.TabIndex = 4;
             this.btnForgot.Text = "Forgot password?";
             this.btnForgot.Click += new System.EventHandler(this.btnForgot_Click);
             // 
@@ -170,5 +184,6 @@
         private Label btnForgot;
         private Panel panel4;
         private ColoringButton.ButtonGradientDark btnLogin;
+        private Label label2;
     }
 }

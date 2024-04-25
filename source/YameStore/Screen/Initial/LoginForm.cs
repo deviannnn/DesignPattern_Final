@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using YameStore.Controllers;
+using YameStore.Models;
 
 namespace YameStore.Screen.Initial
 {
@@ -17,7 +18,7 @@ namespace YameStore.Screen.Initial
 
         public LoginForm()
         {
-            InitializeComponent();        
+            InitializeComponent();
         }
 
         private void btnForgot_Click(object sender, EventArgs e)
@@ -27,15 +28,24 @@ namespace YameStore.Screen.Initial
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
-            string username = tbxUsername.Text;
-            string password = tbxPassword.Text;
-            if (AccountController.Login(username, password))
+            string username = tbxUsername.Text.Trim();
+            string password = tbxPassword.Text.Trim();
+            try
             {
-                SuccessfulLogin?.Invoke(this, EventArgs.Empty);
+                Account? account = AccountController.Authenticate(username, password);
+                if (account != null)
+                {
+                    UserSession.Instance.Login(account);
+                    SuccessfulLogin?.Invoke(this, EventArgs.Empty);
+                }
+                else
+                {
+                    MessageBox.Show("Invalid username or password!", "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
+            catch (Exception ex)
             {
-                MessageBox.Show("Username or password is incorrect!", "Login Fail", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
     }
