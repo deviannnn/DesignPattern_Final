@@ -11,6 +11,7 @@ namespace YameStore.Models
 {
     public class Account
     {
+        public string Username { get; set; }
         public int ID { get; set; }
         public string YameID { get; set; }
         public string Gmail { get; set; }
