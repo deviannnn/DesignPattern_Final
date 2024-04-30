@@ -28,19 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CheckoutDialog));
             this.nameLabel = new System.Windows.Forms.Label();
-            this.namecodeTbox = new System.Windows.Forms.TextBox();
+            this.tbxCode = new System.Windows.Forms.TextBox();
             this.phoneLabel = new System.Windows.Forms.Label();
-            this.phoneTbox = new System.Windows.Forms.TextBox();
-            this.nameTbox = new System.Windows.Forms.TextBox();
+            this.tbxPhone = new System.Windows.Forms.TextBox();
+            this.tbxName = new System.Windows.Forms.TextBox();
             this.codeLabel = new System.Windows.Forms.Label();
-            this.dynamicBtn = new System.Windows.Forms.Button();
             this.dynamicGbox = new System.Windows.Forms.GroupBox();
+            this.radPhone = new System.Windows.Forms.RadioButton();
+            this.radCode = new System.Windows.Forms.RadioButton();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.checkoutMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuCheckout = new System.Windows.Forms.ToolStripMenuItem();
             this.optionsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.newCardMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
             this.reissueCardMenuBtn = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnCheckout = new YameStore.ColoringButton.ButtonGradientDark();
             this.dynamicGbox.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -57,15 +60,15 @@
             this.nameLabel.TabIndex = 1;
             this.nameLabel.Text = "Name";
             // 
-            // namecodeTbox
+            // tbxCode
             // 
-            this.namecodeTbox.BackColor = System.Drawing.Color.White;
-            this.namecodeTbox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.namecodeTbox.ForeColor = System.Drawing.Color.Black;
-            this.namecodeTbox.Location = new System.Drawing.Point(188, 57);
-            this.namecodeTbox.Name = "namecodeTbox";
-            this.namecodeTbox.Size = new System.Drawing.Size(430, 39);
-            this.namecodeTbox.TabIndex = 2;
+            this.tbxCode.BackColor = System.Drawing.Color.White;
+            this.tbxCode.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbxCode.ForeColor = System.Drawing.Color.Black;
+            this.tbxCode.Location = new System.Drawing.Point(188, 57);
+            this.tbxCode.Name = "tbxCode";
+            this.tbxCode.Size = new System.Drawing.Size(430, 39);
+            this.tbxCode.TabIndex = 2;
             // 
             // phoneLabel
             // 
@@ -79,26 +82,27 @@
             this.phoneLabel.TabIndex = 3;
             this.phoneLabel.Text = "Phone number";
             // 
-            // phoneTbox
+            // tbxPhone
             // 
-            this.phoneTbox.BackColor = System.Drawing.Color.White;
-            this.phoneTbox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.phoneTbox.ForeColor = System.Drawing.Color.Black;
-            this.phoneTbox.Location = new System.Drawing.Point(188, 134);
-            this.phoneTbox.Name = "phoneTbox";
-            this.phoneTbox.Size = new System.Drawing.Size(430, 39);
-            this.phoneTbox.TabIndex = 4;
+            this.tbxPhone.BackColor = System.Drawing.Color.LightGray;
+            this.tbxPhone.Enabled = false;
+            this.tbxPhone.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbxPhone.ForeColor = System.Drawing.Color.Black;
+            this.tbxPhone.Location = new System.Drawing.Point(188, 134);
+            this.tbxPhone.Name = "tbxPhone";
+            this.tbxPhone.Size = new System.Drawing.Size(430, 39);
+            this.tbxPhone.TabIndex = 4;
             // 
-            // nameTbox
+            // tbxName
             // 
-            this.nameTbox.BackColor = System.Drawing.Color.White;
-            this.nameTbox.Enabled = false;
-            this.nameTbox.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nameTbox.ForeColor = System.Drawing.Color.Black;
-            this.nameTbox.Location = new System.Drawing.Point(188, 221);
-            this.nameTbox.Name = "nameTbox";
-            this.nameTbox.Size = new System.Drawing.Size(430, 39);
-            this.nameTbox.TabIndex = 6;
+            this.tbxName.BackColor = System.Drawing.Color.LightGray;
+            this.tbxName.Enabled = false;
+            this.tbxName.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tbxName.ForeColor = System.Drawing.Color.Black;
+            this.tbxName.Location = new System.Drawing.Point(188, 221);
+            this.tbxName.Name = "tbxName";
+            this.tbxName.Size = new System.Drawing.Size(430, 39);
+            this.tbxName.TabIndex = 6;
             // 
             // codeLabel
             // 
@@ -112,26 +116,15 @@
             this.codeLabel.TabIndex = 5;
             this.codeLabel.Text = "Code";
             // 
-            // dynamicBtn
-            // 
-            this.dynamicBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
-            this.dynamicBtn.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dynamicBtn.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.dynamicBtn.ForeColor = System.Drawing.Color.White;
-            this.dynamicBtn.Location = new System.Drawing.Point(582, 392);
-            this.dynamicBtn.Name = "dynamicBtn";
-            this.dynamicBtn.Size = new System.Drawing.Size(150, 50);
-            this.dynamicBtn.TabIndex = 7;
-            this.dynamicBtn.Text = "Check-in";
-            this.dynamicBtn.UseVisualStyleBackColor = false;
-            // 
             // dynamicGbox
             // 
-            this.dynamicGbox.Controls.Add(this.nameTbox);
-            this.dynamicGbox.Controls.Add(this.namecodeTbox);
+            this.dynamicGbox.Controls.Add(this.radPhone);
+            this.dynamicGbox.Controls.Add(this.radCode);
+            this.dynamicGbox.Controls.Add(this.tbxName);
+            this.dynamicGbox.Controls.Add(this.tbxCode);
             this.dynamicGbox.Controls.Add(this.codeLabel);
             this.dynamicGbox.Controls.Add(this.nameLabel);
-            this.dynamicGbox.Controls.Add(this.phoneTbox);
+            this.dynamicGbox.Controls.Add(this.tbxPhone);
             this.dynamicGbox.Controls.Add(this.phoneLabel);
             this.dynamicGbox.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.dynamicGbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(100)))));
@@ -143,12 +136,34 @@
             this.dynamicGbox.TabStop = false;
             this.dynamicGbox.Text = "Scan to Checkout";
             // 
+            // radPhone
+            // 
+            this.radPhone.AutoSize = true;
+            this.radPhone.Location = new System.Drawing.Point(653, 143);
+            this.radPhone.Name = "radPhone";
+            this.radPhone.Size = new System.Drawing.Size(21, 20);
+            this.radPhone.TabIndex = 8;
+            this.radPhone.UseVisualStyleBackColor = true;
+            this.radPhone.CheckedChanged += new System.EventHandler(this.radPhone_CheckedChanged);
+            // 
+            // radCode
+            // 
+            this.radCode.AutoSize = true;
+            this.radCode.Checked = true;
+            this.radCode.Location = new System.Drawing.Point(651, 66);
+            this.radCode.Name = "radCode";
+            this.radCode.Size = new System.Drawing.Size(21, 20);
+            this.radCode.TabIndex = 7;
+            this.radCode.TabStop = true;
+            this.radCode.UseVisualStyleBackColor = true;
+            this.radCode.CheckedChanged += new System.EventHandler(this.radCode_CheckedChanged);
+            // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.Control;
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.checkoutMenuBtn,
+            this.menuCheckout,
             this.optionsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
@@ -156,11 +171,11 @@
             this.menuStrip1.TabIndex = 9;
             this.menuStrip1.Text = "menuStrip1";
             // 
-            // checkoutMenuBtn
+            // menuCheckout
             // 
-            this.checkoutMenuBtn.Name = "checkoutMenuBtn";
-            this.checkoutMenuBtn.Size = new System.Drawing.Size(102, 29);
-            this.checkoutMenuBtn.Text = "C̲heckout";
+            this.menuCheckout.Name = "menuCheckout";
+            this.menuCheckout.Size = new System.Drawing.Size(102, 29);
+            this.menuCheckout.Text = "&Checkout";
             // 
             // optionsToolStripMenuItem
             // 
@@ -183,19 +198,33 @@
             this.reissueCardMenuBtn.Size = new System.Drawing.Size(287, 34);
             this.reissueCardMenuBtn.Text = "R̲eissue Member Card";
             // 
-            // CheckoutForm
+            // btnCheckout
+            // 
+            this.btnCheckout.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnCheckout.BackgroundImage")));
+            this.btnCheckout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnCheckout.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCheckout.ForeColor = System.Drawing.Color.White;
+            this.btnCheckout.Location = new System.Drawing.Point(582, 392);
+            this.btnCheckout.Name = "btnCheckout";
+            this.btnCheckout.Size = new System.Drawing.Size(150, 50);
+            this.btnCheckout.TabIndex = 10;
+            this.btnCheckout.Text = "CHECKOUT";
+            this.btnCheckout.UseVisualStyleBackColor = true;
+            this.btnCheckout.Click += new System.EventHandler(this.btnCheckout_Click);
+            // 
+            // CheckoutDialog
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(746, 456);
-            this.Controls.Add(this.dynamicBtn);
+            this.Controls.Add(this.btnCheckout);
             this.Controls.Add(this.dynamicGbox);
             this.Controls.Add(this.menuStrip1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MainMenuStrip = this.menuStrip1;
             this.MaximumSize = new System.Drawing.Size(768, 512);
             this.MinimumSize = new System.Drawing.Size(768, 512);
-            this.Name = "CheckoutForm";
+            this.Name = "CheckoutDialog";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "CheckoutForm";
             this.dynamicGbox.ResumeLayout(false);
@@ -209,17 +238,19 @@
 
         #endregion
         private Label nameLabel;
-        private TextBox namecodeTbox;
+        private TextBox tbxCode;
         private Label phoneLabel;
-        private TextBox phoneTbox;
-        private TextBox nameTbox;
+        private TextBox tbxPhone;
+        private TextBox tbxName;
         private Label codeLabel;
-        private Button dynamicBtn;
         private GroupBox dynamicGbox;
         private MenuStrip menuStrip1;
-        private ToolStripMenuItem checkoutMenuBtn;
+        private ToolStripMenuItem menuCheckout;
         private ToolStripMenuItem optionsToolStripMenuItem;
         private ToolStripMenuItem newCardMenuBtn;
         private ToolStripMenuItem reissueCardMenuBtn;
+        private ColoringButton.ButtonGradientDark btnCheckout;
+        private RadioButton radPhone;
+        private RadioButton radCode;
     }
 }

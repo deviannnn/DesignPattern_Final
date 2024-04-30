@@ -44,17 +44,22 @@ namespace YameStore
     {
         public override CheckResult Check(Account loginAccount)
         {
-            Account? authAccount = IsValidUsernameAndPassword(loginAccount);
-            if (authAccount == null)
+            try
             {
-                // Nếu tên người dùng hoặc mật khẩu không hợp lệ, không cho phép đăng nhập
-                return new CheckResult(false, "Username or password is incorrect!", loginAccount);
+                Account? authAccount = IsValidUsernameAndPassword(loginAccount);
+                if (authAccount == null)
+                {
+                    return new CheckResult(false, "Username or password is incorrect!", authAccount);
+                }
+
+                // Nếu tên người dùng và mật khẩu hợp lệ, chuyển yêu cầu đến bước kiểm tra tiếp theo (nếu có)
+                return _nextChecker != null ? _nextChecker.Check(authAccount) : new CheckResult(true, authAccount);
             }
-
-            // Nếu tên người dùng và mật khẩu hợp lệ, chuyển yêu cầu đến bước kiểm tra tiếp theo (nếu có)
-            return _nextChecker != null ? _nextChecker.Check(authAccount) : new CheckResult(true, authAccount);
+            catch (Exception ex)
+            {
+                return new CheckResult(false, ex.Message, loginAccount);
+            }
         }
-
         private Account? IsValidUsernameAndPassword(Account loginAccount)
         {
             // Kiểm tra tên người dùng và mật khẩu ở đây
@@ -76,21 +81,6 @@ namespace YameStore
         }
     }
 
-    public class AccountActiveChecker : AccountChecker
-    {
-        public override CheckResult Check(Account account)
-        {
-            if (!account.Active)
-            {
-                // Nếu tài khoản chưa được kích hoạt, không cho phép đăng nhập
-                return new CheckResult(false, "Your account has not been activated!", account);
-            }
-
-            // Nếu tài khoản đã được kích hoạt, chuyển yêu cầu đến bước kiểm tra tiếp theo (nếu có)
-            return _nextChecker != null ? _nextChecker.Check(account) : new CheckResult(true, account);
-        }
-    }
-
     public class AccountLockedChecker : AccountChecker
     {
         public override CheckResult Check(Account account)
@@ -106,6 +96,21 @@ namespace YameStore
         }
     }
 
+    public class AccountActiveChecker : AccountChecker
+    {
+        public override CheckResult Check(Account account)
+        {
+            if (!account.Active)
+            {
+                // Nếu tài khoản chưa được kích hoạt, chuyển màn hình đổi mật khẩu
+                return new CheckResult(true, "Your account has not been activated!", account);
+            }
+
+            // Nếu tài khoản đã được kích hoạt, chuyển yêu cầu đến bước kiểm tra tiếp theo (nếu có)
+            return _nextChecker != null ? _nextChecker.Check(account) : new CheckResult(true, account);
+        }
+    }
+
     public class AccountLoginHandler
     {
         private AccountChecker _checker;
@@ -114,12 +119,12 @@ namespace YameStore
         {
             // Xây dựng chuỗi kiểm tra với các bước tương ứng
             var authChecker = new AccountAuthChecker();
-            var activeChecker = new AccountActiveChecker();
             var lockedChecker = new AccountLockedChecker();
+            var activeChecker = new AccountActiveChecker();
 
             // Thiết lập mối liên kết giữa các bước kiểm tra
-            authChecker.SetNextChecker(activeChecker);
-            activeChecker.SetNextChecker(lockedChecker);
+            authChecker.SetNextChecker(lockedChecker);
+            lockedChecker.SetNextChecker(activeChecker);
 
             _checker = authChecker;
         }

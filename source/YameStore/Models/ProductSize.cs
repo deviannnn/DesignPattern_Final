@@ -16,6 +16,7 @@ namespace YameStore.Models
         public string SKU { get; set; }
         public int Quantity { get; set; }
         public bool Active { get; set; }
+        public Product Product { get; set; }
 
         public ProductSize() { }
 

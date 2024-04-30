@@ -8,7 +8,6 @@ using YameStore.Models;
 
 namespace YameStore
 {
-    // Interface cho inventory observer
     public interface IInventoryObserver
     {
         void Update(List<ProductSize> listPS);

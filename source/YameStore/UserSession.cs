@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,12 +10,9 @@ namespace YameStore
 {
     public class UserSession
     {
-        private static UserSession? instance;
         private bool isLoggedIn;
         private Account? account;
-
-        private UserSession() { }
-
+        private static UserSession? instance;
         public static UserSession Instance
         {
             get
@@ -27,10 +25,18 @@ namespace YameStore
             }
         }
 
+        private UserSession() { }
+
         public void Login(Account account)
         {
-            isLoggedIn = true;
-            this.account = account;
+            if (account != null)
+            {
+                if (account.Active)
+                {
+                    isLoggedIn = true;
+                }
+                this.account = account;
+            }
         }
 
         public void Logout()

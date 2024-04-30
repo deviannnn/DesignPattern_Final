@@ -14,58 +14,16 @@ using YameStore.Screen.POS;
 using YameStore.Screen.Profile;
 using YameStore.Screen.Inventory;
 using YameStore.Screen.Staff;
+using YameStore.Screen.Initial;
+using System.Diagnostics;
 
 namespace YameStore.Screen
 {
     public partial class MainScreen : Form
     {
-        readonly static AnalyticsForm analytics = new();
-        readonly static ReportsForm reports = new();
-        readonly static PosForm pos = new();
-        readonly static ProfileForm profile = new();
-        readonly static LookupsForm lookups = new();
-        readonly static CustomersForm members = new();
-        readonly static InventoryForm inventory = new();
-        readonly static StaffForm staff = new();
-
         public MainScreen()
         {
             InitializeComponent();
-        }
-
-        private void SetupAnalyticsForm()
-        {
-            SetupForm(analytics);
-        }
-
-        private void SetupReportsForm()
-        {
-            SetupForm(reports);
-        }
-        
-        private void SetupProfileForm()
-        {
-            SetupForm(profile);
-        }
-
-        private void SetupLookupsForm()
-        {
-            SetupForm(lookups);
-        }
-
-        private void SetupCustomersForm()
-        {
-            SetupForm(members);
-        }
-
-        private void SetupInventoryForm()
-        {
-            SetupForm(inventory);
-        }
-
-        private void SetupStaffForm()
-        {
-            SetupForm(staff);
         }
 
         private void SetupForm(Form form)
@@ -77,44 +35,35 @@ namespace YameStore.Screen
             form.Show();
         }
 
-        private void analyticsTab_Click(object sender, EventArgs e)
+        private void ChangeTab_Click(object sender, EventArgs e)
         {
-            SetupAnalyticsForm();
+            var type = int.Parse(((ToolStripItem)sender).Tag.ToString());
+            if (type == 0)
+                SetupForm(new AnalyticsForm());
+            else if (type == 1)
+                SetupForm(new ReportsForm());
+            else if (type == 2)
+                PosForm.Instance.Show();
+            else if (type == 3)
+                SetupForm(new ProfileForm());
+            else if (type == 4)
+                SetupForm(new LookupsForm());
+            else if (type == 5)
+                SetupForm(new CustomersForm());
+            else if (type == 6)
+                SetupForm(new InventoryForm());
+            else if (type == 7)
+                SetupForm(new StaffForm());
+            else if (type == 8)
+            {
+                Close();
+                InitialScreen.Instance.LogoutAndShow();
+            }
         }
 
-        private void reportsTab_Click(object sender, EventArgs e)
+        private void MainScreen_FormClosed(object sender, FormClosedEventArgs e)
         {
-            SetupReportsForm();
-        }
-
-        private void posTab_Click(object sender, EventArgs e)
-        {
-            pos.Show();
-        }
-
-        private void profileTab_Click(object sender, EventArgs e)
-        {
-            SetupProfileForm();
-        }
-
-        private void lookupsTab_Click(object sender, EventArgs e)
-        {
-            SetupLookupsForm();
-        }
-
-        private void customersTab_Click(object sender, EventArgs e)
-        {
-            SetupCustomersForm();
-        }
-
-        private void inventoryTab_Click(object sender, EventArgs e)
-        {
-            SetupInventoryForm();
-        }
-
-        private void staffTab_Click(object sender, EventArgs e)
-        {
-            SetupStaffForm();
+            InitialScreen.Instance.LogoutAndShow();
         }
     }
 }

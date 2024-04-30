@@ -11,11 +11,11 @@ namespace YameStore.Models
     public class Customer
     {
         public int ID { get; set; }
-        public string YameID { get; set; }
+        public string Code { get; set; }
         public string Phone { get; set; }
         public string Name { get; set; }
         public int Point { get; set; }
-        public double Discount { get; set; }
+        public double PercentDiscount { get; set; }
         public bool Active { get; set; }
 
         public Customer() { }
@@ -23,23 +23,23 @@ namespace YameStore.Models
         public Customer(DataRow dataRow)
         {
             ID = (int)dataRow["ID"];
-            YameID = (string)dataRow["YameID"];
-            Phone = (string)dataRow["Phone"];
-            Name = (string)dataRow["Name"];
-            Point = (int)dataRow["Point"];
-            Discount = Convert.ToDouble(dataRow["Discount"]);
-            Active = (bool)dataRow["Active"];
+            Code = (string)dataRow["CODE"];
+            Phone = (string)dataRow["PHONE"];
+            Name = (string)dataRow["NAME"];
+            Point = (int)dataRow["POINT"];
+            PercentDiscount = Convert.ToDouble(dataRow["PERCENT_DISCOUNT"]);
+            Active = (bool)dataRow["ACTIVE"];
         }
 
         public Customer(DbDataReader reader)
         {
             ID = (int)reader["ID"];
-            YameID = (string)reader["YameID"];
-            Phone = (string)reader["Phone"];
-            Name = (string)reader["Name"];
-            Point = (int)reader["Point"];
-            Discount = Convert.ToDouble(reader["Discount"]);
-            Active = (bool)reader["Active"];
+            Code = (string)reader["CODE"];
+            Phone = (string)reader["PHONE"];
+            Name = (string)reader["NAME"];
+            Point = (int)reader["POINT"];
+            PercentDiscount = Convert.ToDouble(reader["PERCENT_DISCOUNT"]);
+            Active = (bool)reader["ACTIVE"];
         }
     }
 

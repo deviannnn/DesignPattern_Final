@@ -33,10 +33,10 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.buttonGradientDark1 = new YameStore.ColoringButton.ButtonGradientDark();
+            this.buttonGradientWarning1 = new YameStore.ColoringButton.ButtonGradientWarning();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
-            this.buttonGradientWarning1 = new YameStore.ColoringButton.ButtonGradientWarning();
-            this.buttonGradientDark1 = new YameStore.ColoringButton.ButtonGradientDark();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -87,6 +87,36 @@
             this.panel2.Size = new System.Drawing.Size(1322, 220);
             this.panel2.TabIndex = 0;
             // 
+            // buttonGradientDark1
+            // 
+            this.buttonGradientDark1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonGradientDark1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonGradientDark1.BackgroundImage")));
+            this.buttonGradientDark1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonGradientDark1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonGradientDark1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonGradientDark1.ForeColor = System.Drawing.Color.White;
+            this.buttonGradientDark1.Location = new System.Drawing.Point(723, 142);
+            this.buttonGradientDark1.Name = "buttonGradientDark1";
+            this.buttonGradientDark1.Size = new System.Drawing.Size(133, 42);
+            this.buttonGradientDark1.TabIndex = 11;
+            this.buttonGradientDark1.Text = "FIND";
+            this.buttonGradientDark1.UseVisualStyleBackColor = true;
+            // 
+            // buttonGradientWarning1
+            // 
+            this.buttonGradientWarning1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonGradientWarning1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonGradientWarning1.BackgroundImage")));
+            this.buttonGradientWarning1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonGradientWarning1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.buttonGradientWarning1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonGradientWarning1.ForeColor = System.Drawing.Color.White;
+            this.buttonGradientWarning1.Location = new System.Drawing.Point(890, 142);
+            this.buttonGradientWarning1.Name = "buttonGradientWarning1";
+            this.buttonGradientWarning1.Size = new System.Drawing.Size(133, 42);
+            this.buttonGradientWarning1.TabIndex = 7;
+            this.buttonGradientWarning1.Text = "ALL";
+            this.buttonGradientWarning1.UseVisualStyleBackColor = true;
+            // 
             // label1
             // 
             this.label1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -109,36 +139,6 @@
             this.textBox1.PlaceholderText = "Code or Phone number";
             this.textBox1.Size = new System.Drawing.Size(383, 42);
             this.textBox1.TabIndex = 0;
-            // 
-            // buttonGradientWarning1
-            // 
-            this.buttonGradientWarning1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonGradientWarning1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonGradientWarning1.BackgroundImage")));
-            this.buttonGradientWarning1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonGradientWarning1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonGradientWarning1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonGradientWarning1.ForeColor = System.Drawing.Color.White;
-            this.buttonGradientWarning1.Location = new System.Drawing.Point(890, 142);
-            this.buttonGradientWarning1.Name = "buttonGradientWarning1";
-            this.buttonGradientWarning1.Size = new System.Drawing.Size(133, 42);
-            this.buttonGradientWarning1.TabIndex = 7;
-            this.buttonGradientWarning1.Text = "ALL";
-            this.buttonGradientWarning1.UseVisualStyleBackColor = true;
-            // 
-            // buttonGradientDark1
-            // 
-            this.buttonGradientDark1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.buttonGradientDark1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonGradientDark1.BackgroundImage")));
-            this.buttonGradientDark1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.buttonGradientDark1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.buttonGradientDark1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.buttonGradientDark1.ForeColor = System.Drawing.Color.White;
-            this.buttonGradientDark1.Location = new System.Drawing.Point(723, 142);
-            this.buttonGradientDark1.Name = "buttonGradientDark1";
-            this.buttonGradientDark1.Size = new System.Drawing.Size(133, 42);
-            this.buttonGradientDark1.TabIndex = 11;
-            this.buttonGradientDark1.Text = "FIND";
-            this.buttonGradientDark1.UseVisualStyleBackColor = true;
             // 
             // CustomersForm
             // 

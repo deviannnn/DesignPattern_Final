@@ -55,10 +55,9 @@ namespace YameStore.Utils
                 Smtp.Send(msg);
                 return true;
             }
-            catch (Exception ex)
+            catch
             {
-                Debug.WriteLine(ex);
-                return false;
+                throw new Exception("The gmail system sent unsuccessfully.");
             }
         }
     }

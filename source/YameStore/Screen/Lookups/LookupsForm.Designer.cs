@@ -28,14 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LookupsForm));
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
+            this.buttonGradientDark1 = new YameStore.ColoringButton.ButtonGradientDark();
+            this.buttonGradientWarning1 = new YameStore.ColoringButton.ButtonGradientWarning();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -76,9 +78,10 @@
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.buttonGradientWarning1);
+            this.panel2.Controls.Add(this.buttonGradientDark1);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
             this.panel2.Controls.Add(this.textBox1);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 0);
@@ -105,26 +108,12 @@
             this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
             this.button2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(890, 142);
+            this.button2.Location = new System.Drawing.Point(0, 0);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(133, 42);
             this.button2.TabIndex = 3;
             this.button2.Text = "Show All";
             this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.AutoSize = true;
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(20)))), ((int)(((byte)(23)))), ((int)(((byte)(39)))));
-            this.button1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(723, 142);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(133, 42);
-            this.button1.TabIndex = 2;
-            this.button1.Text = "Find";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // textBox1
             // 
@@ -136,6 +125,34 @@
             this.textBox1.PlaceholderText = "Code or Name of Product";
             this.textBox1.Size = new System.Drawing.Size(383, 42);
             this.textBox1.TabIndex = 0;
+            // 
+            // buttonGradientDark1
+            // 
+            this.buttonGradientDark1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonGradientDark1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonGradientDark1.BackgroundImage")));
+            this.buttonGradientDark1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonGradientDark1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonGradientDark1.ForeColor = System.Drawing.Color.White;
+            this.buttonGradientDark1.Location = new System.Drawing.Point(723, 142);
+            this.buttonGradientDark1.Name = "buttonGradientDark1";
+            this.buttonGradientDark1.Size = new System.Drawing.Size(133, 42);
+            this.buttonGradientDark1.TabIndex = 6;
+            this.buttonGradientDark1.Text = "FIND";
+            this.buttonGradientDark1.UseVisualStyleBackColor = true;
+            // 
+            // buttonGradientWarning1
+            // 
+            this.buttonGradientWarning1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.buttonGradientWarning1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("buttonGradientWarning1.BackgroundImage")));
+            this.buttonGradientWarning1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.buttonGradientWarning1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.buttonGradientWarning1.ForeColor = System.Drawing.Color.White;
+            this.buttonGradientWarning1.Location = new System.Drawing.Point(890, 142);
+            this.buttonGradientWarning1.Name = "buttonGradientWarning1";
+            this.buttonGradientWarning1.Size = new System.Drawing.Size(133, 42);
+            this.buttonGradientWarning1.TabIndex = 7;
+            this.buttonGradientWarning1.Text = "ALL";
+            this.buttonGradientWarning1.UseVisualStyleBackColor = true;
             // 
             // LookupsForm
             // 
@@ -160,10 +177,11 @@
         private Panel panel1;
         private Panel panel2;
         private Button button2;
-        private Button button1;
         private TextBox textBox1;
         private Panel panel3;
         private DataGridView dataGridView1;
         private Label label1;
+        private ColoringButton.ButtonGradientWarning buttonGradientWarning1;
+        private ColoringButton.ButtonGradientDark buttonGradientDark1;
     }
 }

@@ -24,16 +24,13 @@ namespace YameStore.DAOs
                 {
                     conn.Open();
 
-                    var cmdText = @"INSERT INTO CUSTOMER (YameID, Phone, Name, Point, Discount, Active) 
-                                    VALUES (@YameID, @Phone, @Name, @Point, @Discount, @Active)";
+                    var cmdText = @"INSERT INTO CUSTOMER (CODE, PHONE, NAME) 
+                                    VALUES (@YameID, @Phone, @Name)";
                     var cmd = databaseFactory.CreateCommand(cmdText, conn);
 
-                    databaseFactory.AddParameterWithValue(cmd, "@YameID", customer.YameID);
+                    databaseFactory.AddParameterWithValue(cmd, "@YameID", customer.Code);
                     databaseFactory.AddParameterWithValue(cmd, "@Phone", customer.Phone);
                     databaseFactory.AddParameterWithValue(cmd, "@Name", customer.Name);
-                    databaseFactory.AddParameterWithValue(cmd, "@Point", customer.Point);
-                    databaseFactory.AddParameterWithValue(cmd, "@Discount", customer.Discount);
-                    databaseFactory.AddParameterWithValue(cmd, "@Active", customer.Active);
 
                     int rowsAffected = cmd.ExecuteNonQuery();
                     return rowsAffected > 0;
@@ -41,8 +38,7 @@ namespace YameStore.DAOs
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error occurred while inserting customer: " + ex.Message);
-                return false;
+                throw new Exception("Error! An error occurred. Please try again later", ex);
             }
         }
 
@@ -75,18 +71,18 @@ namespace YameStore.DAOs
             return list;
         }
 
-        public Customer? GetById(int id)
+        public Customer? GetByIdentifier(string identifier)
         {
-            Customer? customer = null;
             try
             {
+                Customer? customer = null;
                 using (var conn = databaseFactory.CreateConnection())
                 {
                     conn.Open();
 
-                    var cmdText = "SELECT * FROM CUSTOMER WHERE ID = @ID";
+                    var cmdText = "SELECT * FROM CUSTOMER WHERE CODE = @Identifier OR PHONE = @Identifier";
                     var cmd = databaseFactory.CreateCommand(cmdText, conn);
-                    databaseFactory.AddParameterWithValue(cmd, "@ID", id);
+                    databaseFactory.AddParameterWithValue(cmd, "@Identifier", identifier);
 
                     var reader = cmd.ExecuteReader();
                     if (reader.Read())
@@ -94,12 +90,12 @@ namespace YameStore.DAOs
                         customer = new Customer(reader);
                     }
                 }
+                return customer;
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error occurred while getting customer by ID: " + ex.Message);
+                throw new Exception("Error! An error occurred. Please try again later", ex);
             }
-            return customer;
         }
 
         public bool Update(Customer customer)
@@ -110,17 +106,12 @@ namespace YameStore.DAOs
                 {
                     conn.Open();
 
-                    var cmdText = @"UPDATE CUSTOMER 
-                                    SET YameID = @YameID, Phone = @Phone, Name = @Name,
-                                        Point = @Point, Discount = @Discount, Active = @Active
-                                    WHERE ID = @ID";
+                    var cmdText = @"UPDATE CUSTOMER SET CODE = @Code, PHONE = @Phone, NAME = @Name, ACTIVE = @Active WHERE ID = @ID";
                     var cmd = databaseFactory.CreateCommand(cmdText, conn);
 
-                    databaseFactory.AddParameterWithValue(cmd, "@YameID", customer.YameID);
+                    databaseFactory.AddParameterWithValue(cmd, "@Code", customer.Code);
                     databaseFactory.AddParameterWithValue(cmd, "@Phone", customer.Phone);
                     databaseFactory.AddParameterWithValue(cmd, "@Name", customer.Name);
-                    databaseFactory.AddParameterWithValue(cmd, "@Point", customer.Point);
-                    databaseFactory.AddParameterWithValue(cmd, "@Discount", customer.Discount);
                     databaseFactory.AddParameterWithValue(cmd, "@Active", customer.Active);
                     databaseFactory.AddParameterWithValue(cmd, "@ID", customer.ID);
 
@@ -130,8 +121,7 @@ namespace YameStore.DAOs
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error occurred while updating customer: " + ex.Message);
-                return false;
+                throw new Exception("Error! An error occurred. Please try again later", ex);
             }
         }
 
@@ -153,8 +143,7 @@ namespace YameStore.DAOs
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error occurred while deleting customer: " + ex.Message);
-                return false;
+                throw new Exception("Error! An error occurred. Please try again later", ex);
             }
         }
     }

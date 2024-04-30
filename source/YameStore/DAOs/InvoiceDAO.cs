@@ -60,31 +60,31 @@ namespace YameStore.DAOs
             }
         }
 
-        public Invoice GetById(int id)
+        public Invoice? GetByCode(string code)
         {
-            Invoice invoice = null;
             try
             {
+                Invoice? invoice = null;
                 using (var conn = databaseFactory.CreateConnection())
                 {
                     conn.Open();
 
-                    var cmdText = "SELECT * FROM INVOICE WHERE ID = @ID";
+                    var cmdText = "SELECT * FROM INVOICE WHERE CODE = @CODE";
                     var cmd = databaseFactory.CreateCommand(cmdText, conn);
-                    databaseFactory.AddParameterWithValue(cmd, "@ID", id);
+                    databaseFactory.AddParameterWithValue(cmd, "@CODE", code);
 
                     var reader = cmd.ExecuteReader();
                     if (reader.Read())
                     {
                         invoice = new Invoice(reader);
                     }
+                    return invoice;
                 }
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Error occurred while getting invoice by ID: " + ex.Message);
+                throw new Exception("Error! An error occurred. Please try again later", ex);
             }
-            return invoice;
         }
 
         public List<Invoice> GetAll()

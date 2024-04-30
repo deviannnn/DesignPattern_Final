@@ -92,11 +92,12 @@
             this.analyticsTab.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.analyticsTab.Name = "analyticsTab";
             this.analyticsTab.Padding = new System.Windows.Forms.Padding(0);
-            this.analyticsTab.Size = new System.Drawing.Size(270, 32);
+            this.analyticsTab.Size = new System.Drawing.Size(201, 32);
+            this.analyticsTab.Tag = "0";
             this.analyticsTab.Text = "Analytics";
             this.analyticsTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.analyticsTab.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
-            this.analyticsTab.Click += new System.EventHandler(this.analyticsTab_Click);
+            this.analyticsTab.Click += new System.EventHandler(this.ChangeTab_Click);
             // 
             // reportsTab
             // 
@@ -105,9 +106,10 @@
             this.reportsTab.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
             this.reportsTab.Name = "reportsTab";
             this.reportsTab.Padding = new System.Windows.Forms.Padding(0);
-            this.reportsTab.Size = new System.Drawing.Size(270, 32);
+            this.reportsTab.Size = new System.Drawing.Size(201, 32);
+            this.reportsTab.Tag = "1";
             this.reportsTab.Text = "Reports";
-            this.reportsTab.Click += new System.EventHandler(this.reportsTab_Click);
+            this.reportsTab.Click += new System.EventHandler(this.ChangeTab_Click);
             // 
             // posTab
             // 
@@ -121,9 +123,10 @@
             this.posTab.Name = "posTab";
             this.posTab.Padding = new System.Windows.Forms.Padding(5, 10, 0, 10);
             this.posTab.Size = new System.Drawing.Size(162, 52);
+            this.posTab.Tag = "2";
             this.posTab.Text = "Point of Sale";
             this.posTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.posTab.Click += new System.EventHandler(this.posTab_Click);
+            this.posTab.Click += new System.EventHandler(this.ChangeTab_Click);
             // 
             // profileTab
             // 
@@ -137,9 +140,10 @@
             this.profileTab.Name = "profileTab";
             this.profileTab.Padding = new System.Windows.Forms.Padding(5, 10, 0, 10);
             this.profileTab.Size = new System.Drawing.Size(162, 52);
+            this.profileTab.Tag = "3";
             this.profileTab.Text = "Profile";
             this.profileTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.profileTab.Click += new System.EventHandler(this.profileTab_Click);
+            this.profileTab.Click += new System.EventHandler(this.ChangeTab_Click);
             // 
             // lookupsTab
             // 
@@ -153,9 +157,10 @@
             this.lookupsTab.Name = "lookupsTab";
             this.lookupsTab.Padding = new System.Windows.Forms.Padding(5, 10, 0, 10);
             this.lookupsTab.Size = new System.Drawing.Size(162, 52);
+            this.lookupsTab.Tag = "4";
             this.lookupsTab.Text = "Lookups";
             this.lookupsTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.lookupsTab.Click += new System.EventHandler(this.lookupsTab_Click);
+            this.lookupsTab.Click += new System.EventHandler(this.ChangeTab_Click);
             // 
             // customersTab
             // 
@@ -169,9 +174,10 @@
             this.customersTab.Name = "customersTab";
             this.customersTab.Padding = new System.Windows.Forms.Padding(5, 10, 0, 10);
             this.customersTab.Size = new System.Drawing.Size(162, 52);
+            this.customersTab.Tag = "5";
             this.customersTab.Text = "Customers";
             this.customersTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.customersTab.Click += new System.EventHandler(this.customersTab_Click);
+            this.customersTab.Click += new System.EventHandler(this.ChangeTab_Click);
             // 
             // toolStripSeparator1
             // 
@@ -190,10 +196,11 @@
             this.inventoryTab.Name = "inventoryTab";
             this.inventoryTab.Padding = new System.Windows.Forms.Padding(5, 10, 0, 10);
             this.inventoryTab.Size = new System.Drawing.Size(162, 52);
+            this.inventoryTab.Tag = "6";
             this.inventoryTab.Text = "Inventory";
             this.inventoryTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.inventoryTab.ToolTipText = "Inventory";
-            this.inventoryTab.Click += new System.EventHandler(this.inventoryTab_Click);
+            this.inventoryTab.Click += new System.EventHandler(this.ChangeTab_Click);
             // 
             // staffTab
             // 
@@ -207,10 +214,11 @@
             this.staffTab.Name = "staffTab";
             this.staffTab.Padding = new System.Windows.Forms.Padding(5, 10, 0, 10);
             this.staffTab.Size = new System.Drawing.Size(162, 52);
+            this.staffTab.Tag = "7";
             this.staffTab.Text = "Staff";
             this.staffTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.staffTab.ToolTipText = "Staff";
-            this.staffTab.Click += new System.EventHandler(this.staffTab_Click);
+            this.staffTab.Click += new System.EventHandler(this.ChangeTab_Click);
             // 
             // logoutTab
             // 
@@ -225,9 +233,11 @@
             this.logoutTab.Name = "logoutTab";
             this.logoutTab.Padding = new System.Windows.Forms.Padding(5, 10, 0, 10);
             this.logoutTab.Size = new System.Drawing.Size(162, 52);
+            this.logoutTab.Tag = "8";
             this.logoutTab.Text = "Logout";
             this.logoutTab.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.logoutTab.ToolTipText = "Log out";
+            this.logoutTab.Click += new System.EventHandler(this.ChangeTab_Click);
             // 
             // contentPanel
             // 
@@ -249,6 +259,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MainScreen";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.MainScreen_FormClosed);
             this.navbar.ResumeLayout(false);
             this.navbar.PerformLayout();
             this.ResumeLayout(false);

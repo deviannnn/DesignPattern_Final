@@ -7,16 +7,34 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using YameStore.Controllers;
 using YameStore.Models;
+using YameStore.Screen.Initial;
 
 namespace YameStore.Screen.POS
 {
     public partial class PosForm : Form, IInventoryObserver
     {
         private InventoryWarning _inventoryWarning;
-        public PosForm()
+        private static PosForm? instance;
+        public static PosForm Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new PosForm();
+                }
+                return instance;
+            }
+        }
+        public double CustomerDiscountPercent { get; set; }
+        SaleInvoice saleInvoice;
+        private PosForm()
         {
             InitializeComponent();
+            tbxCashierName.Text = UserSession.Instance.Account.Name;
+            saleInvoice = new OriginInvoice();
         }
 
         public void Update(List<ProductSize> updatedItems)
@@ -45,12 +63,42 @@ namespace YameStore.Screen.POS
 
         private void checkOutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            new CheckoutDialog().ShowDialog();
+            using (var checkoutDialog = new CheckoutDialog())
+            {
+                if (checkoutDialog.ShowDialog() == DialogResult.OK)
+                {
+                    tbxCustomerPercentDiscount.Text = $"{checkoutDialog.CheckoutCustomer.PercentDiscount}";
+                    tbxCustomerName.Text = checkoutDialog.CheckoutCustomer.Name;
+                    saleInvoice = new DiscountCustomer(saleInvoice, checkoutDialog.CheckoutCustomer.PercentDiscount);
+                }
+            }
+        }
+
+        private void tbxVoucher_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                var discount = InvoiceController.GetDiscountVoucher(tbxVoucher.Text);
+                if (discount != 0)
+                {
+                    saleInvoice = new DiscountVoucher(saleInvoice, discount);
+                    tbxVoucher.Enabled = false;
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
 
         private void exchangesMenuBtn_Click(object sender, EventArgs e)
         {
             new ScanInvoiceDialog().ShowDialog();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Hide();
         }
     }
 }

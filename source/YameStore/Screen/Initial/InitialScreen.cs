@@ -7,15 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using YameStore.Controllers;
 
 namespace YameStore.Screen.Initial
 {
     public partial class InitialScreen : Form
     {
-        readonly static LoginForm login = new();
-        readonly static ForgotPasswordForm forgotPassword = new();
+        private static InitialScreen? instance;
+        public static InitialScreen Instance
+        {
+            get
+            {
+                if (instance == null)
+                {
+                    instance = new InitialScreen();
+                }
+                return instance;
+            }
+        }
 
-        public InitialScreen()
+        private InitialScreen()
         {
             InitializeComponent();
             SetupLoginForm();
@@ -23,15 +34,26 @@ namespace YameStore.Screen.Initial
 
         private void SetupLoginForm()
         {
+            LoginForm login = new();
             SetupForm(login);
-            login.ForgotPasswordClicked += Trigger_ForgotPasswordClicked;
-            login.SuccessfulLogin += Trigger_LoginSuccess;
+            LoginForm.ForgotPasswordClicked += Trigger_ForgotPasswordClicked;
+            AccountController.SuccessfulLogin += Trigger_LoginSuccess;
+            AccountController.ActiveLogin += Trigger_ActiveLogin;
         }
 
         private void SetupForgotPasswordForm()
         {
+            ForgotPasswordForm forgotPassword = new();
             SetupForm(forgotPassword);
             forgotPassword.BackLoginClicked += Trigger_BackLoginClicked;
+        }
+
+        private void SetupActiveForm()
+        {
+            ActiveForm activeForm = new();
+            SetupForm(activeForm);
+            activeForm.lblName.Text = UserSession.Instance.Account.Name;
+            activeForm.BackLoginClicked += Trigger_BackLoginClicked;
         }
 
         private void SetupForm(Form form)
@@ -41,6 +63,11 @@ namespace YameStore.Screen.Initial
             contentPanel.Controls.Add(form);
             form.Dock = DockStyle.Fill;
             form.Show();
+        }
+
+        private void Trigger_ActiveLogin(object sender, EventArgs e)
+        {
+            SetupActiveForm();
         }
 
         private void Trigger_ForgotPasswordClicked(object sender, EventArgs e)
@@ -56,7 +83,14 @@ namespace YameStore.Screen.Initial
         private void Trigger_LoginSuccess(object sender, EventArgs e)
         {
             new MainScreen().Show();
+            SetupLoginForm();
             Hide();
+        }
+
+        public void LogoutAndShow()
+        {
+            UserSession.Instance.Logout();
+            Show();
         }
     }
 }

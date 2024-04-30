@@ -1,4 +1,6 @@
-﻿namespace YameStore.Screen.Staff
+﻿using ControlUICustom;
+
+namespace YameStore.Screen.Staff
 {
     partial class CreateStaffDialog
     {
@@ -36,14 +38,14 @@
             this.tbxWard = new System.Windows.Forms.TextBox();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
-            this.tbxGender = new System.Windows.Forms.ComboBox();
+            this.cbbGender = new System.Windows.Forms.ComboBox();
             this.panel10 = new System.Windows.Forms.Panel();
             this.tbxCity = new System.Windows.Forms.TextBox();
             this.panel9 = new System.Windows.Forms.Panel();
             this.tbxDistrict = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.tbxName = new System.Windows.Forms.TextBox();
+            this.tbxName = new ControlUICustom.ValidatorTextBox();
             this.panel8 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.tbxNum = new System.Windows.Forms.TextBox();
@@ -51,10 +53,10 @@
             this.tbxAddress = new System.Windows.Forms.TextBox();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
-            this.tbxGmail = new System.Windows.Forms.TextBox();
+            this.tbxGmail = new ControlUICustom.ValidatorTextBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.tbxPhone = new System.Windows.Forms.TextBox();
+            this.tbxPhone = new ControlUICustom.ValidatorTextBox();
             this.btnNext = new YameStore.ColoringButton.ButtonGradientDark();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -149,7 +151,7 @@
             // 
             this.tableLayoutPanel1.SetColumnSpan(this.panel4, 2);
             this.panel4.Controls.Add(this.label6);
-            this.panel4.Controls.Add(this.tbxGender);
+            this.panel4.Controls.Add(this.cbbGender);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel4.Location = new System.Drawing.Point(568, 3);
             this.panel4.Name = "panel4";
@@ -169,21 +171,21 @@
             this.label6.TabIndex = 6;
             this.label6.Text = "Gender";
             // 
-            // tbxGender
+            // cbbGender
             // 
-            this.tbxGender.DisplayMember = "0";
-            this.tbxGender.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.tbxGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.tbxGender.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.tbxGender.ForeColor = System.Drawing.Color.Black;
-            this.tbxGender.FormattingEnabled = true;
-            this.tbxGender.Items.AddRange(new object[] {
+            this.cbbGender.DisplayMember = "0";
+            this.cbbGender.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.cbbGender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbbGender.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.cbbGender.ForeColor = System.Drawing.Color.Black;
+            this.cbbGender.FormattingEnabled = true;
+            this.cbbGender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.tbxGender.Location = new System.Drawing.Point(12, 54);
-            this.tbxGender.Name = "tbxGender";
-            this.tbxGender.Size = new System.Drawing.Size(257, 36);
-            this.tbxGender.TabIndex = 17;
+            this.cbbGender.Location = new System.Drawing.Point(12, 54);
+            this.cbbGender.Name = "cbbGender";
+            this.cbbGender.Size = new System.Drawing.Size(257, 36);
+            this.cbbGender.TabIndex = 17;
             // 
             // panel10
             // 
@@ -260,7 +262,7 @@
             this.tbxName.Name = "tbxName";
             this.tbxName.PlaceholderText = "E.g. Nguyen Van A";
             this.tbxName.Size = new System.Drawing.Size(535, 34);
-            this.tbxName.TabIndex = 7;
+            this.tbxName.TabIndex = 8;
             // 
             // panel8
             // 
@@ -348,10 +350,11 @@
             this.tbxGmail.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbxGmail.ForeColor = System.Drawing.Color.Black;
             this.tbxGmail.Location = new System.Drawing.Point(12, 56);
+            this.tbxGmail.MaxLength = 50;
             this.tbxGmail.Name = "tbxGmail";
             this.tbxGmail.PlaceholderText = "E.g. Yame@gmail.com";
             this.tbxGmail.Size = new System.Drawing.Size(394, 34);
-            this.tbxGmail.TabIndex = 11;
+            this.tbxGmail.TabIndex = 12;
             // 
             // panel7
             // 
@@ -383,21 +386,22 @@
             this.tbxPhone.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.tbxPhone.ForeColor = System.Drawing.Color.Black;
             this.tbxPhone.Location = new System.Drawing.Point(12, 56);
+            this.tbxPhone.MaxLength = 10;
             this.tbxPhone.Name = "tbxPhone";
             this.tbxPhone.PlaceholderText = "E.g. 0987654321";
             this.tbxPhone.Size = new System.Drawing.Size(398, 34);
-            this.tbxPhone.TabIndex = 8;
+            this.tbxPhone.TabIndex = 9;
             // 
             // btnNext
             // 
             this.btnNext.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right)));
             this.btnNext.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("btnNext.BackgroundImage")));
             this.btnNext.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnNext.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnNext.Font = new System.Drawing.Font("Segoe UI", 10F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point);
             this.btnNext.ForeColor = System.Drawing.Color.White;
-            this.btnNext.Location = new System.Drawing.Point(709, 313);
+            this.btnNext.Location = new System.Drawing.Point(709, 312);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(140, 48);
+            this.btnNext.Size = new System.Drawing.Size(140, 50);
             this.btnNext.TabIndex = 11;
             this.btnNext.Text = "NEXT";
             this.btnNext.UseVisualStyleBackColor = true;
@@ -440,10 +444,7 @@
         }
 
         #endregion
-        private ComboBox tbxGender;
-        private TextBox tbxName;
-        private TextBox tbxGmail;
-        private TextBox tbxPhone;
+        private ComboBox cbbGender;
         private TextBox tbxNum;
         private TextBox tbxAddress;
         private TextBox tbxWard;
@@ -466,6 +467,9 @@
         private Panel panel15;
         private TableLayoutPanel tableLayoutPanel1;
         private GroupBox groupBox1;
+        private ControlUICustom.ValidatorTextBox tbxName = new ControlUICustom.ValidatorTextBox(new NameValidator());
+        private ControlUICustom.ValidatorTextBox tbxGmail;
+        private ControlUICustom.ValidatorTextBox tbxPhone;
         private ColoringButton.ButtonGradientDark btnNext;
     }
 }

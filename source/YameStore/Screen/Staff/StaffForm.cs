@@ -18,7 +18,7 @@ namespace YameStore.Screen.Staff
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void btnNew_Click(object sender, EventArgs e)
         {
             new CreateStaffDialog().ShowDialog();
         }

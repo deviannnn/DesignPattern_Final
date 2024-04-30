@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,22 +13,27 @@ namespace YameStore.Controllers
     public class AccountController
     {
         private static readonly AccountDAO accountDAO = new();
-        public static Account? Authenticate(string identifier, string password)
+        public static event EventHandler? SuccessfulLogin;
+        public static event EventHandler? ActiveLogin;
+        public static bool Authenticate(string identifier, string password)
         {
-            try
+            AccountLoginHandler handler = new AccountLoginHandler();
+            var result = handler.HandleLogin(new Account { Username = identifier, Password = password });
+
+            if (result.IsValid)
             {
-                Account? account = accountDAO.GetAccountByIdentifier(identifier);
-                if (account == null)
-                    return null;
+                UserSession.Instance.Login(result.Account);
+                if (result.Account.Active)
+                    SuccessfulLogin?.Invoke(null, EventArgs.Empty);
+                else
+                    ActiveLogin?.Invoke(null, EventArgs.Empty);
 
-                if (account.Password != password)
-                    return null;
-
-                return account;
+                return true;
             }
-            catch (Exception ex)
+            else
             {
-                throw new Exception(ex.Message);
+                MessageBox.Show(result.Msg, "Login Failed", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
         }
 
@@ -45,10 +51,32 @@ namespace YameStore.Controllers
 
         public static bool Create(Account account)
         {
-            // encrypt password
-            // after inserted successfully then send new password to gmail
-            accountDAO.Insert(account);
-            return Gmail.SendPassword(account.Gmail, account.Password);
+            try
+            {
+                bool existingGmail = accountDAO.CheckExistingGmail(account.Gmail);
+                bool existingPhone = accountDAO.CheckExistingPhone(account.Phone);
+
+                if (existingGmail)
+                {
+                    throw new Exception("This Gmail already exists.");
+                }
+
+                if (existingPhone)
+                {
+                    throw new Exception("This phone number already exists.");
+                }
+
+                account.Password = PasswordGenerator.GeneratePassword(10);
+                if (accountDAO.Insert(account))
+                    return Gmail.SendPassword(account.Gmail, account.Password);
+                else
+                    throw new Exception("The account was inserted unsuccessfully.");
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+                throw;
+            }
         }
 
         public static bool ConfirmPIN()

@@ -27,7 +27,7 @@ namespace YameStore.DAOs
                 {
                     conn.Open();
 
-                    var cmdText = @"INSERT INTO ACCOUNT (GMAIL, PHONE, PASSWORD, NAME, GENDER, ADDRESS, ROLE) VALUES (@Gmail, @Phone, @Password, @Name, @Gender, @Address, @Role)";
+                    var cmdText = @"INSERT INTO ACCOUNT (GMAIL, PHONE, PASSWORD, NAME, GENDER, ADDRESS) VALUES (@Gmail, @Phone, @Password, @Name, @Gender, @Address)";
                     var cmd = databaseFactory.CreateCommand(cmdText, conn);
 
                     databaseFactory.AddParameterWithValue(cmd, "@Gmail", account.Gmail.Trim());
@@ -36,9 +36,6 @@ namespace YameStore.DAOs
                     databaseFactory.AddParameterWithValue(cmd, "@Name", account.Name.Trim());
                     databaseFactory.AddParameterWithValue(cmd, "@Gender", account.Gender);
                     databaseFactory.AddParameterWithValue(cmd, "@Address", account.Address.Trim());
-                    databaseFactory.AddParameterWithValue(cmd, "@Locked", account.Locked);
-                    databaseFactory.AddParameterWithValue(cmd, "@Active", account.Active);
-                    databaseFactory.AddParameterWithValue(cmd, "@Role", account.Role.Trim());
 
                     int rowsAffected = cmd.ExecuteNonQuery();
                     return rowsAffected > 0;
@@ -46,8 +43,7 @@ namespace YameStore.DAOs
             }
             catch (Exception ex)
             {
-                Console.WriteLine("Đã xảy ra lỗi khi thêm tài khoản mới: " + ex.Message);
-                return false;
+                throw new Exception("Error! An error occurred. Please try again later", ex);
             }
         }
 
@@ -102,7 +98,6 @@ namespace YameStore.DAOs
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.Message);
                 throw new Exception("Error! An error occurred. Please try again later", ex);
             }
         }
@@ -139,7 +134,6 @@ namespace YameStore.DAOs
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.Message);
                 throw new Exception("Error! An error occurred. Please try again later", ex);
             }
         }
@@ -162,7 +156,6 @@ namespace YameStore.DAOs
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.Message);
                 throw new Exception("Error! An error occurred. Please try again later", ex);
             }
         }
@@ -185,7 +178,6 @@ namespace YameStore.DAOs
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.Message);
                 throw new Exception("Error! An error occurred. Please try again later", ex);
             }
         }
@@ -208,7 +200,6 @@ namespace YameStore.DAOs
             }
             catch (Exception ex)
             {
-                Debug.WriteLine(ex.Message);
                 throw new Exception("Error! An error occurred. Please try again later", ex);
             }
         }
